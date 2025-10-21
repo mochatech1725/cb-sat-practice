@@ -1,0 +1,184 @@
+{
+  "questions": [
+    {
+      "question_id": "SAT_MATH_006",
+      "test_type": "SAT",
+      "domain": "Math",
+      "subdomain": "Algebra",
+      "difficulty": "Easy",
+      "skill": "Systems of Equations",
+      "question_text": "If x + y = 10 and x - y = 4, what is the value of x?",
+      "correct_answer": "C",
+      "answer_choices": {
+        "A": "3",
+        "B": "5",
+        "C": "7",
+        "D": "9"
+      },
+      "answer_analysis": "Add the two equations: (x + y) + (x - y) = 10 + 4, which gives 2x = 14, so x = 7.",
+      "explanation": "When adding equations, variables with opposite coefficients will cancel out.",
+      "is_active": 0
+    },
+    {
+      "question_id": "SAT_MATH_007",
+      "test_type": "SAT",
+      "domain": "Math",
+      "subdomain": "Functions",
+      "difficulty": "Medium",
+      "skill": "Function Notation",
+      "question_text": "If f(x) = 2x + 3, what is f(4)?",
+      "correct_answer": "B",
+      "answer_choices": {
+        "A": "9",
+        "B": "11",
+        "C": "13",
+        "D": "15"
+      },
+      "answer_analysis": "Substitute x = 4 into the function: f(4) = 2(4) + 3 = 8 + 3 = 11.",
+      "explanation": "Function notation f(x) means 'f of x' - substitute the input value for x.",
+      "is_active": 0
+    },
+    {
+      "question_id": "SAT_MATH_008",
+      "test_type": "SAT",
+      "domain": "Math",
+      "subdomain": "Geometry",
+      "difficulty": "Medium",
+      "skill": "Triangles",
+      "question_text": "In a right triangle with legs of length 3 and 4, what is the length of the hypotenuse?",
+      "correct_answer": "B",
+      "answer_choices": {
+        "A": "4",
+        "B": "5",
+        "C": "6",
+        "D": "7"
+      },
+      "answer_analysis": "Use the Pythagorean theorem: a² + b² = c², so 3² + 4² = 9 + 16 = 25, and √25 = 5.",
+      "explanation": "The Pythagorean theorem applies to right triangles: the sum of squares of the legs equals the square of the hypotenuse.",
+      "is_active": 1
+    },
+    {
+      "question_id": "SAT_READING_003",
+      "test_type": "SAT",
+      "domain": "Reading",
+      "subdomain": "History",
+      "difficulty": "Medium",
+      "skill": "Author's Purpose",
+      "question_text": "What is the author's primary purpose in this passage?\n\n'The Industrial Revolution fundamentally transformed society in ways that are still felt today. While it brought unprecedented economic growth and technological advancement, it also created new social challenges. Workers faced harsh conditions in factories, cities became overcrowded, and the gap between rich and poor widened dramatically.'",
+      "correct_answer": "A",
+      "answer_choices": {
+        "A": "To present a balanced view of the Industrial Revolution's effects",
+        "B": "To criticize the negative aspects of industrialization",
+        "C": "To celebrate the technological achievements of the era",
+        "D": "To argue that modern society is worse than before"
+      },
+      "answer_analysis": "The passage presents both positive effects (economic growth, technological advancement) and negative effects (harsh conditions, overcrowding, inequality), indicating a balanced perspective.",
+      "explanation": "Consider whether the author presents multiple viewpoints or focuses on a single perspective.",
+      "is_active": 0
+    },
+    {
+      "question_id": "SAT_READING_004",
+      "test_type": "SAT",
+      "domain": "Reading",
+      "subdomain": "Social Studies",
+      "difficulty": "Hard",
+      "skill": "Evidence Support",
+      "question_text": "Which evidence best supports the claim that social media has changed political discourse?\n\n'Social media platforms have revolutionized how people engage with political issues. Politicians can now communicate directly with constituents without traditional media filters. However, this direct communication has also enabled the rapid spread of misinformation and created echo chambers where people only encounter views similar to their own.'",
+      "correct_answer": "D",
+      "answer_choices": {
+        "A": "Politicians can communicate directly with constituents",
+        "B": "Traditional media filters are no longer necessary",
+        "C": "People only encounter similar views online",
+        "D": "All of the above evidence supports the claim"
+      },
+      "answer_analysis": "Each piece of evidence (direct communication, bypassing media filters, spread of misinformation, echo chambers) demonstrates different ways social media has changed political discourse.",
+      "explanation": "Look for evidence that directly relates to the claim and consider whether multiple pieces of evidence work together.",
+      "is_active": 1
+    },
+    {
+      "question_id": "SAT_WRITING_004",
+      "test_type": "SAT",
+      "domain": "Writing and Language",
+      "subdomain": "Grammar",
+      "difficulty": "Medium",
+      "skill": "Parallel Structure",
+      "question_text": "Which sentence has correct parallel structure?",
+      "correct_answer": "B",
+      "answer_choices": {
+        "A": "She enjoys reading, writing, and to swim.",
+        "B": "She enjoys reading, writing, and swimming.",
+        "C": "She enjoys to read, writing, and swimming.",
+        "D": "She enjoys reading, to write, and swimming."
+      },
+      "answer_analysis": "In parallel structure, all items in a series should have the same grammatical form. 'Reading, writing, and swimming' are all gerunds (verbs ending in -ing used as nouns).",
+      "explanation": "Maintain consistent grammatical structure when listing items in a series.",
+      "is_active": 0
+    },
+    {
+      "question_id": "SAT_WRITING_005",
+      "test_type": "SAT",
+      "domain": "Writing and Language",
+      "subdomain": "Style",
+      "difficulty": "Hard",
+      "skill": "Sentence Combination",
+      "question_text": "Which sentence best combines the following two sentences?\n\n'John studied hard for the exam. He still failed.'",
+      "correct_answer": "A",
+      "answer_choices": {
+        "A": "Although John studied hard for the exam, he still failed.",
+        "B": "John studied hard for the exam, and he still failed.",
+        "C": "John studied hard for the exam; he still failed.",
+        "D": "John studied hard for the exam, but he still failed."
+      },
+      "answer_analysis": "The conjunction 'although' best shows the contrast between studying hard and failing, emphasizing the unexpected outcome.",
+      "explanation": "Choose conjunctions that best express the relationship between ideas (contrast, cause-effect, etc.).",
+      "is_active": 0
+    },
+    {
+      "question_id": "SAT_MATH_009",
+      "test_type": "SAT",
+      "domain": "Math",
+      "subdomain": "Data Analysis",
+      "difficulty": "Easy",
+      "skill": "Probability",
+      "question_text": "A bag contains 3 red marbles and 5 blue marbles. If one marble is drawn at random, what is the probability that it is red?",
+      "correct_answer": "A",
+      "answer_choices": {
+        "A": "3/8",
+        "B": "3/5",
+        "C": "5/8",
+        "D": "1/2"
+      },
+      "answer_analysis": "Probability = favorable outcomes / total outcomes = 3 red marbles / (3 + 5) total marbles = 3/8.",
+      "explanation": "Probability is calculated as the number of favorable outcomes divided by the total number of possible outcomes.",
+      "is_active": 0
+    },
+    {
+      "question_id": "SAT_MATH_010",
+      "test_type": "SAT",
+      "domain": "Math",
+      "subdomain": "Algebra",
+      "difficulty": "Hard",
+      "skill": "Exponential Functions",
+      "question_text": "If 2^x = 16, what is the value of x?",
+      "correct_answer": "C",
+      "answer_choices": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "answer_analysis": "Since 16 = 2⁴, we have 2^x = 2⁴, so x = 4. Alternatively, you can take the logarithm of both sides.",
+      "explanation": "When bases are equal in exponential equations, the exponents must be equal.",
+      "is_active": 1
+    }
+  ],
+  "metadata": {
+    "total_questions": 10,
+    "domains": ["Math", "Reading", "Writing and Language"],
+    "difficulties": ["Easy", "Medium", "Hard"],
+    "test_types": ["SAT"],
+    "active_questions": 4,
+    "inactive_questions": 6,
+    "last_updated": "2024-01-15T11:00:00Z"
+  }
+}

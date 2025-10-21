@@ -1,0 +1,19 @@
+{
+  "name": "cb-sat-practice",
+  "version": "1.0.0",
+  "description": "SAT Practice Set Generator from College Board Question Bank",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["sat", "practice", "college-board", "education"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

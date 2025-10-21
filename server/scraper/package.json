@@ -1,0 +1,18 @@
+{
+  "name": "cb-sat-scraper",
+  "version": "1.0.0",
+  "description": "Web scraper for College Board SAT Question Bank",
+  "main": "scraper.js",
+  "type": "module",
+  "scripts": {
+    "scrape": "node scraper.js",
+    "test": "node test-scraper.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.6.1",
+    "cheerio": "^1.0.0-rc.12",
+    "axios": "^1.6.2",
+    "sqlite3": "^5.1.6",
+    "dotenv": "^16.3.1"
+  }
+}
