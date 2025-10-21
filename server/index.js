@@ -3,18 +3,25 @@ import cors from 'cors';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import dotenv from 'dotenv';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
 import Database from './database/init.js';
 import questionRoutes from './routes/questions.js';
 import practiceRoutes from './routes/practice.js';
 import scraperRoutes from './routes/scraper.js';
 
-dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// Load .env.dev from project root
+dotenv.config({ path: join(__dirname, '..', '.env.dev') });
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Initialize database
+// Initialize database (async initialization)
 const db = new Database();
+await db.init();
 
 // Security middleware
 app.use(helmet());

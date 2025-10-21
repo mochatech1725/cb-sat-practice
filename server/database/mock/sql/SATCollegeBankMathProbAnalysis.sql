@@ -19,7 +19,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Choice A is incorrect and may result from conceptual or calculation errors. Choice C is incorrect. The line of best fit shown has a negative slope, not a positive slope. Choice D is incorrect. The line of best fit shown has a negative slope, not a positive slope. Medium Question ID 191d167b ID: 191d167b Last year,  students enrolled in an interior design program. This year, the number of students enrolled is  of last year’s number. How many students are enrolled in the interior design program this year? A. B. C. D.',
     'B',
     '{}',
-    'Choice B is correct. It''s given that the number of students enrolled in an interior design program this year is  of last year''s number, which is .  of  can be expressed as , or , which is equivalent to . Therefore,  students are enrolled in the interior design program this year. Choice A is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. Easy SAT Math',
+    'Choice B is correct. It''s given that the number of students enrolled in an interior design program this year is  of last year''s number, which is .  of  can be expressed as , or , which is equivalent to . Therefore,  students are enrolled in the interior design program this year. Choice A is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. ',
     '',
     1
 );
@@ -39,7 +39,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 63573fea ID: 63573fea During the first month of sales, a company sold 1,300,000 units of a certain type of smartphone. During the same month, 15% of the units sold were returned. If sales and the return rate remain the same for each of the next 5 months, about how many units of this smartphone will be returned to the company during this 6-month period?',
     'C',
     '{"A":"195,000","B":"975,000","C":"1,170,000","D":"6,630,000"}',
-    'Choice C is correct. Of the 1,300,000 units sold during the first month, 15% were returned, so units were returned during the first month. If the units were sold and returned at the same rate for the next 5 months, then a total of  smartphone units were returned during the 6-month period. Choice A is incorrect. This is the number of units that were returned in 1 month. Choice B is incorrect. This is the number of units that were returned in 5 months. Choice D is incorrect. This is the number of units sold and not returned during the first 6 months. Medium SAT Math',
+    'Choice C is correct. Of the 1,300,000 units sold during the first month, 15% were returned, so units were returned during the first month. If the units were sold and returned at the same rate for the next 5 months, then a total of  smartphone units were returned during the 6-month period. Choice A is incorrect. This is the number of units that were returned in 1 month. Choice B is incorrect. This is the number of units that were returned in 5 months. Choice D is incorrect. This is the number of units sold and not returned during the first 6 months. ',
     '',
     1
 );
@@ -59,7 +59,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 6310adbc ID: 6310adbc The ratio of t to u is 1 to 2, and . What is the value of u ?',
     'D',
     '{"A":"2","B":"5","C":"10","D":"20"}',
-    'Choice D is correct. It’s given that the ratio of t to u is 1 to 2. Since , it follows that the ratio of 10 to u is also 1 to 2. The relationship between these ratios can be represented by the proportion . Multiplying both sides of this equation by 2 and then by u yields . Choice A is incorrect. This is the value of u when . Choice B is incorrect. This would be the value of u if the ratio of t to u were 2 to 1. Choice C is incorrect. This is the value of t, not u. Easy SAT Math',
+    'Choice D is correct. It’s given that the ratio of t to u is 1 to 2. Since , it follows that the ratio of 10 to u is also 1 to 2. The relationship between these ratios can be represented by the proportion . Multiplying both sides of this equation by 2 and then by u yields . Choice A is incorrect. This is the value of u when . Choice B is incorrect. This would be the value of u if the ratio of t to u were 2 to 1. Choice C is incorrect. This is the value of t, not u. ',
     '',
     1
 );
@@ -80,7 +80,7 @@ INSERT INTO questions (
     'D',
     '{"A":"Median","B":"Mean","C":"Sum of the numbers","D":"Standard deviation"}',
     'Choice D is correct. When a data set has an odd number of elements, the median can be found by ordering the values from least to greatest and determining the middle value. Out of the 27 different numbers in this data set, 13 numbers are below the median, one number is exactly 33, and 13 numbers are above the median. When 7 is subtracted from each number below the median and added to each number above the median, the data spread out from the median. Since the median of this data set, 33, is equivalent to the mean of the data set, the data also spread out from the mean. Since standard deviation is a measure of how spread out the data are from the mean, a greater spread from the mean indicates an increased standard deviation. Choice A is incorrect. All the numbers less than the median decrease and all the numbers greater than the median increase, but the median itself doesn’t change. Choices B and C are incorrect. The mean of a data set is found by dividing the sum of the values by the number of values. The net change from subtracting 7 from 13 numbers and adding 7 to 13 numbers is zero. Therefore, neither the mean nor the sum of the numbers changes.',
-    'Hard SAT Math',
+    '',
     1
 );
 
@@ -99,7 +99,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID 022e9894 ID: 022e9894 An insurance company offers a series of three information sessions.  people attended the first information session. of the people who attended the first information session attended the second information session, and  of the people who attended the first and second information sessions attended the third information session. How many people attended all three information sessions?',
     'A',
     '{}',
-    'The correct answer is . It’s given that  people attended the first information session, and that  of the people who attended the first information session attended the second information session. Therefore, the number of people who attended the first and second information sessions can be found by calculating  of , which is equal to , or . It’s also given that  of the people who attended the first and second information sessions attended the third information session. Since  people attended the first and second information sessions, the number of people who attended the first, second, and third information sessions can be found by calculating  of , which is equal to , or . Therefore,  people attended all three information sessions. Medium SAT Math',
+    'The correct answer is . It’s given that  people attended the first information session, and that  of the people who attended the first information session attended the second information session. Therefore, the number of people who attended the first and second information sessions can be found by calculating  of , which is equal to , or . It’s also given that  of the people who attended the first and second information sessions attended the third information session. Since  people attended the first and second information sessions, the number of people who attended the first, second, and third information sessions can be found by calculating  of , which is equal to , or . Therefore,  people attended all three information sessions. ',
     '',
     1
 );
@@ -120,7 +120,7 @@ INSERT INTO questions (
     'C',
     '{"A":"For all , it is true that .","B":"For all , it is true that .","C":"There is a constant c such that if , then , but if , then .","D":"There is a constant c such that if , then , but if , then ."}',
     'Choice C is correct. At , the value of  is less than the value of , which is equivalent to . As the value of x increases, the value of  remains less than the value of  until , which is when the two values are equal: , which is equivalent to . Then, for , the value of  is greater than the value of . So there is a constant, 3, such that when , then , but when , then . Choice A is incorrect because  when . Choice B is incorrect because  when . Choice D is incorrect because  when  and  when .',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -139,7 +139,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Question ID 2c76bcce ID: 2c76bcce A company designs and makes handbags. To estimate the mean weight of the handbags made by the company on a particular day, a sample of the handbags made by the company on that day was selected at random. Based on the sample, it is estimated that the mean weight of all handbags made by the company on that day is , with an associated margin of error of . Based on this estimate and associated margin of error, which of the following is the most plausible conclusion?',
     'A',
     '{"A":"The mean weight of all handbags made by the company on that day is between  and .","B":"The actual weights of all handbags made by the company on that day are between  and .","C":"The actual weights of all handbags from the sample are between  and .","D":"The mean weight of all handbags made by the company on that day is ."}',
-    'Choice A is correct. It''s given that the estimated mean weight of all handbags made by the company on a particular day is , with an associated margin of error of . It follows that plausible values for the mean weight are between and . Therefore, the most plausible conclusion is that the mean weight of all handbags made by the company on that day is between  and . Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. Easy SAT Math',
+    'Choice A is correct. It''s given that the estimated mean weight of all handbags made by the company on a particular day is , with an associated margin of error of . It follows that plausible values for the mean weight are between and . Therefore, the most plausible conclusion is that the mean weight of all handbags made by the company on that day is between  and . Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. ',
     '',
     1
 );
@@ -179,7 +179,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Hard Question ID f8f79e11 ID: f8f79e11 A park ranger asked a random sample of visitors how far they hiked during their visit. Based on the responses, the estimated mean was found to be 4.5 miles, with an associated margin of error of 0.5 miles. Which of the following is the best conclusion from these data?',
     'D',
     '{"A":"It is likely that all visitors hiked between 4 and 5 miles.","B":"It is likely that most visitors hiked exactly 4.5 miles.","C":"It is not possible that any visitor hiked less than 3 miles.","D":"It is plausible that the mean distance hiked for all visitors is between 4 and 5 miles."}',
-    'Choice D is correct. The given estimated mean has an associated margin of error because from sample data, the population mean can’t be determined precisely. Rather, from the sample mean, an interval can be determined within which it’s plausible that the population’s mean is likely to lie. Since the estimated mean is 4.5 miles with an associated margin of error of 0.5 miles, it follows that between  miles and  miles, or between 4 and 5 miles, is plausibly the mean distance hiked for all visitors. Choices A, B, and C are incorrect. Based on the estimated mean, no determination can be made about the number of miles hiked for all visitors to the park. Medium SAT Math',
+    'Choice D is correct. The given estimated mean has an associated margin of error because from sample data, the population mean can’t be determined precisely. Rather, from the sample mean, an interval can be determined within which it’s plausible that the population’s mean is likely to lie. Since the estimated mean is 4.5 miles with an associated margin of error of 0.5 miles, it follows that between  miles and  miles, or between 4 and 5 miles, is plausibly the mean distance hiked for all visitors. Choices A, B, and C are incorrect. Based on the estimated mean, no determination can be made about the number of miles hiked for all visitors to the park. ',
     '',
     1
 );
@@ -199,7 +199,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Inference from sample statistics and margin of error Difficulty Question ID 8705ecba ID: 8705ecba The cost of a certain shirt is $20 before a 5% sales tax is added. What is the total cost, including sales tax, to purchase the shirt?',
     'C',
     '{"A":"$20.05","B":"$20.50","C":"$21.00","D":"$25.00"}',
-    'Choice C is correct. The total cost to purchase the shirt is the $20 cost of the shirt plus the 5% sales tax. The value of the 5% sales tax on the $20 shirt is equivalent to, or $1. Therefore, the total cost to purchase the shirt is , or $21. Choice A is incorrect and may result from neglecting to multiply by $20 when finding the value of the sales tax. Choice B is incorrect and may result from dividing by 10, instead of by 100, and then neglecting to multiply by $20 when finding the sales tax. Choice D is incorrect and may result from interpreting the sales tax of 5% as $5. Easy SAT Math',
+    'Choice C is correct. The total cost to purchase the shirt is the $20 cost of the shirt plus the 5% sales tax. The value of the 5% sales tax on the $20 shirt is equivalent to, or $1. Therefore, the total cost to purchase the shirt is , or $21. Choice A is incorrect and may result from neglecting to multiply by $20 when finding the value of the sales tax. Choice B is incorrect and may result from dividing by 10, instead of by 100, and then neglecting to multiply by $20 when finding the sales tax. Choice D is incorrect and may result from interpreting the sales tax of 5% as $5. ',
     '',
     1
 );
@@ -219,7 +219,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 3f236a64 ID: 3f236a64 xy 14 312 520 40k In the table above, the ratio of y to x for each ordered pair is constant. What is the value of k ?',
     'D',
     '{"A":"28","B":"36","C":"80","D":"160"}',
-    'Choice D is correct. Since the ratio of y to x is constant for each ordered pair in the table, the first row can be used to determine that the ratio of y to x is 4 to 1. The proportion  can be used to solve for k. Multiplying each side of the equation by 40 yields . Choice A is incorrect. This is the value of y when the value of x is 7, not 40. Choice B is incorrect and may result from subtracting 4 from 40 instead of multiplying 40 by 4. Choice C is incorrect and may result from incorrectly setting up the proportion. Easy SAT Math',
+    'Choice D is correct. Since the ratio of y to x is constant for each ordered pair in the table, the first row can be used to determine that the ratio of y to x is 4 to 1. The proportion  can be used to solve for k. Multiplying each side of the equation by 40 yields . Choice A is incorrect. This is the value of y when the value of x is 7, not 40. Choice B is incorrect and may result from subtracting 4 from 40 instead of multiplying 40 by 4. Choice C is incorrect and may result from incorrectly setting up the proportion. ',
     '',
     1
 );
@@ -239,7 +239,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 190be2fc ID: 190be2fc Data set A consists of  positive integers less than . The list shown gives  of the integers from data set A. , , , , , , , , The mean of these  integers is . If the mean of data set A is an integer that is greater than , what is the value of the largest integer from data set A?',
     'A',
     '{}',
-    'The correct answer is . The mean of a data set is calculated by dividing the sum of the data values by the number of values. It’s given that data set A consists of  values,  of which are shown. Let  represent the  data value in data set A, which isn’t shown. The mean of data set A can be found using the expression , or . It’s given that the mean of the  values shown is  and that the mean of all  numbers is greater than . Consequently, the  data value, , is larger than . It’s also given that the data values in data set A are positive integers less than . Thus, . Finally, it’s given that the mean of data set A is an integer. This means that the sum of the  data values, , is divisible by . Thus,  must have a ones digit of . It follows that  must have a ones digit of . Since  and  has a ones digit of , the only possible value of  is . Since  is larger than any of the integers shown, the largest integer from data set A is . Hard SAT Math',
+    'The correct answer is . The mean of a data set is calculated by dividing the sum of the data values by the number of values. It’s given that data set A consists of  values,  of which are shown. Let  represent the  data value in data set A, which isn’t shown. The mean of data set A can be found using the expression , or . It’s given that the mean of the  values shown is  and that the mean of all  numbers is greater than . Consequently, the  data value, , is larger than . It’s also given that the data values in data set A are positive integers less than . Thus, . Finally, it’s given that the mean of data set A is an integer. This means that the sum of the  data values, , is divisible by . Thus,  must have a ones digit of . It follows that  must have a ones digit of . Since  and  has a ones digit of , the only possible value of  is . Since  is larger than any of the integers shown, the largest integer from data set A is . ',
     '',
     1
 );
@@ -260,7 +260,7 @@ INSERT INTO questions (
     'A',
     '{"A":"6","B":"11","C":"16","D":"21"}',
     'Choice A is correct. If x is 6, then the five numbers in the given list are 15, 14, 18, 17, 6. The mean of these five numbers is the sum of all the values divided by the number of values, or . The median of these five numbers can be found by ordering the numbers from least to greatest and determining the middle value. When ordered from least to greatest, the numbers in the given list are 6, 14, 15, 17, 18, and the middle value is 15. Since the mean is 14 and the median is 15, the mean and median aren’t equal when x is 6. Choices B, C, and D are incorrect. If any of these values is substituted for x, the mean and median of the data set would be equal.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -279,7 +279,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID 3f2ee20a ID: 3f2ee20a The results of two independent surveys are shown in the table below. Men''s Height GroupSample sizeMean (centimeters)Standard deviation (centimeters) A2,50018612.5 B2,50018619.1 Which statement is true based on the table?',
     'C',
     '{"A":"The Group A data set was identical to the Group B data set.","B":"Group B contained the tallest participant.","C":"The heights of the men in Group B had a larger spread than the heights of the men in Group A.","D":"The median height of Group B is larger than the median height of Group A."}',
-    'Choice C is correct. Standard deviation is a measure of spread, so data sets with larger standard deviations tend to have larger spread. The standard deviation of the heights of the men in Group B is larger than the standard deviation of the heights of the men in Group A. Therefore, the heights of the men in Group B had a larger spread than the heights of the men in Group A. Choice A is incorrect. If two data sets are identical, they will have equivalent means and equivalent standard deviations. Since the two data sets have different standard deviations, they cannot be identical. Choice B is incorrect. Without knowing the maximum value for each data set, it’s impossible to know which group contained the tallest participant. Choice D is incorrect. Since the means of the two groups are equivalent, the medians could also be the same or could be different, but it''s impossible to tell from the given information. Medium SAT Math',
+    'Choice C is correct. Standard deviation is a measure of spread, so data sets with larger standard deviations tend to have larger spread. The standard deviation of the heights of the men in Group B is larger than the standard deviation of the heights of the men in Group A. Therefore, the heights of the men in Group B had a larger spread than the heights of the men in Group A. Choice A is incorrect. If two data sets are identical, they will have equivalent means and equivalent standard deviations. Since the two data sets have different standard deviations, they cannot be identical. Choice B is incorrect. Without knowing the maximum value for each data set, it’s impossible to know which group contained the tallest participant. Choice D is incorrect. Since the means of the two groups are equivalent, the medians could also be the same or could be different, but it''s impossible to tell from the given information. ',
     '',
     1
 );
@@ -299,7 +299,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID c88e0663 ID: c88e0663 For a school fund-raiser, 10 students sold a total of 90 boxes of cookies. Which of the following can be calculated from this information?',
     'A',
     '{"A":"The average number of boxes sold per student","B":"The median number of boxes sold per student","C":"The greatest number of boxes sold by one student","D":"The least number of boxes sold by one student"}',
-    'Choice A is correct. The average can be found by dividing the total number of boxes sold by the number of students, which is . Choices B, C, and D are incorrect. Each results from choosing measures that require the results of individual students, which are not given. Easy SAT Math',
+    'Choice A is correct. The average can be found by dividing the total number of boxes sold by the number of students, which is . Choices B, C, and D are incorrect. Each results from choosing measures that require the results of individual students, which are not given. ',
     '',
     1
 );
@@ -320,7 +320,7 @@ INSERT INTO questions (
     'A',
     '{}',
     'Choice A is correct. The total number of state parks in the state is . According to the table, 5 of these have camping facilities but not bicycle paths. Therefore, if a state park is selected at random, the probability that it has camping facilities but not bicycle paths is . Choice B is incorrect. This is the probability that a state park selected at random from the state parks with camping facilities does not have bicycle paths. Choice C is incorrect. This is the probability that a state park selected at random from the state parks with bicycle paths does not have camping facilities. Choice D is incorrect. This is the probability that a state park selected at random from the state parks without bicycle paths does have camping facilities.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -339,7 +339,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Question ID d4413871 ID: d4413871 Blood type Rhesus factorABABO 339337 721x Human blood can be classified into four common blood types—A, B, AB, and O. It is also characterized by the presence  or absence  of the rhesus factor. The table above shows the distribution of blood type and rhesus factor for a group of people. If one of these people who is rhesus negative  is chosen at random, the probability that the person has blood type B is  . What is the value of x ?',
     'A',
     '{}',
-    'The correct answer is 8. In this group,  of the people who are rhesus negative have blood type B. The total number of people who are rhesus negative in the group is , and there are 2 people who are rhesus negative with blood type B. Therefore, . Combining like terms on the left-hand side of the equation yields . Multiplying both sides of this equation by 9 yields , and multiplying both sides of this equation by yields . Subtracting 10 from both sides of this equation yields . Hard SAT Math',
+    'The correct answer is 8. In this group,  of the people who are rhesus negative have blood type B. The total number of people who are rhesus negative in the group is , and there are 2 people who are rhesus negative with blood type B. Therefore, . Combining like terms on the left-hand side of the equation yields . Multiplying both sides of this equation by 9 yields , and multiplying both sides of this equation by yields . Subtracting 10 from both sides of this equation yields . ',
     '',
     1
 );
@@ -359,7 +359,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Question ID 53d97af5 ID: 53d97af5 A study was done on the weights of different types of fish in a pond. A random sample of fish were caught and marked in order to ensure that none were weighed more than once. The sample contained 150 largemouth bass, of which 30% weighed more than 2 pounds. Which of the following conclusions is best supported by the sample data?',
     'D',
     '{"A":"The majority of all fish in the pond weigh less than 2 pounds.","B":"The average weight of all fish in the pond is approximately 2 pounds.","C":"Approximately 30% of all fish in the pond weigh more than 2 pounds.","D":"Approximately 30% of all largemouth bass in the pond weigh more than 2 pounds."}',
-    'Choice D is correct. The sample of 150 largemouth bass was selected at random from all the largemouth bass in the pond, and since 30% of the fish in the sample weighed more than 2 pounds, it can be concluded that approximately 30% of all largemouth bass in the pond weigh more than 2 pounds. Choices A, B, and C are incorrect. Since the sample contained 150 largemouth bass, of which 30% weighed more than 2 pounds, this result can be generalized only to largemouth bass in the pond, not to all fish in the pond. Medium SAT Math',
+    'Choice D is correct. The sample of 150 largemouth bass was selected at random from all the largemouth bass in the pond, and since 30% of the fish in the sample weighed more than 2 pounds, it can be concluded that approximately 30% of all largemouth bass in the pond weigh more than 2 pounds. Choices A, B, and C are incorrect. Since the sample contained 150 largemouth bass, of which 30% weighed more than 2 pounds, this result can be generalized only to largemouth bass in the pond, not to all fish in the pond. ',
     '',
     1
 );
@@ -380,7 +380,7 @@ INSERT INTO questions (
     'B',
     '{"A":"109","B":"252","C":"468","D":"688"}',
     'Choice B is correct. The table summarizes all 1,000 responses from the students surveyed. If 312 are males who play a sport, 220 are females who play a sport, and 216 are females who do not play a sport, then 1,000 – 312 – 220 – 216 = 252 males who do not play a sport. Choices A, C, and D are incorrect. If 109 males who do not play a sport responded, then the table summary would be 109 + 312 + 220 + 216 = 857 total student responses rather than 1,000. If 468 males who do not play a sport responded, then the table summary would be 468 + 312 + 220 + 216 = 1,216 total student responses rather than 1,000. If 688 males who do not play a sport responded, then the table summary would be 688 + 312 + 220 + 216 = 1,436 total student responses rather than 1,000.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -399,7 +399,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Question ID be35c117 ID: be35c117 A wind turbine completes  revolutions in  minutes. At this rate, how many revolutions per minute does this turbine complete? A. B. C. D.',
     'A',
     '{}',
-    'Choice A is correct. Dividing the number of revolutions by the number of minutes gives the number of revolutions the turbine completes per minute. It’s given that the wind turbine completes  revolutions in  minutes. Therefore, at this rate, this turbine completes , or , revolutions per minute. Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. Easy SAT Math',
+    'Choice A is correct. Dividing the number of revolutions by the number of minutes gives the number of revolutions the turbine completes per minute. It’s given that the wind turbine completes  revolutions in  minutes. Therefore, at this rate, this turbine completes , or , revolutions per minute. Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. ',
     '',
     1
 );
@@ -419,7 +419,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 0231050d ID: 0231050d The line graph shows the total amount of snow, in inches, recorded each year in Washington, DC, from 2003 to 2015. If  is the percent decrease in the annual snowfall from 2003 to 2007, what is the value of p ?',
     'A',
     '{}',
-    'The correct answer is 75. The percent decrease between two values is found by dividing the difference between the two values by the original value and multiplying by 100. The line graph shows that the annual snowfall in 2003 was 40 inches, and the annual snowfall in 2007 was 10 inches. Therefore, the percent decrease in the annual snowfall from 2003 to 2007 is , or 75. It’s given that this is equivalent to , so the value of p is 75. Hard SAT Math',
+    'The correct answer is 75. The percent decrease between two values is found by dividing the difference between the two values by the original value and multiplying by 100. The line graph shows that the annual snowfall in 2003 was 40 inches, and the annual snowfall in 2007 was 10 inches. Therefore, the percent decrease in the annual snowfall from 2003 to 2007 is , or 75. It’s given that this is equivalent to , so the value of p is 75. ',
     '',
     1
 );
@@ -439,7 +439,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 8736334b ID: 8736334b Data set A and data set B each contain 5 numbers. If the mean of data set A is equal to the mean of data set B, what is the value of x ?',
     'C',
     '{"A":"77","B":"85","C":"86","D":"95"}',
-    'Choice C is correct. The mean of a data set is found by dividing the sum of the values in the data set by the number of values in the data set. Therefore, the mean of data set A is , which simplifies to 74. The mean of data set B is represented by the equation , or . It’s given that the mean of data set A is equal to the mean of data set B. Therefore, the equation  can be used to solve for x. Multiplying both sides of this equation by 5 yields . Subtracting 284 from both sides of this equation yields . Choices A, B, and D are incorrect and may result from calculation errors. Easy SAT Math',
+    'Choice C is correct. The mean of a data set is found by dividing the sum of the values in the data set by the number of values in the data set. Therefore, the mean of data set A is , which simplifies to 74. The mean of data set B is represented by the equation , or . It’s given that the mean of data set A is equal to the mean of data set B. Therefore, the equation  can be used to solve for x. Multiplying both sides of this equation by 5 yields . Subtracting 284 from both sides of this equation yields . Choices A, B, and D are incorrect and may result from calculation errors. ',
     '',
     1
 );
@@ -459,7 +459,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID 8e528129 ID: 8e528129 Pure beeswax has a density of 0.555 ounce per cubic inch. An online company sells pure beeswax at a price of $8.00 per ounce. What is the selling price, in dollars per cubic inch, for pure beeswax purchased from this company?',
     'A',
     '{}',
-    'The correct answer is 4.44. The selling price, in dollars per cubic inch, is found by multiplying the density, in ounces per cubic inch, by the unit price, in dollars per ounce:  yields . Thus, the selling price, in dollars per cubic inch, is 4.44. Medium SAT Math',
+    'The correct answer is 4.44. The selling price, in dollars per cubic inch, is found by multiplying the density, in ounces per cubic inch, by the unit price, in dollars per ounce:  yields . Thus, the selling price, in dollars per cubic inch, is 4.44. ',
     '',
     1
 );
@@ -479,7 +479,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 90eed2e5 ID: 90eed2e5 A city has 50 city council members. A reporter polled a random sample of 20 city council members and found that 6 of those polled supported a specific bill. Based on the sample, which of the following is the best estimate of the number of city council members in the city who support the bill?',
     'A',
     '{"A":"6","B":"9","C":"15","D":"30"}',
-    'Choice C is correct. Because a random sample of the city council was polled, the proportion of the sample who supported the bill is expected to be approximately equal to the proportion of the total city council who supports the bill. Since 6 of the 20 polled, or 30%, supported the bill, it can be estimated that , or 15, city council members support the bill. Choice A is incorrect. This is the number of city council members in the sample who supported the bill. Choice B is incorrect and may result from a computational error. Choice D is incorrect. This is the number of city council members in the sample of city council members who were not polled. Easy SAT Math',
+    'Choice C is correct. Because a random sample of the city council was polled, the proportion of the sample who supported the bill is expected to be approximately equal to the proportion of the total city council who supports the bill. Since 6 of the 20 polled, or 30%, supported the bill, it can be estimated that , or 15, city council members support the bill. Choice A is incorrect. This is the number of city council members in the sample who supported the bill. Choice B is incorrect and may result from a computational error. Choice D is incorrect. This is the number of city council members in the sample of city council members who were not polled. ',
     '',
     1
 );
@@ -499,7 +499,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Inference from sample statistics and margin of error Difficulty Question ID 0ea56bb2 ID: 0ea56bb2 Year Subscriptions sold 20125,600 20135,880 The manager of an online news service received the report above on the number of subscriptions sold by the service. The manager estimated that the percent increase from 2012 to 2013 would be double the percent increase from 2013 to 2014. How many subscriptions did the manager expect would be sold in 2014?',
     'B',
     '{"A":"6,020","B":"6,027","C":"6,440","D":"6,468"}',
-    'Choice B is correct. The percent increase from 2012 to 2013 was , or 5%. Since the percent increase from 2012 to 2013 was estimated to be double the percent increase from 2013 to 2014, the percent increase from 2013 to 2014 was expected to be 2.5%. Therefore, the number of subscriptions sold in 2014 is expected to be the number of subscriptions sold in 2013 multiplied by , or . Choice A is incorrect and is the result of adding half of the value of the increase from 2012 to 2013 to the 2013 result. Choice C is incorrect and is the result adding twice the value of the increase from 2012 to 2013 to the 2013 result. Choice D is incorrect and is the result of interpreting the percent increase from 2013 to 2014 as double the percent increase from 2012 to 2013. Hard SAT Math',
+    'Choice B is correct. The percent increase from 2012 to 2013 was , or 5%. Since the percent increase from 2012 to 2013 was estimated to be double the percent increase from 2013 to 2014, the percent increase from 2013 to 2014 was expected to be 2.5%. Therefore, the number of subscriptions sold in 2014 is expected to be the number of subscriptions sold in 2013 multiplied by , or . Choice A is incorrect and is the result of adding half of the value of the increase from 2012 to 2013 to the 2013 result. Choice C is incorrect and is the result adding twice the value of the increase from 2012 to 2013 to the 2013 result. Choice D is incorrect and is the result of interpreting the percent increase from 2013 to 2014 as double the percent increase from 2012 to 2013. ',
     '',
     1
 );
@@ -539,7 +539,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Choice D is incorrect and may result from a calculation error. Easy Question ID 16cea46c ID: 16cea46c Voice typeNumber of singers Countertenor4 Tenor6 Baritone10 Bass5 A total of 25 men registered for singing lessons. The frequency table shows how many of these singers have certain voice types. If one of these singers is selected at random, what is the probability he is a baritone?',
     'B',
     '{"A":"0.10","B":"0.40","C":"0.60","D":"0.67"}',
-    'Choice B is correct. This probability is calculated by dividing the number of baritone singers by the total number of men registered for singing lessons. It’s given that a total of 25 men registered for singing lessons and that there are 10 baritones. Therefore, the probability of selecting a baritone from this group at random is , which is equivalent to 0.40. Choice A is incorrect. This would be the probability of selecting a baritone at random if there were 100 total men who registered for singing lessons. Choice C is incorrect. This is the probability of selecting a singer at random who isn’t a baritone. Choice D is incorrect. This would be the probability of selecting a baritone at random if there were 15 total men registered for singing lessons. Easy SAT Math',
+    'Choice B is correct. This probability is calculated by dividing the number of baritone singers by the total number of men registered for singing lessons. It’s given that a total of 25 men registered for singing lessons and that there are 10 baritones. Therefore, the probability of selecting a baritone from this group at random is , which is equivalent to 0.40. Choice A is incorrect. This would be the probability of selecting a baritone at random if there were 100 total men who registered for singing lessons. Choice C is incorrect. This is the probability of selecting a singer at random who isn’t a baritone. Choice D is incorrect. This would be the probability of selecting a baritone at random if there were 15 total men registered for singing lessons. ',
     '',
     1
 );
@@ -579,7 +579,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Choice A is incorrect. This is the difference between the numbers of students from the two high schools who completed internships in 2010 divided by the total number of students from the two schools who completed internships that year. Choice C is incorrect. This is the fraction of students from Foothill High School who completed internships out of all the students who completed internships in 2010. Choice D is incorrect. This is the number of students from Valley High School who completed internships in 2010 divided by the number of students from Foothill High School who completed internships in 2010. Easy Question ID ac5b6558 ID: ac5b6558 The scatterplot above shows the high temperature on a certain day and the elevation of 8 different locations in the Lake Tahoe Basin. A line of best fit for the data is also shown. What temperature is predicted by the line of best fit for a location in the Lake Tahoe Basin with an elevation of 8,500 feet?',
     'B',
     '{"A":"37°F","B":"39°F","C":"41°F","D":"43°F"}',
-    'Choice B is correct. The line of best fit passes through the point . Therefore, the line of best fit predicts a temperature of 39°F for a location in Lake Tahoe Basin with an elevation of 8,500 feet. Choice A is incorrect. This is the lowest temperature listed on the scatterplot, and the line of best fit never crosses this value for any of the elevations shown. Choice C is incorrect. According to the line of best fit, the temperature of 41°F is predicted for an elevation of slightly greater than 7,500 feet, not an elevation of 8,500 feet. Choice D is incorrect. According to the line of best fit, the temperature of 43°F is predicted for an elevation of roughly 6,700 feet, not an elevation of 8,500 feet. Easy SAT Math',
+    'Choice B is correct. The line of best fit passes through the point . Therefore, the line of best fit predicts a temperature of 39°F for a location in Lake Tahoe Basin with an elevation of 8,500 feet. Choice A is incorrect. This is the lowest temperature listed on the scatterplot, and the line of best fit never crosses this value for any of the elevations shown. Choice C is incorrect. According to the line of best fit, the temperature of 41°F is predicted for an elevation of slightly greater than 7,500 feet, not an elevation of 8,500 feet. Choice D is incorrect. According to the line of best fit, the temperature of 43°F is predicted for an elevation of roughly 6,700 feet, not an elevation of 8,500 feet. ',
     '',
     1
 );
@@ -619,7 +619,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Medium Question ID 000259aa ID: 000259aa A group of monarch butterflies migrated from Chicago, Illinois, to Michoacán, Mexico, flying a total of 2,100 miles. It took a single butterfly in the group 120 days to travel this route one way. On average, how many miles did the butterfly travel per day?',
     'A',
     '{"A":"0.057","B":"0.729","C":"17.5","D":"24"}',
-    'Choice C is correct. If the butterfly traveled 2,100 miles in 120 days, then it traveled, on average,  miles per day. Choice A is incorrect. This is approximately the average amount of time, in days, it took the butterfly to fly one mile: days per mile. Choice B is incorrect and may result from an arithmetic error. Choice D is incorrect. This is the number of hours in a day rather than the number of miles flown per day. Easy SAT Math',
+    'Choice C is correct. If the butterfly traveled 2,100 miles in 120 days, then it traveled, on average,  miles per day. Choice A is incorrect. This is approximately the average amount of time, in days, it took the butterfly to fly one mile: days per mile. Choice B is incorrect and may result from an arithmetic error. Choice D is incorrect. This is the number of hours in a day rather than the number of miles flown per day. ',
     '',
     1
 );
@@ -719,7 +719,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Since the mode is 18, the median is 19, and the mean is 20, . Choices B and D are incorrect because the mean is greater than the median. Choice C is incorrect because the median is greater than the mode. Alternate approach: After determining the mode, 18, and the median, 19, it remains to determine whether the mean is less than 19 or more than 19. Because the mean is a balancing point, there is as much deviation below the mean as above the mean. It is possible to compare the data to 19 to determine the balance of deviation above and below the mean. There is a total deviation of only 6 below 19 (the 6 values of 18); however, the data value 30 alone deviates by 11 above 19. Thus the mean must be greater than 19. Medium Question ID 83272c51 ID: 83272c51 In an experiment, a heated cup of coffee is removed from a heat source, and the cup of coffee is then left in a room that is kept at a constant temperature. The graph above shows the temperature, in degrees Fahrenheit (°F), of the coffee immediately after being removed from the heat source and at 10-minute intervals thereafter. During which of the following 10-minute intervals does the temperature of the coffee decrease at the greatest average rate?',
     'A',
     '{"A":"Between 0 and 10 minutes","B":"Between 30 and 40 minutes","C":"Between 50 and 60 minutes","D":"Between 90 and 100 minutes"}',
-    'Choice A is correct. The average rate of change in temperature of the coffee in degrees Fahrenheit per minute is calculated by dividing the difference between two recorded temperatures by the number of minutes in the corresponding interval of time. Since the time intervals given are all 10 minutes, the average rate of change is greatest for the points with the greatest difference in temperature. Of the choices, the greatest difference in temperature occurs between 0 and 10 minutes. Choices B, C, and D are incorrect and may result from misinterpreting the average rate of change from the graph. Easy SAT Math',
+    'Choice A is correct. The average rate of change in temperature of the coffee in degrees Fahrenheit per minute is calculated by dividing the difference between two recorded temperatures by the number of minutes in the corresponding interval of time. Since the time intervals given are all 10 minutes, the average rate of change is greatest for the points with the greatest difference in temperature. Of the choices, the greatest difference in temperature occurs between 0 and 10 minutes. Choices B, C, and D are incorrect and may result from misinterpreting the average rate of change from the graph. ',
     '',
     1
 );
@@ -739,7 +739,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Question ID 37930b2a ID: 37930b2a Residents of a town were surveyed to determine whether they are satisfied with the concession stand at the local park. A random sample of 200 residents was selected. All 200 responded, and 87% said they are satisfied. Based on this information, which of the following statements must be true? I. Of all the town residents, 87% would say they are satisfied with the concession stand at the local park. II. If another random sample of 200 residents were surveyed, 87% would say they are satisfied.',
     'A',
     '{"A":"Neither","B":"I only","C":"II only","D":"I and II"}',
-    'Choice A is correct. The purpose of surveying a random sample of residents is to approximate the percent of the town residents that are satisfied with the concession stand. The sample doesn’t necessarily get the same result as surveying every resident of the town, nor would another sample necessarily have identical results. Therefore, although it’s possible that either statement I or statement II could prove true by surveying every resident of the town, these statements cannot be proven true solely based on the results of the sample. Choice B is incorrect because surveying a sample of the town residents may not have the same result as surveying all the town residents. Choices C and D are incorrect because surveying a different sample of residents could yield different results. Medium SAT Math',
+    'Choice A is correct. The purpose of surveying a random sample of residents is to approximate the percent of the town residents that are satisfied with the concession stand. The sample doesn’t necessarily get the same result as surveying every resident of the town, nor would another sample necessarily have identical results. Therefore, although it’s possible that either statement I or statement II could prove true by surveying every resident of the town, these statements cannot be proven true solely based on the results of the sample. Choice B is incorrect because surveying a sample of the town residents may not have the same result as surveying all the town residents. Choices C and D are incorrect because surveying a different sample of residents could yield different results. ',
     '',
     1
 );
@@ -760,7 +760,7 @@ INSERT INTO questions (
     'B',
     '{}',
     'Choice B is correct. The graphical model that most closely fits the data in the scatterplot is a model in which the number of data points above and below the model are approximately balanced. Fitting a graphical model to the data shown results in an upward-facing parabola with a y-intercept near  and a vertex with an approximate x-value of 2.5. Of the given choices, only choice B gives an equation of an upward-facing parabola with a y-intercept at . Furthermore, substituting 2.5 for x into the equation in choice B yields . This is approximately the y-value of the vertex of the model. Choices A, C, and D are incorrect. These equations don’t give a graphical model that best fits the data. At , they have y- values of , , and 3, respectively. At , they have y-values of , , and 3, respectively.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -779,7 +779,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Question ID 1ea09200 ID: 1ea09200 A sample of 40 fourth-grade students was selected at random from a certain school. The 40 students completed a survey about the morning announcements, and 32 thought the announcements were helpful. Which of the following is the largest population to which the results of the survey can be applied?',
     'B',
     '{"A":"The 40 students who were surveyed","B":"All fourth-grade students at the school","C":"All students at the school","D":"All fourth-grade students in the county in which the school is located"}',
-    'Choice B is correct. Selecting a sample of a reasonable size at random to use for a survey allows the results from that survey to be applied to the population from which the sample was selected, but not beyond this population. In this case, the population from which the sample was selected is all fourth-grade students at a certain school. Therefore, the results of the survey can be applied to all fourth-grade students at the school. Choice A is incorrect. The results of the survey can be applied to the 40 students who were surveyed. However, this isn’t the largest group to which the results of the survey can be applied. Choices C and D are incorrect. Since the sample was selected at random from among the fourth-grade students at a certain school, the results of the survey can’t be applied to other students at the school or to other fourth-grade students who weren’t represented in the survey results. Students in other grades in the school or other fourth-grade students in the country may feel differently about announcements than the fourth-grade students at the school. Hard SAT Math',
+    'Choice B is correct. Selecting a sample of a reasonable size at random to use for a survey allows the results from that survey to be applied to the population from which the sample was selected, but not beyond this population. In this case, the population from which the sample was selected is all fourth-grade students at a certain school. Therefore, the results of the survey can be applied to all fourth-grade students at the school. Choice A is incorrect. The results of the survey can be applied to the 40 students who were surveyed. However, this isn’t the largest group to which the results of the survey can be applied. Choices C and D are incorrect. Since the sample was selected at random from among the fourth-grade students at a certain school, the results of the survey can’t be applied to other students at the school or to other fourth-grade students who weren’t represented in the survey results. Students in other grades in the school or other fourth-grade students in the country may feel differently about announcements than the fourth-grade students at the school. ',
     '',
     1
 );
@@ -799,7 +799,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Evaluating statistical claims: Observational studies and experiments Difficulty Question ID 65c49824 ID: 65c49824 A school district is forming a committee to discuss plans for the construction of a new high school. Of those invited to join the committee, 15% are parents of students, 45% are teachers from the current high school, 25% are school and district administrators, and the remaining 6 individuals are students. How many more teachers were invited to join the committee than school and district administrators?',
     'A',
     '{}',
-    'The correct answer is 8. The 6 students represent  of those invited to join the committee. If x people were invited to join the committee, then . Thus, there were  people invited to join the committee. It follows that there were  teachers and  school and district administrators invited to join the committee. Therefore, there were 8 more teachers than school and district administrators invited to join the committee. Hard SAT Math',
+    'The correct answer is 8. The 6 students represent  of those invited to join the committee. If x people were invited to join the committee, then . Thus, there were  people invited to join the committee. It follows that there were  teachers and  school and district administrators invited to join the committee. Therefore, there were 8 more teachers than school and district administrators invited to join the committee. ',
     '',
     1
 );
@@ -819,7 +819,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID d3b9c8d8 ID: d3b9c8d8 The box plots summarize the masses, in kilograms, of two groups of gazelles. Based on the box plots, which of the following statements must be true?',
     'C',
     '{"A":"The mean mass of group 1 is greater than the mean mass of group 2.","B":"The mean mass of group 1 is less than the mean mass of group 2.","C":"The median mass of group 1 is greater than the median mass of group 2.","D":"The median mass of group 1 is less than the median mass of group 2."}',
-    'Choice C is correct. The median of a data set represented in a box plot is represented by the vertical line within the box. It follows that the median mass of the gazelles in group  is  kilograms, and the median mass of the gazelles in group  is kilograms. Since  kilograms is greater than  kilograms, the median mass of group  is greater than the median mass of group . Choice A is incorrect. The mean mass of each of the two groups cannot be determined from the box plots. Choice B is incorrect. The mean mass of each of the two groups cannot be determined from the box plots. Choice D is incorrect and may result from conceptual or calculation errors. Hard SAT Math',
+    'Choice C is correct. The median of a data set represented in a box plot is represented by the vertical line within the box. It follows that the median mass of the gazelles in group  is  kilograms, and the median mass of the gazelles in group  is kilograms. Since  kilograms is greater than  kilograms, the median mass of group  is greater than the median mass of group . Choice A is incorrect. The mean mass of each of the two groups cannot be determined from the box plots. Choice B is incorrect. The mean mass of each of the two groups cannot be determined from the box plots. Choice D is incorrect and may result from conceptual or calculation errors. ',
     '',
     1
 );
@@ -840,7 +840,7 @@ INSERT INTO questions (
     'B',
     '{"A":"2","B":"3","C":"4","D":"9"}',
     'Choice B is correct. When a data set has an odd number of values, the median can be found by ordering the values from least to greatest and determining the value in the middle. Since the values are already presented in order from least to greatest and there are 7 values, the median is the fourth value in the list. Therefore, the median is 3. Choice A is incorrect. This is the mode. Choice C is incorrect. This is the mean. Choice D is incorrect. This is the range.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -859,7 +859,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID b4912cc5 ID: b4912cc5 The population density of Iceland, in people per square kilometer of land area, increased from 2.5 in 1990 to 3.3 in 2014. During this time period, the land area of Iceland was 100,250 square kilometers. By how many people did Iceland’s population increase from 1990 to 2014?',
     'D',
     '{"A":"330,825","B":"132,330","C":"125,312","D":"80,200"}',
-    'Choice D is correct. The increase in Iceland’s population can be found by multiplying the increase in population density, in people per square kilometer, by the area, in square kilometers. It’s given that the population density of Iceland was 2.5 people per square kilometer in 1990 and 3.3 people per square kilometer in 2014. The increase in population density can be found by subtracting 2.5 from 3.3, which yields 0.8. It’s given that the land area of Iceland was 100,250 square kilometers. Thus, the increase in population is , or 80,200. Alternate approach: It’s given that the population density of Iceland, in people per square kilometer of land area, in 1990 was 2.5. Since the land area of Iceland was 100,250 square kilometers, it follows that the population of Iceland in 1990 was , or 250,625. Similarly, the population of Iceland in 2014 was , or 330,825. The population increase is the difference in the population from 1990 to 2014, or , which yields 80,200. Therefore, Iceland’s population increased by 80,200 from 1990 to 2014. Choice A is incorrect. This is the population of Iceland in 2014. Choice B is incorrect and may result from dividing 3.3 by 2.5, instead of subtracting 2.5 from 3.3. Choice C is incorrect and may result from dividing the population of Iceland in 1990 by 2. Medium SAT Math',
+    'Choice D is correct. The increase in Iceland’s population can be found by multiplying the increase in population density, in people per square kilometer, by the area, in square kilometers. It’s given that the population density of Iceland was 2.5 people per square kilometer in 1990 and 3.3 people per square kilometer in 2014. The increase in population density can be found by subtracting 2.5 from 3.3, which yields 0.8. It’s given that the land area of Iceland was 100,250 square kilometers. Thus, the increase in population is , or 80,200. Alternate approach: It’s given that the population density of Iceland, in people per square kilometer of land area, in 1990 was 2.5. Since the land area of Iceland was 100,250 square kilometers, it follows that the population of Iceland in 1990 was , or 250,625. Similarly, the population of Iceland in 2014 was , or 330,825. The population increase is the difference in the population from 1990 to 2014, or , which yields 80,200. Therefore, Iceland’s population increased by 80,200 from 1990 to 2014. Choice A is incorrect. This is the population of Iceland in 2014. Choice B is incorrect and may result from dividing 3.3 by 2.5, instead of subtracting 2.5 from 3.3. Choice C is incorrect and may result from dividing the population of Iceland in 1990 by 2. ',
     '',
     1
 );
@@ -879,7 +879,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 3f5398a6 ID: 3f5398a6 For a person m miles from a flash of lightning, the length of the time interval from the moment the person sees the lightning to the moment the person hears the thunder is k seconds. The ratio of m to k can be estimated to be 1 to 5. According to this estimate, the person is how many miles from a flash of lightning if the time interval is 25 seconds?',
     'A',
     '{"A":"10","B":"9","C":"6","D":"5"}',
-    'Choice D is correct. It’s given that the ratio of m to k is estimated to be 1 to 5. Therefore, when , the relationship between these ratios can be expressed by the proportion . Multiplying both sides of this equation by 25 yields . Choices A, B, and C are incorrect and may result from calculation errors. Easy SAT Math',
+    'Choice D is correct. It’s given that the ratio of m to k is estimated to be 1 to 5. Therefore, when , the relationship between these ratios can be expressed by the proportion . Multiplying both sides of this equation by 25 yields . Choices A, B, and C are incorrect and may result from calculation errors. ',
     '',
     1
 );
@@ -899,7 +899,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 1adb39f0 ID: 1adb39f0 The scatterplot shows the relationship between two variables, x and y. A line of best fit for the data is also shown. Which of the following is closest to the difference between the y-coordinate of the data point with  and the y-value predicted by the line of best fit at  ?',
     'A',
     '{"A":"1","B":"2","C":"5","D":"12"}',
-    'Choice A is correct. The data point with  has a y-coordinate of 12. The y-value predicted by the line of best fit at is approximately 11. The difference between the y-coordinate of the data point and the y-value predicted by the line of best fit at  is , or 1. Choices B and C are incorrect and may result from incorrectly reading the scatterplot. Choice D is incorrect. This is the y- coordinate of the data point at . Medium SAT Math',
+    'Choice A is correct. The data point with  has a y-coordinate of 12. The y-value predicted by the line of best fit at is approximately 11. The difference between the y-coordinate of the data point and the y-value predicted by the line of best fit at  is , or 1. Choices B and C are incorrect and may result from incorrectly reading the scatterplot. Choice D is incorrect. This is the y- coordinate of the data point at . ',
     '',
     1
 );
@@ -919,7 +919,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Question ID d28c29e1 ID: d28c29e1 The International Space Station orbits Earth at an average speed of 4.76 miles per second. What is the space station’s average speed in miles per hour?',
     'D',
     '{"A":"285.6","B":"571.2","C":"856.8","D":"17,136.0"}',
-    'Choice D is correct. Since 1 minute = 60 seconds and 1 hour = 60 minutes, it follows that 1 hour = (60)(60), or 3,600 seconds. Using this conversion factor, the space station’s average speed of 4.76 miles per second is equal to an average speed of , or 17,136 miles per hour. Choice A is incorrect. This is the space station’s average speed in miles per minute. Choice B is incorrect. This is double the space station’s average speed in miles per minute, or the number of miles the space station travels on average in 2 minutes. Choice C is incorrect. This is triple the space station’s average speed in miles per minute, or the number of miles the space station travels on average in 3 minutes. Medium SAT Math',
+    'Choice D is correct. Since 1 minute = 60 seconds and 1 hour = 60 minutes, it follows that 1 hour = (60)(60), or 3,600 seconds. Using this conversion factor, the space station’s average speed of 4.76 miles per second is equal to an average speed of , or 17,136 miles per hour. Choice A is incorrect. This is the space station’s average speed in miles per minute. Choice B is incorrect. This is double the space station’s average speed in miles per minute, or the number of miles the space station travels on average in 2 minutes. Choice C is incorrect. This is triple the space station’s average speed in miles per minute, or the number of miles the space station travels on average in 3 minutes. ',
     '',
     1
 );
@@ -960,7 +960,7 @@ INSERT INTO questions (
     'B',
     '{}',
     'Choice B is correct. It’s given that each serving of Crunchy Grain cereal provides 5% of an adult’s daily allowance of potassium, so x servings would provide x times 5%. The percentage of an adult’s daily allowance of potassium, p, is 5 times the number of servings, x. Therefore, the percentage of an adult’s daily allowance of potassium can be expressed as . Choices A, C, and D are incorrect and may result from incorrectly converting 5% to its decimal equivalent, which isn’t necessary since p is expressed as a percentage. Additionally, choices C and D are incorrect because the context should be represented by a linear relationship, not by an exponential relationship.',
-    'Hard SAT Math',
+    '',
     1
 );
 
@@ -1000,7 +1000,7 @@ INSERT INTO questions (
     'C',
     '{"A":"11,000 to 12,000","B":"12,500 to 13,500","C":"13,500 to 14,500","D":"18,000 to 19,000"}',
     'Choice C is correct. The mean of the 5 samples is  trees per acre. The best estimate for the total number of trees in the forest is the product of the mean number of trees per acre in the sample and the total number of acres in the forest. This is (56)(253) = 14,168, which is between 13,500 and 14,500. Choice A is incorrect and may result from multiplying the minimum number of trees per acre in the sample, 45, by the number of acres, 253. Choice B is incorrect and may result from multiplying the median number of trees per acre in the sample, 52, by the number of acres, 253. Choice D is incorrect and may result from multiplying the maximum number of trees per acre in the sample, 73, by the number of acres, 253.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -1020,7 +1020,7 @@ INSERT INTO questions (
     'A',
     '{"A":"25 meters per second","B":"32 meters per second","C":"250 meters per second","D":"324 meters per second"}',
     'Choice A is correct. Since 1 kilometer is equal to 1,000 meters, it follows that 90 kilometers is equal to meters. Since 1 hour is equal to 60 minutes and 1 minute is equal to 60 seconds, it follows that 1 hour is equal to seconds. Now  is equal to , which reduces to  or 25 meters per second. Choices B, C, and D are incorrect and may result from conceptual or calculation errors.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -1060,7 +1060,7 @@ INSERT INTO questions (
     'A',
     '{"A":"7.5","B":"10","C":"50.5","D":"120"}',
     'Choice A is correct. If 2.5 ounces of chocolate are needed for each muffin, then the number of ounces of chocolate needed to make 48 muffins is  ounces. Since 1 pound = 16 ounces, the number of pounds that is equivalent to 120 ounces is pounds. Therefore, 7.5 pounds of chocolate are needed to make the 48 muffins. Choice B is incorrect. If 10 pounds of chocolate were needed to make 48 muffins, then the total number of ounces of chocolate needed would be  ounces. The number of ounces of chocolate per muffin would then be ounces per muffin, not 2.5 ounces per muffin. Choices C and D are also incorrect. Following the same procedures as used to test choice B gives 16.8 ounces per muffin for choice C and 40 ounces per muffin for choice D, not 2.5 ounces per muffin. Therefore, 50.5 and 120 pounds cannot be the number of pounds needed to make 48 signature chocolate muffins.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -1079,7 +1079,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID a6b2fcce ID: a6b2fcce According to the line graph above, between which two consecutive years was there the greatest change in the number of 3‑D movies released?',
     'D',
     '{"A":"2003–2004","B":"2008–2009","C":"2009–2010","D":"2010–2011"}',
-    'Choice D is correct. The change in the number of 3-D movies released between any two consecutive years can be found by first estimating the number of 3-D movies released for each of the two years and then finding the positive difference between these two estimates. Between 2003 and 2004, this change is approximately  movies; between 2008 and 2009, this change is approximately  movies; between 2009 and 2010, this change is approximately movies; and between 2010 and 2011, this change is approximately  movies. Therefore, of the pairs of consecutive years in the choices, the greatest increase in the number of 3-D movies released occurred during the time period between 2010 and 2011. Choices A, B, and C are incorrect. Between 2010 and 2011, approximately 20 more 3-D movies were released. The change in the number of 3-D movies released between any of the other pairs of consecutive years is significantly smaller than 20. Easy SAT Math',
+    'Choice D is correct. The change in the number of 3-D movies released between any two consecutive years can be found by first estimating the number of 3-D movies released for each of the two years and then finding the positive difference between these two estimates. Between 2003 and 2004, this change is approximately  movies; between 2008 and 2009, this change is approximately  movies; between 2009 and 2010, this change is approximately movies; and between 2010 and 2011, this change is approximately  movies. Therefore, of the pairs of consecutive years in the choices, the greatest increase in the number of 3-D movies released occurred during the time period between 2010 and 2011. Choices A, B, and C are incorrect. Between 2010 and 2011, approximately 20 more 3-D movies were released. The change in the number of 3-D movies released between any of the other pairs of consecutive years is significantly smaller than 20. ',
     '',
     1
 );
@@ -1100,7 +1100,7 @@ INSERT INTO questions (
     'D',
     '{"A":"The mean of each data set is 2.","B":"The mean of each data set is 4.","C":"The mean of data set A is less than the mean of data set B.","D":"The mean of data set A is greater than the mean of data set B."}',
     'Choice D is correct. The mean of a data set is found by dividing the sum of the values in the data set by the number of values in the data set. Therefore, the mean of data set A is , or 4. The mean of data set B is , or approximately 2.2857. Therefore, the mean of data set A is greater than the mean of data set B. Alternate approach: Data set A and data set B are both ordered from least to greatest value. Besides the first value in each data set, which is 1, each value in ordered data set B is less than the respective value in ordered data set A. Therefore, conceptually, the mean of data set A must be greater than the mean of data set B. Choices A, B, and C are incorrect and may result from various misconceptions or miscalculations.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -1119,7 +1119,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID fa7a0164 ID: fa7a0164 The table below shows the high and low temperatures in Houston, Texas, during a five-day period. What was the mean low temperature, in degrees Fahrenheit, during the five-day period?',
     'A',
     '{"A":"48.8","B":"49","C":"59","D":"59.1"}',
-    'Choice A is correct. The mean low temperature can be calculated by finding the sum of the low temperatures for all the days shown in the table, 49 + 37 + 41 + 54 + 63 = 244, and then dividing the sum by the number of days the temperature was recorded, . Choice B is incorrect. This may be the result of choosing the median rather than calculating the mean. Choices C and D are incorrect and may be the result of calculation errors. Easy SAT Math',
+    'Choice A is correct. The mean low temperature can be calculated by finding the sum of the low temperatures for all the days shown in the table, 49 + 37 + 41 + 54 + 63 = 244, and then dividing the sum by the number of days the temperature was recorded, . Choice B is incorrect. This may be the result of choosing the median rather than calculating the mean. Choices C and D are incorrect and may be the result of calculation errors. ',
     '',
     1
 );
@@ -1139,7 +1139,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID 9bf4c545 ID: 9bf4c545 The members of a city council wanted to assess the opinions of all city residents about converting an open field into a dog park. The council surveyed a sample of 500 city residents who own dogs. The survey showed that the majority of those sampled were in favor of the dog park. Which of the following is true about the city council’s survey?',
     'D',
     '{"A":"It shows that the majority of city residents are in favor of the dog park.","B":"The survey sample should have included more residents who are dog owners.","C":"The survey sample should have consisted entirely of residents who do not own dogs.","D":"The survey sample is biased because it is not representative of all city residents."}',
-    'Choice D is correct. The members of the city council wanted to assess opinions of all city residents. To gather an unbiased sample, the council should have used a random sampling design to select subjects from all city residents. The given survey introduced a sampling bias because the 500 city residents surveyed were all dog owners. This sample is not representative of all city residents because not all city residents are dog owners. Choice A is incorrect because when the sampling method isn’t random, there is no guarantee that the survey results will be reliable; hence, they cannot be generalized to the entire population. Choice B is incorrect because a larger sample of residents who are dog owners would not correct the sampling bias. Choice C is incorrect because a survey sample of entirely non–dog owners would likely have a biased opinion, just as a sample of dog owners would likely have a biased opinion. Easy SAT Math',
+    'Choice D is correct. The members of the city council wanted to assess opinions of all city residents. To gather an unbiased sample, the council should have used a random sampling design to select subjects from all city residents. The given survey introduced a sampling bias because the 500 city residents surveyed were all dog owners. This sample is not representative of all city residents because not all city residents are dog owners. Choice A is incorrect because when the sampling method isn’t random, there is no guarantee that the survey results will be reliable; hence, they cannot be generalized to the entire population. Choice B is incorrect because a larger sample of residents who are dog owners would not correct the sampling bias. Choice C is incorrect because a survey sample of entirely non–dog owners would likely have a biased opinion, just as a sample of dog owners would likely have a biased opinion. ',
     '',
     1
 );
@@ -1159,7 +1159,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Evaluating statistical claims: Observational studies and experiments Difficulty Question ID c9dd92b1 ID: c9dd92b1 The densities of different concentrations of grape juice are shown in the scatterplot above. According to the trend shown by the data, which of the following is closest to the predicted density, in kilograms per cubic meter (kg/m), for grape juice with a concentration of 60%?',
     'C',
     '{"A":"1,200","B":"1,250","C":"1,300","D":"1,350"}',
-    'Choice C is correct. The data in the scatterplot show an increasing linear trend. The density when the juice concentration is 60% will be between the densities shown at about 53% and 67% concentration, or between about 1,255 and 1,340 kg/m. Of the choices given, only 1,300 falls within this range. Choices A, B, and D are incorrect. These are the approximate densities of grape juice with a concentration of 45%, 55%, and 70%, respectively. Easy SAT Math',
+    'Choice C is correct. The data in the scatterplot show an increasing linear trend. The density when the juice concentration is 60% will be between the densities shown at about 53% and 67% concentration, or between about 1,255 and 1,340 kg/m. Of the choices given, only 1,300 falls within this range. Choices A, B, and D are incorrect. These are the approximate densities of grape juice with a concentration of 45%, 55%, and 70%, respectively. ',
     '',
     1
 );
@@ -1179,7 +1179,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty 3 3 Question ID f04d40b2 ID: f04d40b2 From a population of  people,  were chosen at random and surveyed about a proposed piece of legislation. Based on the survey, it is estimated that  of people in the population support the legislation, with an associated margin of error of . Based on these results, which of the following is a plausible value for the total number of people in the population who support the proposed legislation? A. B. C. D.',
     'C',
     '{}',
-    'Choice C is correct. It’s given that an estimated  of people in the population support the legislation, with an associated margin of error of . Subtracting and adding the margin of error from the estimate gives an interval of plausible values for the true percentage of people in the population who support the legislation. Therefore, it’s plausible that between  and of people in this population support the legislation. The corresponding numbers of people represented by these percentages in the population can be calculated by multiplying the total population, , by  and by , which gives  and , respectively. It follows that any value in the interval  to is a plausible value for the total number of people in the population who support the proposed legislation. Of the choices given, only  is in this interval. Choice A is incorrect. This is the number of people in the sample, rather than in the population, who support the legislation. Choice B is incorrect. This is the number of people in the sample who do not support the legislation. Choice D is incorrect. This is a plausible value for the total number of people in the population who do not support the proposed legislation. Medium SAT Math',
+    'Choice C is correct. It’s given that an estimated  of people in the population support the legislation, with an associated margin of error of . Subtracting and adding the margin of error from the estimate gives an interval of plausible values for the true percentage of people in the population who support the legislation. Therefore, it’s plausible that between  and of people in this population support the legislation. The corresponding numbers of people represented by these percentages in the population can be calculated by multiplying the total population, , by  and by , which gives  and , respectively. It follows that any value in the interval  to is a plausible value for the total number of people in the population who support the proposed legislation. Of the choices given, only  is in this interval. Choice A is incorrect. This is the number of people in the sample, rather than in the population, who support the legislation. Choice B is incorrect. This is the number of people in the sample who do not support the legislation. Choice D is incorrect. This is a plausible value for the total number of people in the population who do not support the proposed legislation. ',
     '',
     1
 );
@@ -1199,7 +1199,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Inference from sample statistics and margin of error Difficulty Question ID 4b09f783 ID: 4b09f783 A list of  data values is shown. , , , , , , , , , What is the mean of these data?',
     'A',
     '{}',
-    'The correct answer is . The mean of a data set is calculated by dividing the sum of the data values by the number of data values in the data set. For this data set, the mean can be calculated as , which is equivalent to , or . Easy SAT Math',
+    'The correct answer is . The mean of a data set is calculated by dividing the sum of the data values by the number of data values in the data set. For this data set, the mean can be calculated as , which is equivalent to , or . ',
     '',
     1
 );
@@ -1219,7 +1219,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID 1d945139 ID: 1d945139 The total mass, in kilograms, of  identical objects is . Which expression represents the total mass, in kilograms, of  of these objects? A. B. C. D.',
     'D',
     '{}',
-    'Choice D is correct. It’s given that the total mass, in kilograms, of  identical objects is . To obtain the expression ,  is multiplied by . Therefore, to find the total mass, in kilograms, of  of these objects,  must also be multiplied by . The result of multiplying  by  is the expression . Therefore, the total mass, in kilograms, of  of these objects, is . Choice A is incorrect and may result from conceptual errors. Choice B is incorrect and may result from conceptual errors. Choice C is incorrect and may result from conceptual errors. Medium SAT Math',
+    'Choice D is correct. It’s given that the total mass, in kilograms, of  identical objects is . To obtain the expression ,  is multiplied by . Therefore, to find the total mass, in kilograms, of  of these objects,  must also be multiplied by . The result of multiplying  by  is the expression . Therefore, the total mass, in kilograms, of  of these objects, is . Choice A is incorrect and may result from conceptual errors. Choice B is incorrect and may result from conceptual errors. Choice C is incorrect and may result from conceptual errors. ',
     '',
     1
 );
@@ -1239,7 +1239,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 67c0200a ID: 67c0200a The number  is  less than the positive number . The number  is  greater than . The number  is how many times ?',
     'A',
     '{}',
-    'The correct answer is . It''s given that the number  is  less than the positive number . Therefore, , which is equivalent to , or . It''s also given that the number  is  greater than . Therefore, , which is equivalent to , or . Since , substituting  for  in the equation  yields , or . Thus,  is  times . Note that .54 and 27/50 are examples of ways to enter a correct answer. Hard SAT Math',
+    'The correct answer is . It''s given that the number  is  less than the positive number . Therefore, , which is equivalent to , or . It''s also given that the number  is  greater than . Therefore, , which is equivalent to , or . Since , substituting  for  in the equation  yields , or . Thus,  is  times . Note that .54 and 27/50 are examples of ways to enter a correct answer. ',
     '',
     1
 );
@@ -1259,7 +1259,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 7d721177 ID: 7d721177 The density of a certain type of wood is  kilograms per cubic meter. A sample of this type of wood is in the shape of a cube and has a mass of  kilograms. To the nearest hundredth of a meter, what is the length of one edge of this sample? A. B. C. D.',
     'B',
     '{}',
-    'Choice B is correct. It’s given that the density of a certain type of wood is  kilograms per cubic meter , and a sample of this type of wood has a mass of . Let  represent the volume, in , of the sample. It follows that the relationship between the density, mass, and volume of this sample can be written as , or . Multiplying both sides of this equation by  yields . Dividing both sides of this equation by  yields . Therefore, the volume of this sample is . Since it’s given that the sample of this type of wood is a cube, it follows that the length of one edge of this sample can be found using the volume formula for a cube, , where  represents the volume, in , and  represents the length, in m, of one edge of the cube. Substituting for  in this formula yields . Taking the cube root of both sides of this equation yields , or . Therefore, the length of one edge of this sample to the nearest hundredth of a meter is . Choices A, C, and D are incorrect and may result from conceptual or calculation errors. Hard SAT Math',
+    'Choice B is correct. It’s given that the density of a certain type of wood is  kilograms per cubic meter , and a sample of this type of wood has a mass of . Let  represent the volume, in , of the sample. It follows that the relationship between the density, mass, and volume of this sample can be written as , or . Multiplying both sides of this equation by  yields . Dividing both sides of this equation by  yields . Therefore, the volume of this sample is . Since it’s given that the sample of this type of wood is a cube, it follows that the length of one edge of this sample can be found using the volume formula for a cube, , where  represents the volume, in , and  represents the length, in m, of one edge of the cube. Substituting for  in this formula yields . Taking the cube root of both sides of this equation yields , or . Therefore, the length of one edge of this sample to the nearest hundredth of a meter is . Choices A, C, and D are incorrect and may result from conceptual or calculation errors. ',
     '',
     1
 );
@@ -1279,7 +1279,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 308084c5 ID: 308084c5 SamplePercent in favorMargin of error A52%4.2% B48%1.6% The results of two random samples of votes for a proposition are shown above. The samples were selected from the same population, and the margins of error were calculated using the same method. Which of the following is the most appropriate reason that the margin of error for sample A is greater than the margin of error for sample B?',
     'D',
     '{"A":"Sample A had a smaller number of votes that could not be recorded.","B":"Sample A had a higher percent of favorable responses.","C":"Sample A had a larger sample size.","D":"Sample A had a smaller sample size."}',
-    'Choice D is correct. Sample size is an appropriate reason for the margin of error to change. In general, a smaller sample size increases the margin of error because the sample may be less representative of the whole population. Choice A is incorrect. The margin of error will depend on the size of the sample of recorded votes, not the number of votes that could not be recorded. In any case, the smaller number of votes that could not be recorded for sample A would tend to decrease, not increase, the comparative size of the margin of error. Choice B is incorrect. Since the percent in favor for sample A is the same distance from 50% as the percent in favor for sample B, the percent of favorable responses doesn’t affect the comparative size of the margin of error for the two samples. Choice C is incorrect. If sample A had a larger margin of error than sample B, then sample A would tend to be less representative of the population. Therefore, sample A is not likely to have a larger sample size. Hard SAT Math',
+    'Choice D is correct. Sample size is an appropriate reason for the margin of error to change. In general, a smaller sample size increases the margin of error because the sample may be less representative of the whole population. Choice A is incorrect. The margin of error will depend on the size of the sample of recorded votes, not the number of votes that could not be recorded. In any case, the smaller number of votes that could not be recorded for sample A would tend to decrease, not increase, the comparative size of the margin of error. Choice B is incorrect. Since the percent in favor for sample A is the same distance from 50% as the percent in favor for sample B, the percent of favorable responses doesn’t affect the comparative size of the margin of error for the two samples. Choice C is incorrect. If sample A had a larger margin of error than sample B, then sample A would tend to be less representative of the population. Therefore, sample A is not likely to have a larger sample size. ',
     '',
     1
 );
@@ -1319,7 +1319,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Medium Question ID be00d896 ID: be00d896 For which of the following data sets is the mean greater than the median?',
     'C',
     '{"A":"5, 5, 5, 5, 5, 5, 5, 5, 5","B":"0, 10, 20, 30, 40, 50, 60, 70, 80","C":"2, 4, 8, 16, 32, 64, 128, 256, 512","D":"7, 107, 107, 207, 207, 207, 307, 307, 307"}',
-    'Choice C is correct. If the values in a data set are ordered from least to greatest, the median of the data set will be the middle value. Since each data set in the choices is ordered and contains exactly 9 data values, the 5th value in each is the median. It follows that the median of the data set in choice C is 32. The sum of the positive differences between 32 and each of the values that are less than 32 is significantly smaller than the sum of the positive differences between 32 and each of the values that are greater than 32. If 32 were the mean, these sums would have been equal to each other. Therefore, the mean of this data set must be greater than 32. This can also be confirmed by calculating the mean as the sum of the values divided by the number of values in the data set:  . Choices A and B are incorrect. Each of the data sets in these choices is symmetric with respect to its median, so the mean and the median for each of these choices are equivalent. Choice D is incorrect. The median of this data set is 207. Since the sum of the positive differences between 207 and each of the values less than 207 is greater than the sum of the positive differences between 207 and each value greater than 207 in this data set, the mean must be less than the median. Medium SAT Math',
+    'Choice C is correct. If the values in a data set are ordered from least to greatest, the median of the data set will be the middle value. Since each data set in the choices is ordered and contains exactly 9 data values, the 5th value in each is the median. It follows that the median of the data set in choice C is 32. The sum of the positive differences between 32 and each of the values that are less than 32 is significantly smaller than the sum of the positive differences between 32 and each of the values that are greater than 32. If 32 were the mean, these sums would have been equal to each other. Therefore, the mean of this data set must be greater than 32. This can also be confirmed by calculating the mean as the sum of the values divided by the number of values in the data set:  . Choices A and B are incorrect. Each of the data sets in these choices is symmetric with respect to its median, so the mean and the median for each of these choices are equivalent. Choice D is incorrect. The median of this data set is 207. Since the sum of the positive differences between 207 and each of the values less than 207 is greater than the sum of the positive differences between 207 and each value greater than 207 in this data set, the mean must be less than the median. ',
     '',
     1
 );
@@ -1339,7 +1339,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID 24ad9dcb ID: 24ad9dcb The weight of an object on Venus is approximately  of its weight on Earth. The weight of an object on Jupiter is approximately  of its weight on Earth. If an object weighs 100 pounds on Earth, approximately how many more pounds does it weigh on Jupiter than it weighs on Venus?',
     'C',
     '{"A":"90","B":"111","C":"140","D":"230"}',
-    'Choice C is correct. The weight of an object on Venus is approximately  of its weight on Earth. If an object weighs 100 pounds on Earth, then the object’s weight on Venus is approximately  pounds. The same object’s weight on Jupiter is approximately  of its weight on Earth; therefore, the object weighs approximately  pounds on Jupiter. The difference between the object’s weight on Jupiter and the object’s weight on Venus is approximately pounds. Therefore, an object that weighs 100 pounds on Earth weighs 140 more pounds on Jupiter than it weighs on Venus. Choice A is incorrect because it is the weight, in pounds, of the object on Venus. Choice B is incorrect because it is the weight, in pounds, of an object on Earth if it weighs 100 pounds on Venus. Choice D is incorrect because it is the weight, in pounds, of the object on Jupiter. Easy SAT Math',
+    'Choice C is correct. The weight of an object on Venus is approximately  of its weight on Earth. If an object weighs 100 pounds on Earth, then the object’s weight on Venus is approximately  pounds. The same object’s weight on Jupiter is approximately  of its weight on Earth; therefore, the object weighs approximately  pounds on Jupiter. The difference between the object’s weight on Jupiter and the object’s weight on Venus is approximately pounds. Therefore, an object that weighs 100 pounds on Earth weighs 140 more pounds on Jupiter than it weighs on Venus. Choice A is incorrect because it is the weight, in pounds, of the object on Venus. Choice B is incorrect because it is the weight, in pounds, of an object on Earth if it weighs 100 pounds on Venus. Choice D is incorrect because it is the weight, in pounds, of the object on Jupiter. ',
     '',
     1
 );
@@ -1360,7 +1360,7 @@ INSERT INTO questions (
     'C',
     '{"A":"36","B":"3.6","C":"1.36","D":"0.36"}',
     'Choice C is correct. It’s given that the number k is 36% greater than 50. Therefore, the value of k is the number 50 plus 36% of 50. This can be rewritten as . Multiplying the terms  yields 18, so , or . It’s also given that k is the product of 50 and r, which can be rewritten as . Substituting 68 for k yields . Dividing both sides of this equation by 50 yields . Choice A is incorrect. This is the percentage that k is greater than 50. Choice B is incorrect and may result from a calculation error. Choice D is incorrect. This would be the value of r if k were 36% of 50, instead of 36% greater than 50.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -1379,7 +1379,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 8637294f ID: 8637294f If  and , what is the value of ?',
     'A',
     '{}',
-    'The correct answer is . It''s given that  and . The equation  can be rewritten as . Dividing both sides of this equation by  yields . The equation  can be rewritten as . Substituting  for  in this equation yields , or . Multiplying both sides of this equation by  yields . Dividing both sides of this equation by  yields . Therefore, the value of  is . Note that .0625, 0.062, 0.063, and 1/16 are examples of ways to enter a correct answer. Hard SAT Math',
+    'The correct answer is . It''s given that  and . The equation  can be rewritten as . Dividing both sides of this equation by  yields . The equation  can be rewritten as . Substituting  for  in this equation yields , or . Multiplying both sides of this equation by  yields . Dividing both sides of this equation by  yields . Therefore, the value of  is . Note that .0625, 0.062, 0.063, and 1/16 are examples of ways to enter a correct answer. ',
     '',
     1
 );
@@ -1399,7 +1399,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 7cd1c6db ID: 7cd1c6db An object travels at a constant speed of  centimeters per second. At this speed, what is the time, in seconds, that it would take for the object to travel  centimeters? A. B. C. D.',
     'A',
     '{}',
-    'Choice A is correct. If the object travels  centimeters at a speed of  centimeters per second, the time of travel can be determined by dividing the total distance by the speed. This results in , which is  seconds. Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. Easy SAT Math',
+    'Choice A is correct. If the object travels  centimeters at a speed of  centimeters per second, the time of travel can be determined by dividing the total distance by the speed. This results in , which is  seconds. Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. ',
     '',
     1
 );
@@ -1420,7 +1420,7 @@ INSERT INTO questions (
     'A',
     '{}',
     'Choice A is correct. Increasing the positive quantity x by 9% is the result of adding 9% of x to x. 9% of x can be represented algebraically as , or . Adding this expression to x yields , or . Choice B is incorrect. This represents 9% of x. Choice C is incorrect. This represents increasing x by 9, not by 9%. Choice D is incorrect. This represents increasing x by 0.09, not by 9%.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -1439,7 +1439,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 7b65bb28 ID: 7b65bb28 Station 1Station 2Station 3Station 4Station 5 $3.699$3.609$3.729$3.679$3.729 In the table above, Melissa recorded the price of one gallon of regular gas from five different local gas stations on the same day. What is the median of the gas prices Melissa recorded?',
     'C',
     '{"A":"$3.679","B":"$3.689","C":"$3.699","D":"$3.729"}',
-    'Choice C is correct. The median of a data set is the middle value when the data is in ascending or descending order. In ascending order, the gas prices are $3.609, $3.679, $3.699, $3.729, and $3.729. The middle number of this list is 3.699, so it follows that $3.699 is the median gas price. Choice A is incorrect. When the gas prices are listed in ascending order, this value isn’t the middle number. Choice B is incorrect. This value represents the mean gas price. Choice D is incorrect. This value represents both the mode and the maximum gas price. Medium SAT Math',
+    'Choice C is correct. The median of a data set is the middle value when the data is in ascending or descending order. In ascending order, the gas prices are $3.609, $3.679, $3.699, $3.729, and $3.729. The middle number of this list is 3.699, so it follows that $3.699 is the median gas price. Choice A is incorrect. When the gas prices are listed in ascending order, this value isn’t the middle number. Choice B is incorrect. This value represents the mean gas price. Choice D is incorrect. This value represents both the mode and the maximum gas price. ',
     '',
     1
 );
@@ -1460,7 +1460,7 @@ INSERT INTO questions (
     'B',
     '{}',
     'Choice B is correct. It was estimated that 15% of the beads in the bag are red. Since the bag contains 10,000 beads, it follows that there are an estimated  red beads. It’s given that the margin of error is 2%, or beads. If the estimate is too high, there could plausibly be  red beads. If the estimate is too low, there could plausibly be  red beads. Therefore, the most plausible statement of the actual number of red beads in the bag is . Choices A and D are incorrect and may result from misinterpreting the margin of error. It’s unlikely that more than 1,700 beads or fewer than 1,300 beads in the bag are red. Choice C is incorrect because 200 is the margin of error for the number of red beads, not the lower bound of the range of red beads.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -1479,7 +1479,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Inference from sample statistics and margin of error Difficulty Question ID 29c177e6 ID: 29c177e6 What is  of ? A. B. C. D.',
     'B',
     '{}',
-    'Choice B is correct.  of a quantity means  times the quantity. Therefore,  of  can be represented as , which is equivalent to , or . Therefore,  of  is . Choice A is incorrect. This is  of , not  of . Choice C is incorrect. This is  of , not  of . Choice D is incorrect. This is , not  of . Easy SAT Math',
+    'Choice B is correct.  of a quantity means  times the quantity. Therefore,  of  can be represented as , which is equivalent to , or . Therefore,  of  is . Choice A is incorrect. This is  of , not  of . Choice C is incorrect. This is  of , not  of . Choice D is incorrect. This is , not  of . ',
     '',
     1
 );
@@ -1499,7 +1499,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 939c46d1 ID: 939c46d1 The glass pictured above can hold a maximum volume of 473 cubic centimeters, which is approximately 16 fluid ounces. Jenny has a pitcher that contains 1 gallon of water. How many times could Jenny completely fill the glass with 1 gallon of water?',
     'B',
     '{"A":"16","B":"8","C":"4","D":"3"}',
-    'Choice B is correct. It is given that the volume of the glass is approximately 16 fluid ounces. If Jenny has 1 gallon of water, which is 128 fluid ounces, she could fill the glass  times. Choice A is incorrect because Jenny would need  fluid ounces = 256 fluid ounces, or 2 gallons, of water to fill the glass 16 times. Choice C is incorrect because Jenny would need only  fluid ounces = 64 fluid ounces of water to fill the glass 4 times. Choice D is incorrect because Jenny would need only  fluid ounces = 48 fluid ounces to fill the glass 3 times. Medium SAT Math',
+    'Choice B is correct. It is given that the volume of the glass is approximately 16 fluid ounces. If Jenny has 1 gallon of water, which is 128 fluid ounces, she could fill the glass  times. Choice A is incorrect because Jenny would need  fluid ounces = 256 fluid ounces, or 2 gallons, of water to fill the glass 16 times. Choice C is incorrect because Jenny would need only  fluid ounces = 64 fluid ounces of water to fill the glass 4 times. Choice D is incorrect because Jenny would need only  fluid ounces = 48 fluid ounces to fill the glass 3 times. ',
     '',
     1
 );
@@ -1519,7 +1519,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID ba62b0b0 ID: ba62b0b0 A kangaroo has a mass of  kilograms. What is the kangaroo''s mass, in grams? A. B. C. D.',
     'A',
     '{}',
-    'Choice A is correct. It''s given that a kangaroo has a mass of  kilograms and that  kilogram is equal to  grams. Therefore, the kangaroo''s mass, in grams, is , which is equivalent to  grams. Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. Easy SAT Math',
+    'Choice A is correct. It''s given that a kangaroo has a mass of  kilograms and that  kilogram is equal to  grams. Therefore, the kangaroo''s mass, in grams, is , which is equivalent to  grams. Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. ',
     '',
     1
 );
@@ -1560,7 +1560,7 @@ INSERT INTO questions (
     'C',
     '{"A":"20","B":"24","C":"32","D":"36"}',
     'Choice C is correct. If the mean score of 8 players is 14.5, then the total of all 8 scores is . If the mean of 7 scores is 12, then the total of all 7 scores is . Since the set of 7 scores was made by removing the highest score of the set of 8 scores, then the difference between the total of all 8 scores and the total of all 7 scores is equal to the removed score: . Choice A is incorrect because if 20 is removed from the group of 8 scores, then the mean score of the remaining 7 players is is approximately 13.71, not 12. Choice B is incorrect because if 24 is removed from the group of 8 scores, then the mean score of the remaining 7 players is  is approximately 13.14, not 12. Choice D is incorrect because if 36 is removed from the group of 8 scores, then the mean score of the remaining 7 players is  or approximately 11.43, not 12.',
-    'Hard SAT Math',
+    '',
     1
 );
 
@@ -1580,7 +1580,7 @@ INSERT INTO questions (
     'A',
     '{}',
     'Choice A is correct. It’s given that when Tanya works z hours, she earns  dollars. Since her hourly rate is constant, if she works 3 times as many hours, or  hours, she will earn 3 times as many dollars, or . Choice B is incorrect. This expression represents adding 3 dollars to the  dollars Tanya will earn. Choice C is incorrect. This expression can be rewritten as , which implies that Tanya earns $16.50 per hour, not $13.50. Choice D is incorrect. This expression adds 3 to the number of hours Tanya works, rather than multiplying the hours she works by 3.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -1600,7 +1600,7 @@ INSERT INTO questions (
     'A',
     '{"A":"0","B":"1","C":"2","D":"3"}',
     'Choice A is correct. Since the frequencies of values less than the middle value, 3, are the same as the frequencies of the values greater than 3, the set of data has a symmetric distribution. When a set of data has a symmetric distribution, the mean and median values are equal. Therefore, the mean is 0 greater than the median. Choices B, C, and D are incorrect and may result from misinterpreting the set of data.',
-    'Hard SAT Math',
+    '',
     1
 );
 
@@ -1619,7 +1619,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID 3638f413 ID: 3638f413 Jeremy deposited x dollars in his investment account on January 1, 2001. The amount of money in the account doubled each year until Jeremy had 480 dollars in his investment account on January 1, 2005. What is the value of x ?',
     'A',
     '{}',
-    'The correct answer is 30. The situation can be represented by the equation , where the 2 represents the fact that the amount of money in the account doubled each year and the 4 represents the fact that there are 4 years between January 1, 2001, and January 1, 2005. Simplifying  gives . Therefore, . Hard SAT Math',
+    'The correct answer is 30. The situation can be represented by the equation , where the 2 represents the fact that the amount of money in the account doubled each year and the 4 represents the fact that there are 4 years between January 1, 2001, and January 1, 2005. Simplifying  gives . Therefore, . ',
     '',
     1
 );
@@ -1659,7 +1659,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Choice A is incorrect. This fraction represents the probability of selecting at random any one of the 799 teens surveyed. Choice C is incorrect and may result from conceptual errors. Choice D is incorrect. This fraction represents the probability of selecting at random one of the 799 teens surveyed who doesn’t talk on a cell phone daily. Easy Question ID 2df8f293 ID: 2df8f293 Each vertex of a -sided polygon is labeled with one of the  letters  through , with a different letter at each vertex. If one vertex is selected at random, what is the probability that the letter  will be at the selected vertex? (Express your answer as a decimal or fraction, not as a percent.)',
     'A',
     '{}',
-    'The correct answer is . If one vertex of the polygon is selected at random, the probability that the letter  will be at the selected vertex is equal to the number of vertices labeled with the letter  divided by the total number of vertices. It''s given that each vertex is labeled with one of the  letters  through , with a different letter at each vertex. It follows that there is  vertex labeled with the letter . It''s also given that the polygon is -sided. It follows that there are a total of  vertices. Thus, the probability that the letter  will be at the selected vertex is . Note that 1/14, .0714, and 0.071 are examples of ways to enter a correct answer. Medium SAT Math',
+    'The correct answer is . If one vertex of the polygon is selected at random, the probability that the letter  will be at the selected vertex is equal to the number of vertices labeled with the letter  divided by the total number of vertices. It''s given that each vertex is labeled with one of the  letters  through , with a different letter at each vertex. It follows that there is  vertex labeled with the letter . It''s also given that the polygon is -sided. It follows that there are a total of  vertices. Thus, the probability that the letter  will be at the selected vertex is . Note that 1/14, .0714, and 0.071 are examples of ways to enter a correct answer. ',
     '',
     1
 );
@@ -1679,7 +1679,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Question ID e7d9649f ID: e7d9649f A random sample of 50 people from a town with a population of 14,878 were asked to name their favorite flavor of ice cream. If 7 people in the sample named chocolate as their favorite ice‑cream flavor, about how many people in the town would be expected to name chocolate?',
     'B',
     '{"A":"350","B":"2,100","C":"7,500","D":"10,500"}',
-    'Choice B is correct. Let x be the number of people in the entire town that would be expected to name chocolate. Since the sample of 50 people was selected at random, it is reasonable to expect that the proportion of people who named chocolate as their favorite ice-cream flavor would be the same for both the sample and the town population. Symbolically, this can be expressed as . Using cross multiplication, ; solving for x yields 2,083. The choice closest to the value of 2,083 is choice B, 2,100. Choices A, C, and D are incorrect and may be the result of errors when setting up the proportion, solving for the unknown, or incorrectly comparing the choices to the number of people expected to name chocolate, 2,083. Easy SAT Math',
+    'Choice B is correct. Let x be the number of people in the entire town that would be expected to name chocolate. Since the sample of 50 people was selected at random, it is reasonable to expect that the proportion of people who named chocolate as their favorite ice-cream flavor would be the same for both the sample and the town population. Symbolically, this can be expressed as . Using cross multiplication, ; solving for x yields 2,083. The choice closest to the value of 2,083 is choice B, 2,100. Choices A, C, and D are incorrect and may be the result of errors when setting up the proportion, solving for the unknown, or incorrectly comparing the choices to the number of people expected to name chocolate, 2,083. ',
     '',
     1
 );
@@ -1719,7 +1719,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Medium Question ID e9841407 ID: e9841407 Shaquan has 7 red cards and 28 blue cards. What is the ratio of red cards to blue cards that Shaquan has?',
     'A',
     '{"A":"1 to 4","B":"4 to 1","C":"1 to 7","D":"7 to 1"}',
-    'Choice A is correct. It’s given that Shaquan has 7 red cards and 28 blue cards. Therefore, the ratio of red cards to blue cards that Shaquan has is 7 to 28. This ratio can be reduced by dividing both parts of the ratio by 7, which yields the ratio 1 to 4. Choice B is incorrect. This is the ratio of blue cards to red cards that Shaquan has. Choice C is incorrect and may result from a calculation error when reducing the ratio. Choice D is incorrect. This may result from finding the ratio of blue cards to red cards, or 28 to 7, and then making a calculation error when reducing the ratio. Easy SAT Math',
+    'Choice A is correct. It’s given that Shaquan has 7 red cards and 28 blue cards. Therefore, the ratio of red cards to blue cards that Shaquan has is 7 to 28. This ratio can be reduced by dividing both parts of the ratio by 7, which yields the ratio 1 to 4. Choice B is incorrect. This is the ratio of blue cards to red cards that Shaquan has. Choice C is incorrect and may result from a calculation error when reducing the ratio. Choice D is incorrect. This may result from finding the ratio of blue cards to red cards, or 28 to 7, and then making a calculation error when reducing the ratio. ',
     '',
     1
 );
@@ -1760,7 +1760,7 @@ INSERT INTO questions (
     'A',
     '{}',
     'Choice A is correct. It’s given that rectangle A has length 15 and width w. Therefore, the length-to-width ratio of rectangle A is 15 to w. It’s also given that rectangle B has length 20 and the same length-to-width ratio as rectangle A. Let x represent the width of rectangle B. The proportion  can be used to solve for x in terms of w. Multiplying both sides of this equation by x yields , and then multiplying both sides of this equation by w yields . Dividing both sides of this equation by 15 yields . Simplifying this fraction yields . Choices B and D are incorrect and may result from interpreting the difference in the lengths of rectangle A and rectangle B as equivalent to the difference in the widths of rectangle A and rectangle B. Choice C is incorrect and may result from using a length-to-width ratio of w to 15, instead of 15 to w.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -1779,7 +1779,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 7ac5d686 ID: 7ac5d686 An inspector begins a day of work with a large sample of shirts that need to be checked for defects. The inspector works at a constant rate throughout the morning. What type of model is best to model the number of shirts remaining to be checked for defects at any given time throughout the morning?',
     'A',
     '{"A":"A linear model with a positive slope","B":"A linear model with a negative slope","C":"An exponential growth model","D":"An exponential decay model"}',
-    'Choice B is correct. Since the work is done at a constant rate, a linear model best models the situation. The number of shirts remaining is dependent on the length of time the inspector has worked; therefore, if the relationship were graphed, time would be the variable of the horizontal axis and the number of remaining shirts would be the variable of the vertical axis. Since the number of shirts decreases as the time worked increases, it follows that the slope of this graph is negative. Choice A is incorrect and may result from incorrectly reasoning about the slope. Choices C and D are incorrect and may result from not identifying the constant rate of work as a characteristic of a linear model. Medium SAT Math',
+    'Choice B is correct. Since the work is done at a constant rate, a linear model best models the situation. The number of shirts remaining is dependent on the length of time the inspector has worked; therefore, if the relationship were graphed, time would be the variable of the horizontal axis and the number of remaining shirts would be the variable of the vertical axis. Since the number of shirts decreases as the time worked increases, it follows that the slope of this graph is negative. Choice A is incorrect and may result from incorrectly reasoning about the slope. Choices C and D are incorrect and may result from not identifying the constant rate of work as a characteristic of a linear model. ',
     '',
     1
 );
@@ -1800,7 +1800,7 @@ INSERT INTO questions (
     'C',
     '{"D":"2"}',
     'Choice C is correct. If one of these planets is selected at random, the probability that the selected planet will be rocky is calculated by dividing the number of planets that are considered rocky by the total number of planets. It’s given that 4 of the 8 total planets are considered rocky. Therefore, the probability that the selected planet will be rocky is , which is equivalent to . Choices A and B are incorrect. These represent the probability if 1 of the 8 planets was considered rocky (choice A) and if 2 of the 8 planets were considered rocky (choice B). Choice D is incorrect and may result from dividing the total number of planets by the number of planets that are considered rocky.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -1839,7 +1839,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Medium Question ID f46139df ID: f46139df The scatterplot shows the relationship between two variables,  and . A line of best fit for the data is also shown. At , which of the following is closest to the y-value predicted by the line of best fit? A. B. C. D.',
     'C',
     '{}',
-    'Choice C is correct. On the line of best fit, an x-value of  corresponds to a y-value between  and . Therefore, at ,  is closest to the y-value predicted by the line of best fit. Choice A is incorrect and may result from conceptual errors. Choice B is incorrect and may result from conceptual errors. Choice D is incorrect and may result from conceptual errors. Medium SAT Math',
+    'Choice C is correct. On the line of best fit, an x-value of  corresponds to a y-value between  and . Therefore, at ,  is closest to the y-value predicted by the line of best fit. Choice A is incorrect and may result from conceptual errors. Choice B is incorrect and may result from conceptual errors. Choice D is incorrect and may result from conceptual errors. ',
     '',
     1
 );
@@ -1859,7 +1859,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Question ID e03f3477 ID: e03f3477 A sample consisting of  adults who own televisions was selected at random for a study. Based on the sample, it is estimated that  of all adults who own televisions use their televisions to watch nature shows, with an associated margin of error of . Which of the following is the most plausible conclusion about all adults who own televisions? shows, no conclusion can be made.',
     'B',
     '{"A":"More than  of all adults who own televisions use their televisions to watch nature shows.","B":"Between  and  of all adults who own televisions use their televisions to watch nature shows.","C":"Since the sample included adults who own televisions and not just those who use their televisions to watch nature","D":"Since the sample did not include all the people who watch nature shows, no conclusion can be made."}',
-    'Choice B is correct. It''s given that based on a sample selected at random, it''s estimated that  of all adults who own televisions use their televisions to watch nature shows, with an associated margin of error of . Subtracting the margin of error from the estimate and adding the margin of error to the estimate gives an interval of plausible values for the true percentage of adults who own televisions who use their televisions to watch nature shows. This means it''s plausible that between , or , and , or , of all adults who own televisions use their televisions to watch nature shows. Therefore, of the given choices, the most plausible conclusion is that between  and of all adults who own televisions use their televisions to watch nature shows. Choice A is incorrect and may result from conceptual errors. Choice C is incorrect. To make a plausible conclusion about all adults who own televisions, the sample must be selected at random from all adults who own televisions, not just those who use their televisions to watch nature shows. Choice D is incorrect. Since the sample was selected at random from all adults who own televisions, a plausible conclusion can be made about all adults who own televisions. Medium SAT Math',
+    'Choice B is correct. It''s given that based on a sample selected at random, it''s estimated that  of all adults who own televisions use their televisions to watch nature shows, with an associated margin of error of . Subtracting the margin of error from the estimate and adding the margin of error to the estimate gives an interval of plausible values for the true percentage of adults who own televisions who use their televisions to watch nature shows. This means it''s plausible that between , or , and , or , of all adults who own televisions use their televisions to watch nature shows. Therefore, of the given choices, the most plausible conclusion is that between  and of all adults who own televisions use their televisions to watch nature shows. Choice A is incorrect and may result from conceptual errors. Choice C is incorrect. To make a plausible conclusion about all adults who own televisions, the sample must be selected at random from all adults who own televisions, not just those who use their televisions to watch nature shows. Choice D is incorrect. Since the sample was selected at random from all adults who own televisions, a plausible conclusion can be made about all adults who own televisions. ',
     '',
     1
 );
@@ -1879,7 +1879,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Inference from sample statistics and margin of error Difficulty Question ID 9d88a3e3 ID: 9d88a3e3 Theresa ran on a treadmill for thirty minutes, and her time and speed are shown on the graph above. According to the graph, which of the following statements is NOT true concerning Theresa’s run?',
     'B',
     '{"A":"Theresa ran at a constant speed for five minutes.","B":"Theresa’s speed was increasing for a longer period of time than it was decreasing.","C":"Theresa’s speed decreased at a constant rate during the last five minutes.","D":"Theresa’s speed reached its maximum during the last ten minutes."}',
-    'Choice B is correct. Theresa’s speed was increasing from 0 to 5 minutes and from 20 to 25 minutes, which is a total of 10 minutes. Theresa’s speed was decreasing from 10 minutes to 20 minutes and from 25 to 30 minutes, which is a total of 15 minutes. Therefore, Theresa’s speed was NOT increasing for a longer period of time than it was decreasing. Choice A is incorrect. Theresa ran at a constant speed for the 5-minute period from 5 to 10 minutes. Choice C is incorrect. Theresa’s speed decreased at a constant rate during the last 5 minutes, which can be seen since the graph is linear during that time. Choice D is incorrect. Theresa’s speed reached its maximum at 25 minutes, which is within the last 10 minutes. Easy SAT Math',
+    'Choice B is correct. Theresa’s speed was increasing from 0 to 5 minutes and from 20 to 25 minutes, which is a total of 10 minutes. Theresa’s speed was decreasing from 10 minutes to 20 minutes and from 25 to 30 minutes, which is a total of 15 minutes. Therefore, Theresa’s speed was NOT increasing for a longer period of time than it was decreasing. Choice A is incorrect. Theresa ran at a constant speed for the 5-minute period from 5 to 10 minutes. Choice C is incorrect. Theresa’s speed decreased at a constant rate during the last 5 minutes, which can be seen since the graph is linear during that time. Choice D is incorrect. Theresa’s speed reached its maximum at 25 minutes, which is within the last 10 minutes. ',
     '',
     1
 );
@@ -1900,7 +1900,7 @@ INSERT INTO questions (
     'A',
     '{}',
     'The correct answer is 25.4. The average speed is the total distance divided by the total time. The total distance is 11 miles and the total time is 26 minutes. Thus, the average speed is  miles per minute. The question asks for the average speed in miles per hour, and there are 60 minutes in an hour; converting miles per minute to miles per hour gives the following:',
-    'Therefore, to the nearest tenth of a mile per hour, the average speed of Paul Revere’s ride would have been 25.4 miles per hour. Note that 25.4 and 127/5 are examples of ways to enter a correct answer. Medium SAT Math',
+    'Therefore, to the nearest tenth of a mile per hour, the average speed of Paul Revere’s ride would have been 25.4 miles per hour. Note that 25.4 and 127/5 are examples of ways to enter a correct answer. ',
     1
 );
 
@@ -1919,7 +1919,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 74dee52b ID: 74dee52b The line graph shows the number of graduates from the classes of 2001 through 2007 at a certain school who enrolled in college within 24 months of graduation. Of the following, which class had the fewest graduates who enrolled in college within 24 months of graduation?',
     'A',
     '{"A":"2002","B":"2004","C":"2005","D":"2007"}',
-    'Choice A is correct. The year with the fewest graduates who enrolled in college within 24 months of graduation is the point with the lowest value on the vertical axis. This occurs at 2002. Choice B, C, and D are incorrect. The years 2004, 2005, and 2007 each had a greater number of graduates who enrolled in college within 24 months of graduation than did the year 2002. Easy SAT Math',
+    'Choice A is correct. The year with the fewest graduates who enrolled in college within 24 months of graduation is the point with the lowest value on the vertical axis. This occurs at 2002. Choice B, C, and D are incorrect. The years 2004, 2005, and 2007 each had a greater number of graduates who enrolled in college within 24 months of graduation than did the year 2002. ',
     '',
     1
 );
@@ -1939,7 +1939,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Question ID d6af3572 ID: d6af3572 The scatterplot above shows the federal-mandated minimum wage every 10 years between 1940 and 2010. A line of best fit is shown, and its equation is . What does the line of best fit predict about the increase in the minimum wage over the 70-year period?',
     'A',
     '{"A":"Each year between 1940 and 2010, the average increase in minimum wage was 0.096 dollars.","B":"Each year between 1940 and 2010, the average increase in minimum wage was 0.49 dollars.","C":"Every 10 years between 1940 and 2010, the average increase in minimum wage was 0.096 dollars.","D":"Every 10 years between 1940 and 2010, the average increase in minimum wage was 0.488 dollars."}',
-    'Choice A is correct. The given equation is in slope-intercept form, or , where m is the value of the slope of the line of best fit. Therefore, the slope of the line of best fit is 0.096. From the definition of slope, it follows that an increase of 1 in the x-value corresponds to an increase of 0.096 in the y-value. Therefore, the line of best fit predicts that for each year between 1940 and 2010, the minimum wage will increase by 0.096 dollar per hour. Choice B is incorrect and may result from using the y-coordinate of the y-intercept as the average increase, instead of the slope. Choice C is incorrect and may result from using the 10-year increments given on the x-axis to incorrectly interpret the slope of the line of best fit. Choice D is incorrect and may result from using the y-coordinate of the y-intercept as the average increase, instead of the slope, and from using the 10-year increments given on the x-axis to incorrectly interpret the slope of the line of best fit. Hard SAT Math',
+    'Choice A is correct. The given equation is in slope-intercept form, or , where m is the value of the slope of the line of best fit. Therefore, the slope of the line of best fit is 0.096. From the definition of slope, it follows that an increase of 1 in the x-value corresponds to an increase of 0.096 in the y-value. Therefore, the line of best fit predicts that for each year between 1940 and 2010, the minimum wage will increase by 0.096 dollar per hour. Choice B is incorrect and may result from using the y-coordinate of the y-intercept as the average increase, instead of the slope. Choice C is incorrect and may result from using the 10-year increments given on the x-axis to incorrectly interpret the slope of the line of best fit. Choice D is incorrect and may result from using the y-coordinate of the y-intercept as the average increase, instead of the slope, and from using the 10-year increments given on the x-axis to incorrectly interpret the slope of the line of best fit. ',
     '',
     1
 );
@@ -1960,7 +1960,7 @@ INSERT INTO questions (
     'C',
     '{"A":"All professors in the United States","B":"All history professors in the United States","C":"All history professors at all California State Universities","D":"All professors at all California State Universities"}',
     'Choice C is correct. Selecting a sample at random when conducting a survey allows the results to be generalized to the population from which the sample was selected, but not beyond this population. In this situation, the population that the sample was selected from is history professors from the California State Universities. Therefore, the largest population to which the results of the survey can be generalized is all history professors at all California State Universities. Choices A, B, and D are incorrect. Since the sample was selected at random from history professors from the California State Universities, the results of the survey can’t be generalized to all professors in the United States, all history professors in the United States, or all professors at all California State Universities. All three of these populations may use different texts and therefore may name different publishers.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -1979,7 +1979,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Evaluating statistical claims: Observational studies and experiments Difficulty Question ID 60caadfd ID: 60caadfd Each rock in a collection of  rocks was classified as either igneous, metamorphic, or sedimentary, as shown in the frequency table. ClassificationFrequency igneous metamorphic sedimentary If one of these rocks is selected at random, what is the probability of selecting a rock that is igneous? A. B. C. D.',
     'D',
     '{}',
-    'Choice D is correct. If one of the rocks in the collection is selected at random, the probability of selecting a rock that is igneous is equal to the number of igneous rocks in the collection divided by the total number of rocks in the collection. According to the table, there are  igneous rocks in the collection, and it''s given that there''s a total of  rocks in the collection. Therefore, if one of the rocks in the collection is selected at random, the probability of selecting a rock that is igneous is . Choice A is incorrect. This is the number of igneous rocks in the collection divided by the number of sedimentary rocks in the collection, not divided by the total number of rocks in the collection. Choice B is incorrect. This is the number of igneous rocks in the collection divided by the number of metamorphic rocks in the collection, not divided by the total number of rocks in the collection. Choice C is incorrect. This is the number of igneous rocks in the collection divided by the number of rocks in the collection that aren''t igneous, not divided by the total number of rocks in the collection. Easy SAT Math',
+    'Choice D is correct. If one of the rocks in the collection is selected at random, the probability of selecting a rock that is igneous is equal to the number of igneous rocks in the collection divided by the total number of rocks in the collection. According to the table, there are  igneous rocks in the collection, and it''s given that there''s a total of  rocks in the collection. Therefore, if one of the rocks in the collection is selected at random, the probability of selecting a rock that is igneous is . Choice A is incorrect. This is the number of igneous rocks in the collection divided by the number of sedimentary rocks in the collection, not divided by the total number of rocks in the collection. Choice B is incorrect. This is the number of igneous rocks in the collection divided by the number of metamorphic rocks in the collection, not divided by the total number of rocks in the collection. Choice C is incorrect. This is the number of igneous rocks in the collection divided by the number of rocks in the collection that aren''t igneous, not divided by the total number of rocks in the collection. ',
     '',
     1
 );
@@ -1999,7 +1999,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Question ID 4a422e3e ID: 4a422e3e To determine the mean number of children per household in a community, Tabitha surveyed 20 families at a playground. For the 20 families surveyed, the mean number of children per household was 2.4. Which of the following statements must be true? sample size is too small. community. household in the community.',
     'C',
     '{"A":"The mean number of children per household in the community is 2.4.","B":"A determination about the mean number of children per household in the community should not be made because the","C":"The sampling method is flawed and may produce a biased estimate of the mean number of children per household in the","D":"The sampling method is not flawed and is likely to produce an unbiased estimate of the mean number of children per"}',
-    'Choice C is correct. In order to use a sample mean to estimate the mean for a population, the sample must be representative of the population (for example, a simple random sample). In this case, Tabitha surveyed 20 families in a playground. Families in the playground are more likely to have children than other households in the community. Therefore, the sample isn’t representative of the population. Hence, the sampling method is flawed and may produce a biased estimate. Choices A and D are incorrect because they incorrectly assume the sampling method is unbiased. Choice B is incorrect because a sample of size 20 could be large enough to make an estimate if the sample had been representative of all the families in the community. Hard SAT Math',
+    'Choice C is correct. In order to use a sample mean to estimate the mean for a population, the sample must be representative of the population (for example, a simple random sample). In this case, Tabitha surveyed 20 families in a playground. Families in the playground are more likely to have children than other households in the community. Therefore, the sample isn’t representative of the population. Hence, the sampling method is flawed and may produce a biased estimate. Choices A and D are incorrect because they incorrectly assume the sampling method is unbiased. Choice B is incorrect because a sample of size 20 could be large enough to make an estimate if the sample had been representative of all the families in the community. ',
     '',
     1
 );
@@ -2039,7 +2039,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Easy Question ID 7f84b136 ID: 7f84b136 The table summarizes the number of objects in each group. GroupNumber of objects A B C D Total The number of objects in group C is  of the number of objects in group A. What is the value of ?',
     'A',
     '{}',
-    'The correct answer is . It''s given in the table that there are  objects in group A and  objects in group C. It’s also given that the number of objects in group C is  of the number of objects in group A. Therefore,  is  of , which can be represented by , or . Dividing both sides of this equation by  yields . Therefore, the value of  is . Medium SAT Math',
+    'The correct answer is . It''s given in the table that there are  objects in group A and  objects in group C. It’s also given that the number of objects in group C is  of the number of objects in group A. Therefore,  is  of , which can be represented by , or . Dividing both sides of this equation by  yields . Therefore, the value of  is . ',
     '',
     1
 );
@@ -2059,7 +2059,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 2e92cc21 ID: 2e92cc21 The number  is  greater than the number . The number  is  less than . What is the value of ?',
     'A',
     '{}',
-    'The correct answer is . It’s given that the number  is  greater than the number . It follows that , or . It’s also given that the number  is  less than . It follows that , or , which yields . Substituting  for  in the equation  yields , which is equivalent to . Therefore, the value of  is . Hard SAT Math',
+    'The correct answer is . It’s given that the number  is  greater than the number . It follows that , or . It’s also given that the number  is  less than . It follows that , or , which yields . Substituting  for  in the equation  yields , which is equivalent to . Therefore, the value of  is . ',
     '',
     1
 );
@@ -2079,7 +2079,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 623dbebb ID: 623dbebb A reseller buys certain books for a purchase price of  dollars each and then marks them each for sale at a consumer price that is  of the purchase price. After  months, any remaining books not yet sold are marked at a discounted price that is  off the consumer price. What is the discounted price of each of the remaining books, in dollars?',
     'A',
     '{}',
-    'The correct answer is . It''s given that the purchase price for certain books is  dollars each. It''s also given that each book is marked for sale at a consumer price that is  of the purchase price. Since the consumer price is  of the purchase price of  dollars, it follows that the consumer price is , or , dollars. It''s given that after months, any remaining books are discounted at  off the consumer price. Thus, the discount amount is , or , dollars. Subtracting the discount amount from the consumer price gives the discounted price of each of the remaining books: . Note that 4.05 and 81/20 are examples of ways to enter a correct answer. Hard SAT Math',
+    'The correct answer is . It''s given that the purchase price for certain books is  dollars each. It''s also given that each book is marked for sale at a consumer price that is  of the purchase price. Since the consumer price is  of the purchase price of  dollars, it follows that the consumer price is , or , dollars. It''s given that after months, any remaining books are discounted at  off the consumer price. Thus, the discount amount is , or , dollars. Subtracting the discount amount from the consumer price gives the discounted price of each of the remaining books: . Note that 4.05 and 81/20 are examples of ways to enter a correct answer. ',
     '',
     1
 );
@@ -2099,7 +2099,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 98958ae8 ID: 98958ae8 Data set A consists of the heights of  objects and has a mean of  meters. Data set B consists of the heights of objects and has a mean of  meters. Data set C consists of the heights of the  objects from data sets A and B. What is the mean, in meters, of data set C?',
     'A',
     '{}',
-    'The correct answer is . The mean of a data set is computed by dividing the sum of the values in the data set by the number of values in the data set. It’s given that data set A consists of the heights of  objects and has a mean of meters. This can be represented by the equation , where  represents the sum of the heights of the objects, in meters, in data set A. Multiplying both sides of this equation by  yields , or  meters. Therefore, the sum of the heights of the objects in data set A is  meters. It’s also given that data set B consists of the heights of objects and has a mean of  meters. This can be represented by the equation , where  represents the sum of the heights of the objects, in meters, in data set B. Multiplying both sides of this equation by  yields , or meters. Therefore, the sum of the heights of the objects in data set B is  meters. Since it’s given that data set C consists of the heights of the  objects from data sets A and B, it follows that the mean of data set C is the sum of the heights of the objects, in meters, in data sets A and B divided by the number of objects represented in data sets A and B, or , which is equivalent to  meters. Therefore, the mean, in meters, of data set C is . Hard SAT Math',
+    'The correct answer is . The mean of a data set is computed by dividing the sum of the values in the data set by the number of values in the data set. It’s given that data set A consists of the heights of  objects and has a mean of meters. This can be represented by the equation , where  represents the sum of the heights of the objects, in meters, in data set A. Multiplying both sides of this equation by  yields , or  meters. Therefore, the sum of the heights of the objects in data set A is  meters. It’s also given that data set B consists of the heights of objects and has a mean of  meters. This can be represented by the equation , where  represents the sum of the heights of the objects, in meters, in data set B. Multiplying both sides of this equation by  yields , or meters. Therefore, the sum of the heights of the objects in data set B is  meters. Since it’s given that data set C consists of the heights of the  objects from data sets A and B, it follows that the mean of data set C is the sum of the heights of the objects, in meters, in data sets A and B divided by the number of objects represented in data sets A and B, or , which is equivalent to  meters. Therefore, the mean, in meters, of data set C is . ',
     '',
     1
 );
@@ -2120,7 +2120,7 @@ INSERT INTO questions (
     'A',
     '{"A":"3","B":"6"}',
     'Choice A is correct. Since the distance is equal to the amount of time multiplied by a constant, the given equation represents a proportional relationship between distance and time in this situation. Since , the time when hours is 3 times the time when  hours. Therefore, the distance traveled after  hours is 3 times the distance after hours. Choices B and D are incorrect and may result from interpreting the proportional relationship between time and distance as additive rather than multiplicative. Choice C is incorrect and may result from an arithmetic error.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -2139,7 +2139,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 1180401d ID: 1180401d The total area of a coastal city is 92.1 square miles, of which 11.3 square miles is water. If the city had a population of 621,000 people in the year 2010, which of the following is closest to the population density, in people per square mile of land area, of the city at that time?',
     'B',
     '{"A":"6,740","B":"7,690","C":"55,000","D":"76,000"}',
-    'Choice B is correct. The land area of the coastal city can be found by subtracting the area of the water from the total area of the coastal city; that is,  square miles. The population density is the population divided by the land area, or , which is closest to 7,690 people per square mile. Choice A is incorrect and may be the result of dividing the population by the total area, instead of the land area. Choice C is incorrect and may be the result of dividing the population by the area of water. Choice D is incorrect and may be the result of making a computational error with the decimal place. Medium SAT Math',
+    'Choice B is correct. The land area of the coastal city can be found by subtracting the area of the water from the total area of the coastal city; that is,  square miles. The population density is the population divided by the land area, or , which is closest to 7,690 people per square mile. Choice A is incorrect and may be the result of dividing the population by the total area, instead of the land area. Choice C is incorrect and may be the result of dividing the population by the area of water. Choice D is incorrect and may be the result of making a computational error with the decimal place. ',
     '',
     1
 );
@@ -2159,7 +2159,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 014c47ab ID: 014c47ab Site ASite BTotal Tulip Daffodil Total The table shows the distribution of two types of flowers at two different sites. If a flower represented in the table is selected at random, what is the probability of selecting a flower from site A, given that the flower is a tulip? (Express your answer as a decimal or fraction, not as a percent.)',
     'A',
     '{}',
-    'The correct answer is . Based on the table, there are a total of  tulips, and  of these tulips are from site A. The probability of selecting at random a flower from site A, given that the flower is a tulip, is equal to the number of tulips from site A divided by the total number of tulips, which can be written as , or . Note that 35/50, 7/10, and .7 are examples of ways to enter a correct answer. Hard SAT Math',
+    'The correct answer is . Based on the table, there are a total of  tulips, and  of these tulips are from site A. The probability of selecting at random a flower from site A, given that the flower is a tulip, is equal to the number of tulips from site A divided by the total number of tulips, which can be written as , or . Note that 35/50, 7/10, and .7 are examples of ways to enter a correct answer. ',
     '',
     1
 );
@@ -2179,7 +2179,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Question ID 551c52b9 ID: 551c52b9 Tilly earns  dollars for every  hours of work. Which expression represents the amount of money, in dollars, Tilly earns for hours of work? A. B. C. D.',
     'A',
     '{}',
-    'Choice A is correct. It’s given that Tilly earns  dollars for every  hours of work. This can be represented by the proportion . The amount of money, , Tilly earns for  hours of work can be found by setting up the proportion . This can be rewritten as . Dividing both sides by  results in . Choice B is incorrect. This is the amount of money Tilly earns in dollars per hour, not the amount of money Tilly earns for hours of work. Choice C is incorrect. This is the amount of money Tilly earns for  hours of work plus , not the amount of money Tilly earns for  hours of work. Choice D is incorrect. This is the amount of money Tilly earns for  hours of work minus , not the amount of money Tilly earns for  hours of work. Easy SAT Math',
+    'Choice A is correct. It’s given that Tilly earns  dollars for every  hours of work. This can be represented by the proportion . The amount of money, , Tilly earns for  hours of work can be found by setting up the proportion . This can be rewritten as . Dividing both sides by  results in . Choice B is incorrect. This is the amount of money Tilly earns in dollars per hour, not the amount of money Tilly earns for hours of work. Choice C is incorrect. This is the amount of money Tilly earns for  hours of work plus , not the amount of money Tilly earns for  hours of work. Choice D is incorrect. This is the amount of money Tilly earns for  hours of work minus , not the amount of money Tilly earns for  hours of work. ',
     '',
     1
 );
@@ -2200,7 +2200,7 @@ INSERT INTO questions (
     'C',
     '{"A":"6.0%","B":"12.0%","C":"13.3%","D":"14.0%"}',
     'Choice C is correct. The sum of the number of states with a state-level sales tax is . Of these states, 6 don’t have a state-level income tax. Therefore, , or about 13.3%, of states with a state-level sales tax don’t have a state-level income tax. Choice A is incorrect. This is the number of states that have a state-level sales tax and no state-level income tax. Choice B is incorrect. This is the percent of states that have a state-level sales tax and no state-level income tax. Choice D is incorrect. This is the percent of states that have no state-level income tax.',
-    'Hard SAT Math',
+    '',
     1
 );
 
@@ -2240,7 +2240,7 @@ INSERT INTO questions (
     'B',
     '{"A":"The percentages do not add up to 100%, so any possible conclusions from the poll are invalid.","B":"Those who responded to the poll were not a random sample of the population of the United States.","C":"There were not 50% “Yes” responses and 50% “No” responses.","D":"The show did not allow viewers enough time to respond to the poll."}',
     'Choice B is correct. In order for the poll results from a sample of a population to represent the entire population, the sample must be representative of the population. A sample that is randomly selected from a population is more likely than a sample of the type described to represent the population. In this case, the people who responded were people with access to cable television and websites, which aren’t accessible to the entire population. Moreover, the people who responded also chose to watch the show and respond to the poll. The people who made these choices aren’t representative of the entire population of the United States because they were not a random sample of the population of the United States. Choices A, C, and D are incorrect because they present reasons unrelated to whether the sample is representative of the population of the United States.',
-    'Hard SAT Math',
+    '',
     1
 );
 
@@ -2279,7 +2279,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Easy Question ID dae79de4 ID: dae79de4 visit or more visitsTotal Less than  years old At least  years old Total The table summarizes customers who visited a car dealership in the last month by age and number of visits they made to the dealership. If a customer from the last month is selected at random, what is the probability that the selected customer is at least  years old? A. B. C. D.',
     'D',
     '{}',
-    'Choice D is correct. Based on the table, there are a total of  customers who visited the car dealership in the last month, and  of these customers are at least  years old. If a customer from the last month is selected at random, the probability that the selected customer is at least  years old is equal to the number of customers who are at least  years old divided by the total number of customers. Therefore, the probability that the selected customer is at least  years old is . Choice A is incorrect. This is the probability that the selected customer is less than  years old. Choice B is incorrect. This is the probability that the selected customer visited the dealership  time in the last month. Choice C is incorrect. This is the probability that the selected customer visited the dealership  or more times in the last month. Easy SAT Math',
+    'Choice D is correct. Based on the table, there are a total of  customers who visited the car dealership in the last month, and  of these customers are at least  years old. If a customer from the last month is selected at random, the probability that the selected customer is at least  years old is equal to the number of customers who are at least  years old divided by the total number of customers. Therefore, the probability that the selected customer is at least  years old is . Choice A is incorrect. This is the probability that the selected customer is less than  years old. Choice B is incorrect. This is the probability that the selected customer visited the dealership  time in the last month. Choice C is incorrect. This is the probability that the selected customer visited the dealership  or more times in the last month. ',
     '',
     1
 );
@@ -2300,7 +2300,7 @@ INSERT INTO questions (
     'D',
     '{"A":"1.2","B":"15","C":"48","D":"72"}',
     'Choice D is correct. There are 60 minutes in one hour, so an 8-hour workday has  minutes. To calculate 15% of 480, multiply 0.15 by 480: . Therefore, Lani spent 72 minutes of her workday in meetings. Choice A is incorrect because 1.2 is 15% of 8, which gives the time Lani spent of her workday in meetings in hours, not minutes. Choices B and C are incorrect and may be the result of computation errors.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -2319,7 +2319,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 881ef5f5 ID: 881ef5f5 If a is the mean and b is the median of nine consecutive integers, what is the value of  ?',
     'A',
     '{}',
-    'The correct answer is 0. Any nine consecutive integers can be written as , , , , , , , , . The mean of the integers is their sum divided by 9: , which simplifies to . So . Since there is an odd number of integers (nine), the median is the integer in the middle when all the integers are ordered from least to greatest: . So . Therefore, , which is 0. Medium SAT Math',
+    'The correct answer is 0. Any nine consecutive integers can be written as , , , , , , , , . The mean of the integers is their sum divided by 9: , which simplifies to . So . Since there is an odd number of integers (nine), the median is the integer in the middle when all the integers are ordered from least to greatest: . So . Therefore, , which is 0. ',
     '',
     1
 );
@@ -2339,7 +2339,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID eb672707 ID: eb672707 How many tablespoons are equivalent to  teaspoons?',
     'A',
     '{}',
-    'The correct answer is . It''s given that  teaspoons is equivalent to  tablespoon. Therefore,  teaspoons is equivalent to , or  tablespoons. Note that 14/3, 4.666, and 4.667 are examples of ways to enter a correct answer. Medium SAT Math',
+    'The correct answer is . It''s given that  teaspoons is equivalent to  tablespoon. Therefore,  teaspoons is equivalent to , or  tablespoons. Note that 14/3, 4.666, and 4.667 are examples of ways to enter a correct answer. ',
     '',
     1
 );
@@ -2360,7 +2360,7 @@ INSERT INTO questions (
     'B',
     '{}',
     'Choice B is correct. If 1,200 customers register for new accounts every day, then (1,200)(5) = 6,000 customers registered for new accounts in the first 5 days. Therefore, of the first 60,000 new accounts that were registered, , or , were registered in the first 5 days. Choice A is incorrect. The fraction  represents the fraction of accounts registered in 1 of the first 5 days. Choice C is incorrect and may result from conceptual or computation errors. Choice D is incorrect. The fraction  represents the fraction of the first 60,000 accounts that were registered in 1 day.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -2380,7 +2380,7 @@ INSERT INTO questions (
     'B',
     '{}',
     'Choice B is correct. Since there are n nonfiction and 12 fiction books on the bookshelf,  represents the total number of books. If one of these books is selected at random, the probability of selecting a nonfiction book is equivalent to the number of nonfiction books divided by the total number of books. Therefore, the probability of selecting a nonfiction book, in terms of n, is . Choice A is incorrect. This expression represents the number of nonfiction books divided by the number of fiction books. Choice C is incorrect. This expression represents the number of fiction books divided by the number of nonfiction books. Choice D is incorrect. This expression represents the probability of selecting a fiction book.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -2399,7 +2399,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Question ID ab7740a8 ID: ab7740a8 In which of the following tables is the relationship between the values of x and their corresponding y-values nonlinear? A. B. C. D.',
     'D',
     '{}',
-    'Choice D is correct. The relationship between the values of x and their corresponding y-values is nonlinear if the rate of change between these pairs of values isn’t constant. The table for choice D gives four pairs of values: ,, , and . Finding the rate of change, or slope, between  and  by using the slope formula, , yields , or 6. Finding the rate of change between  and  yields , or 12. Finding the rate of change between  and  yields , or 24. Since the rate of change isn’t constant for these pairs of values, this table shows a nonlinear relationship. Choices A, B, and C are incorrect. The rate of change between the values of x and their corresponding y-values in each of these tables is constant, being 3, 4, and 5, respectively. Therefore, each of these tables shows a linear relationship. Medium SAT Math',
+    'Choice D is correct. The relationship between the values of x and their corresponding y-values is nonlinear if the rate of change between these pairs of values isn’t constant. The table for choice D gives four pairs of values: ,, , and . Finding the rate of change, or slope, between  and  by using the slope formula, , yields , or 6. Finding the rate of change between  and  yields , or 12. Finding the rate of change between  and  yields , or 24. Since the rate of change isn’t constant for these pairs of values, this table shows a nonlinear relationship. Choices A, B, and C are incorrect. The rate of change between the values of x and their corresponding y-values in each of these tables is constant, being 3, 4, and 5, respectively. Therefore, each of these tables shows a linear relationship. ',
     '',
     1
 );
@@ -2419,7 +2419,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Question ID d6121490 ID: d6121490 The graph above shows the relationship between the speed of a particular car, in miles per hour, and its corresponding braking distance, in feet. Approximately how many feet greater will the car’s braking distance be when the car is traveling at 50 miles per hour than when the car is traveling at 30 miles per hour?',
     'B',
     '{"A":"75","B":"125","C":"175","D":"250"}',
-    'Choice B is correct. According to the graph, when the car is traveling at 50 miles per hour, the braking distance is approximately 225 feet, and when the car is traveling at 30 miles per hour, the braking distance is approximately 100 feet. The difference between these braking distances is , or 125 feet. Choice A is incorrect and may result from finding the braking distance for 20 miles per hour, the difference between the given speeds. Choice C is incorrect and may result from subtracting the speed from the braking distance at 50 miles per hour. Choice D is incorrect and may result from finding the difference in the braking distances at 60 and 20 miles per hour. Easy SAT Math',
+    'Choice B is correct. According to the graph, when the car is traveling at 50 miles per hour, the braking distance is approximately 225 feet, and when the car is traveling at 30 miles per hour, the braking distance is approximately 100 feet. The difference between these braking distances is , or 125 feet. Choice A is incorrect and may result from finding the braking distance for 20 miles per hour, the difference between the given speeds. Choice C is incorrect and may result from subtracting the speed from the braking distance at 50 miles per hour. Choice D is incorrect and may result from finding the difference in the braking distances at 60 and 20 miles per hour. ',
     '',
     1
 );
@@ -2439,7 +2439,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Question ID b2f6f17d ID: b2f6f17d A customer’s monthly water bill was $75.74. Due to a rate increase, her monthly bill is now $79.86. To the nearest tenth of a percent, by what percent did the amount of the customer’s water bill increase?',
     'D',
     '{"A":"4.1%","B":"5.1%","C":"5.2%","D":"5.4%"}',
-    'Choice D is correct. To find the percent increase of the customer’s water bill, the absolute increase of the bill, in dollars, is divided by the original amount of the bill, and the result is multiplied by 100%, as follows: ; . Choice A is incorrect. This choice is the difference  rounded to the nearest tenth, which is the (absolute) increase of the bill’s amount, not its percent increase. Choice B is incorrect and may be the result of some calculation errors. Choice C is incorrect and is the result of dividing the difference between the two bill amounts by the new bill amount instead of the original bill amount. Medium SAT Math',
+    'Choice D is correct. To find the percent increase of the customer’s water bill, the absolute increase of the bill, in dollars, is divided by the original amount of the bill, and the result is multiplied by 100%, as follows: ; . Choice A is incorrect. This choice is the difference  rounded to the nearest tenth, which is the (absolute) increase of the bill’s amount, not its percent increase. Choice B is incorrect and may be the result of some calculation errors. Choice C is incorrect and is the result of dividing the difference between the two bill amounts by the new bill amount instead of the original bill amount. ',
     '',
     1
 );
@@ -2460,7 +2460,7 @@ INSERT INTO questions (
     'A',
     '{}',
     'Choice A is correct. A line of best fit for the data in a scatterplot is a line that follows the trend of the data with approximately half the data points above and half the data points below the line. Based on the given data, a line of best fit will have a positive y-intercept on or near the point  and a negative slope. All of the choices are in slope-intercept form , where m is the slope and b is the y-coordinate of the y-intercept. Only choice A is an equation of a line with a positive y-intercept at  and a negative slope, . Choice B is incorrect. This equation is for a line that has a negative y-intercept, not a positive y-intercept. Choices C and D are incorrect and may result from one or more sign errors and from switching the values of the y-intercept and the slope in the equation.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -2480,7 +2480,7 @@ INSERT INTO questions (
     'A',
     '{"A":"Only the means are different.","B":"Only the medians are different.","C":"Both the means and the medians are different.","D":"Neither the means nor the medians are different."}',
     'Choice A is correct. The mean of a data set is the sum of the values divided by the number of values. The mean of data set A is , or 5. The mean of data set B is , or 14.5. Thus, the means are different. The median of a data set is the middle value when the values are ordered from least to greatest. The medians of data sets A and B are both 5. Therefore, the medians are the same, so only the means are different. Choices B, C, and D are incorrect and may result from conceptual or calculation errors.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -2499,7 +2499,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID d0430601 ID: d0430601 Each dot in the scatterplot above represents the temperature and the number of people who visited a beach in Lagos, Nigeria, on one of eleven different days. The line of best fit for the data is also shown. The line of best fit for the data has a slope of approximately 57. According to this estimate, how many additional people per day are predicted to visit the beach for each 5°C increase in average temperature?',
     'A',
     '{}',
-    'The correct answer is 285. The number of people predicted to visit the beach each day is represented by the y-values of the line of best fit, and the average temperature, in degrees Celsius (), is represented by the x-values. Since the slope of the line of best fit is approximately 57, the y-value, or the number of people predicted to visit the beach each day, increases by 57 for every x-value increase of 1, or every  increase in average temperature. Therefore, an increase of  in average temperature corresponds to a y-value increase of  additional people per day predicted to visit the beach. Hard SAT Math',
+    'The correct answer is 285. The number of people predicted to visit the beach each day is represented by the y-values of the line of best fit, and the average temperature, in degrees Celsius (), is represented by the x-values. Since the slope of the line of best fit is approximately 57, the y-value, or the number of people predicted to visit the beach each day, increases by 57 for every x-value increase of 1, or every  increase in average temperature. Therefore, an increase of  in average temperature corresponds to a y-value increase of  additional people per day predicted to visit the beach. ',
     '',
     1
 );
@@ -2519,7 +2519,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Question ID 61f61789 ID: 61f61789 To study the moisture content in a group of trees, samples from the trunk of each tree were taken from  trees and cut in the shape of a cube. The length of the edge of one of these cubes is  centimeters. If this cube has a mass of grams, what is the density of this cube, in grams per cubic centimeter?',
     'A',
     '{}',
-    'The correct answer is . The volume of a cube is given by the formula , where  is the length of an edge of the cube. It’s given that each edge of the cube has a length of  centimeters. Substituting  centimeters for  in the formula  yields , or  cubic centimeters. It’s given that the cube has a mass of grams. Dividing the mass, in grams, of the cube by the volume, in cubic centimeters, of the cube gives its density, in grams per cubic centimeters. Therefore, the density of the cube is , or  grams per cubic centimeter. Note that .32 and 8/25 are examples of ways to enter a correct answer. Hard SAT Math',
+    'The correct answer is . The volume of a cube is given by the formula , where  is the length of an edge of the cube. It’s given that each edge of the cube has a length of  centimeters. Substituting  centimeters for  in the formula  yields , or  cubic centimeters. It’s given that the cube has a mass of grams. Dividing the mass, in grams, of the cube by the volume, in cubic centimeters, of the cube gives its density, in grams per cubic centimeters. Therefore, the density of the cube is , or  grams per cubic centimeter. Note that .32 and 8/25 are examples of ways to enter a correct answer. ',
     '',
     1
 );
@@ -2539,7 +2539,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 66f03086 ID: 66f03086 , , , , , , , , What is the median of the data shown? A. B. C. D.',
     'B',
     '{}',
-    'Choice B is correct. The median of a data set with an odd number of data values is defined as the middle value of the ordered list of values. The data set shown has nine values, so the median is the fifth value in the ordered list, which is . Choice A is incorrect. This is the minimum value of the data set, not the median. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect. This is the mean of the data set, not the median. Easy SAT Math',
+    'Choice B is correct. The median of a data set with an odd number of data values is defined as the middle value of the ordered list of values. The data set shown has nine values, so the median is the fifth value in the ordered list, which is . Choice A is incorrect. This is the minimum value of the data set, not the median. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect. This is the mean of the data set, not the median. ',
     '',
     1
 );
@@ -2559,7 +2559,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID 3ac09984 ID: 3ac09984 Marta has 7,500 pesos she will convert to US dollars using a currency exchange service. At this time, the currency exchange rate is 1 peso = 0.075 US dollars. The exchange service will charge Marta a 2% fee on the converted US dollar amount. How many US dollars will Marta receive from the currency exchange after the 2% fee is applied?',
     'A',
     '{"A":"$551.25","B":"$562.50","C":"$5,625.00","D":"$98,000.00"}',
-    'Choice A is correct. At the exchange rate of 1 peso = 0.075 US dollars, 7,500 pesos would be converted to 7,500 × 0.075 = $562.50. However, since Maria pays a 2% fee on the converted US dollar amount, she receives only (100 – 2)%, or 98%, of the converted US dollars, and 562.50 × 0.98 = $551.25. Choice B is incorrect. This is the number of US dollars Maria would receive if the exchange service did not charge a 2% fee. Choice C is incorrect and may result from a decimal point error made when calculating the conversion to US dollars and from not assessing the 2% fee. Choice D is incorrect and may result from reversing the units of the exchange rate. Easy SAT Math',
+    'Choice A is correct. At the exchange rate of 1 peso = 0.075 US dollars, 7,500 pesos would be converted to 7,500 × 0.075 = $562.50. However, since Maria pays a 2% fee on the converted US dollar amount, she receives only (100 – 2)%, or 98%, of the converted US dollars, and 562.50 × 0.98 = $551.25. Choice B is incorrect. This is the number of US dollars Maria would receive if the exchange service did not charge a 2% fee. Choice C is incorrect and may result from a decimal point error made when calculating the conversion to US dollars and from not assessing the 2% fee. Choice D is incorrect and may result from reversing the units of the exchange rate. ',
     '',
     1
 );
@@ -2579,7 +2579,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 30db8f77 ID: 30db8f77 At a conference, there are a total of  attendees. Each attendee is assigned to either group A, group B, or group C. If one of these attendees is selected at random, the probability of selecting an attendee who is assigned to group A is  and the probability of selecting an attendee who is assigned to group B is . How many attendees are assigned to group C?',
     'A',
     '{}',
-    'The correct answer is . It''s given that there are a total of  attendees and each attendee is assigned to either group A, group B, or group C. It''s also given that if one of these attendees is selected at random, the probability of selecting an attendee who is assigned to group A is  and the probability of selecting an attendee who is assigned to group B is . It follows that there are , or , attendees who are assigned to group A and , or , attendees who are assigned to group B. The number of attendees who are assigned to group C is the number of attendees who are not assigned to group A or group B. In other words, the number of attendees who are assigned to group C is the total number of attendees minus the number of attendees who are assigned to group A and group B. Therefore, the number of attendees who are assigned to group C is , or . Medium SAT Math',
+    'The correct answer is . It''s given that there are a total of  attendees and each attendee is assigned to either group A, group B, or group C. It''s also given that if one of these attendees is selected at random, the probability of selecting an attendee who is assigned to group A is  and the probability of selecting an attendee who is assigned to group B is . It follows that there are , or , attendees who are assigned to group A and , or , attendees who are assigned to group B. The number of attendees who are assigned to group C is the number of attendees who are not assigned to group A or group B. In other words, the number of attendees who are assigned to group C is the total number of attendees minus the number of attendees who are assigned to group A and group B. Therefore, the number of attendees who are assigned to group C is , or . ',
     '',
     1
 );
@@ -2600,7 +2600,7 @@ INSERT INTO questions (
     'B',
     '{"A":"Mean","B":"Median","C":"Range","D":"Standard deviation"}',
     'Choice B is correct. The median weight is found by ordering the horses’ weights from least to greatest and then determining the middle value from this list of weights. Decreasing the value for the horse with the lowest weight doesn’t affect the median since it’s still the lowest value. Choice A is incorrect. The mean is calculated by finding the sum of all the weights of the horses and then dividing by the number of horses. Decreasing one of the weights would decrease the sum and therefore decrease the mean. Choice C is incorrect. Range is the difference between the highest and lowest weights, so decreasing the lowest weight would increase the range. Choice D is incorrect. Standard deviation is calculated based on the mean weight of the horses. Decreasing one of the weights decreases the mean and therefore would affect the standard deviation.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -2619,7 +2619,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID 82dfb646 ID: 82dfb646 A market researcher selected 200 people at random from a group of people who indicated that they liked a certain book. The 200 people were shown a movie based on the book and then asked whether they liked or disliked the movie. Of those surveyed, 95% said they disliked the movie. Which of the following inferences can appropriately be drawn from this survey result?',
     'D',
     '{"A":"At least 95% of people who go see movies will dislike this movie.","B":"At least 95% of people who read books will dislike this movie.","C":"Most people who dislike this book will like this movie.","D":"Most people who like this book will dislike this movie."}',
-    'Choice D is correct. The sample was selected from a group of people who indicated that they liked the book. It is inappropriate to generalize the result of the survey beyond the population from which the participants were selected. Choice D is the most appropriate inference from the survey results because it describes a conclusion about people who liked the book, and the results of the survey indicate that most people who like the book disliked the movie. Choices A, B, and C are incorrect because none of these inferences can be drawn from the survey results. Choices A and B need not be true. The people surveyed all liked the book on which the movie was based, which is not necessarily true of all people who go see movies or all people who read books. Thus, the people surveyed are not representative of all people who go see movies or all people who read books. Therefore, the results of this survey cannot appropriately be extended to at least 95% of people who go see movies or to at least 95% of people who read books. Choice C need not be true because the sample includes only people who liked the book, and so the results do not extend to people who dislike the book. Easy SAT Math',
+    'Choice D is correct. The sample was selected from a group of people who indicated that they liked the book. It is inappropriate to generalize the result of the survey beyond the population from which the participants were selected. Choice D is the most appropriate inference from the survey results because it describes a conclusion about people who liked the book, and the results of the survey indicate that most people who like the book disliked the movie. Choices A, B, and C are incorrect because none of these inferences can be drawn from the survey results. Choices A and B need not be true. The people surveyed all liked the book on which the movie was based, which is not necessarily true of all people who go see movies or all people who read books. Thus, the people surveyed are not representative of all people who go see movies or all people who read books. Therefore, the results of this survey cannot appropriately be extended to at least 95% of people who go see movies or to at least 95% of people who read books. Choice C need not be true because the sample includes only people who liked the book, and so the results do not extend to people who dislike the book. ',
     '',
     1
 );
@@ -2640,7 +2640,7 @@ INSERT INTO questions (
     'C',
     '{"A":"199","B":"299","C":"300","D":"337"}',
     'Choice C is correct. The decimal equivalent of 6% is 0.06. Since increasing the number n by 6% yields the number 318, this situation can be represented by the equation , or . Dividing both sides of this equation by 1.06 yields . Choice A is incorrect. This is the result when n is increased by 60%, not by 6%. Choice B is incorrect. This is the approximate result of decreasing 318 by 6%. Choice D is incorrect. This is the approximate result of increasing 318 by 6%.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -2699,7 +2699,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty',
     'B',
     '{}',
-    'Choice B is correct. Range is defined as the difference between the greatest and least values from a set of data. The greatest number of wheels made during a one-hour period was 24 wheels. The least number of wheels was 19. Hence, the range is , or 5.0. Choices A, C, and D are incorrect and may be the result of arithmetic errors or incorrectly identifying the greatest or least number of wheels made during a one-hour period. Easy Choice B is correct. It’s given that in a group,  of the items are red. It follows that the number of red items in the group can be represented by , where  represents the total number of items in the group. It’s also given that of all the red items in the group,  also have stripes. It follows that the number of items in the group that are red and have stripes can be represented by , or . The expression  represents  of . Since  represents the total number of items in the group, it follows that  of the items in the group are red and have stripes. Choice A is incorrect and may result from subtracting  from  rather than calculating  of . Choice C is incorrect and may result from adding  and  rather than calculating  of . Choice D is incorrect and may result from calculating the percentage that  is of  rather than calculating  of . Medium SAT Math',
+    'Choice B is correct. Range is defined as the difference between the greatest and least values from a set of data. The greatest number of wheels made during a one-hour period was 24 wheels. The least number of wheels was 19. Hence, the range is , or 5.0. Choices A, C, and D are incorrect and may be the result of arithmetic errors or incorrectly identifying the greatest or least number of wheels made during a one-hour period. Easy Choice B is correct. It’s given that in a group,  of the items are red. It follows that the number of red items in the group can be represented by , where  represents the total number of items in the group. It’s also given that of all the red items in the group,  also have stripes. It follows that the number of items in the group that are red and have stripes can be represented by , or . The expression  represents  of . Since  represents the total number of items in the group, it follows that  of the items in the group are red and have stripes. Choice A is incorrect and may result from subtracting  from  rather than calculating  of . Choice C is incorrect and may result from adding  and  rather than calculating  of . Choice D is incorrect and may result from calculating the percentage that  is of  rather than calculating  of . ',
     'Question ID 8cbf1415 ID: 8cbf1415 In a group, % of the items are red. Of all the red items in the group, % also have stripes. What percentage of the items in the group are red with stripes? A. % B. % C. % D. %',
     1
 );
@@ -2719,7 +2719,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 6a715bed ID: 6a715bed The table summarizes the distribution of age and assigned group for  participants in a study. – years– years yearsTotal Group A Group B Group C Total One of these participants will be selected at random. What is the probability of selecting a participant from group A, given that the participant is at least  years of age? (Express your answer as a decimal or fraction, not as a percent.)',
     'A',
     '{}',
-    'The correct answer is . It''s given that one of the participants will be selected at random. The probability of selecting a participant from group A given that the participant is at least  years of age is the number of participants in group A who are at least  years of age divided by the total number of participants who are at least  years of age. The table shows that in group A, there are  participants who are – years of age and  participants who are  years of age. Therefore, there are , or , participants in group A who are at least  years of age. The table also shows that there are a total of  participants who are – years of age and  participants who are  years of age. Therefore, there are a total of , or , participants who are at least  years of age. It follows that the probability of selecting a participant from group A given that the participant is at least  years of age is . Note that 23/60, .3833, and 0.383 are examples of ways to enter a correct answer. Hard SAT Math',
+    'The correct answer is . It''s given that one of the participants will be selected at random. The probability of selecting a participant from group A given that the participant is at least  years of age is the number of participants in group A who are at least  years of age divided by the total number of participants who are at least  years of age. The table shows that in group A, there are  participants who are – years of age and  participants who are  years of age. Therefore, there are , or , participants in group A who are at least  years of age. The table also shows that there are a total of  participants who are – years of age and  participants who are  years of age. Therefore, there are a total of , or , participants who are at least  years of age. It follows that the probability of selecting a participant from group A given that the participant is at least  years of age is . Note that 23/60, .3833, and 0.383 are examples of ways to enter a correct answer. ',
     '',
     1
 );
@@ -2739,7 +2739,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Question ID 3a6ed720 ID: 3a6ed720 Of  beads,  are silver. What percentage of the beads are silver? A. B. C. D.',
     'D',
     '{}',
-    'Choice D is correct. The proportion of the beads that are silver can be written as , or . Therefore, the percentage of the beads that are silver is , or . Choice A is incorrect. This is the percentage of the beads that are not silver. Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Easy SAT Math',
+    'Choice D is correct. The proportion of the beads that are silver can be written as , or . Therefore, the percentage of the beads that are silver is , or . Choice A is incorrect. This is the percentage of the beads that are not silver. Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. ',
     '',
     1
 );
@@ -2779,7 +2779,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Medium Question ID 28c6bd8c ID: 28c6bd8c The table above shows a summary of 1,200 responses to a survey question. Based on the table, how many of those surveyed get most of their medical information from either a doctor or the Internet?',
     'C',
     '{"A":"865","B":"887","C":"912","D":"926"}',
-    'Choice C is correct. According to the table, 63% of survey respondents get most of their medical information from a doctor and 13% get most of their medical information from the Internet. Therefore, 76% of the 1,200 survey respondents get their information from either a doctor or the Internet, and 76% of 1,200 is 912. Choices A, B, and D are incorrect. According to the table, 76% of survey respondents get their information from either a doctor or the Internet. Choice A is incorrect because 865 is about 72% (the percent of survey respondents who get most of their medical information from a doctor or from magazines/brochures), not 76%, of 1,200. Choice B is incorrect because 887 is about 74%, not 76%, of 1,200. Choice D is incorrect because 926 is about 77%, not 76%, of 1,200. Easy SAT Math',
+    'Choice C is correct. According to the table, 63% of survey respondents get most of their medical information from a doctor and 13% get most of their medical information from the Internet. Therefore, 76% of the 1,200 survey respondents get their information from either a doctor or the Internet, and 76% of 1,200 is 912. Choices A, B, and D are incorrect. According to the table, 76% of survey respondents get their information from either a doctor or the Internet. Choice A is incorrect because 865 is about 72% (the percent of survey respondents who get most of their medical information from a doctor or from magazines/brochures), not 76%, of 1,200. Choice B is incorrect because 887 is about 74%, not 76%, of 1,200. Choice D is incorrect because 926 is about 77%, not 76%, of 1,200. ',
     '',
     1
 );
@@ -2800,7 +2800,7 @@ INSERT INTO questions (
     'C',
     '{"A":"The percent of the students at the school who support a menu change is 38%.","B":"The percent of the students at the school who support a menu change is greater than 38%.","C":"Plausible values of the percent of the students at the school who support a menu change are between 32.5% and 43.5%.","D":"Plausible values of the number of the students at the school who support a menu change are between 295 and 305."}',
     'Choice C is correct. It’s given that an estimated 38% of sampled students at the school were in support of a menu change, with a margin of error of 5.5%. It follows that the percent of the students at the school who support a menu change is 38% plus or minus 5.5%. The lower bound of this estimation is , or 32.5%. The upper bound of this estimation is , or 43.5%. Therefore, plausible values of the percent of the students at the school who support a menu change are between 32.5% and 43.5%. Choice A is incorrect. This is the percent of the sampled students at the school who support a menu change. Choices B and D are incorrect and may result from misinterpreting the margin of error.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -2819,7 +2819,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Inference from sample statistics and margin of error Difficulty Question ID 642519d7 ID: 642519d7 A polling agency recently surveyed 1,000 adults who were selected at random from a large city and asked each of the adults, “Are you satisfied with the quality of air in the city?” Of those surveyed, 78 percent responded that they were satisfied with the quality of air in the city. Based on the results of the survey, which of the following statements must be true? 1. Of all adults in the city, 78 percent are satisfied with the quality of air in the city. 2. If another 1,000 adults selected at random from the city were surveyed, 78 percent of them would report they are satisfied with the quality of air in the city. 3. If 1,000 adults selected at random from a different city were surveyed, 78 percent of them would report they are satisfied with the quality of air in the city.',
     'A',
     '{"A":"None","B":"II only","C":"I and II only","D":"I and III only"}',
-    'Choice A is correct. Statement I need not be true. The fact that 78% of the 1,000 adults who were surveyed responded that they were satisfied with the air quality in the city does not mean that the exact same percentage of all adults in the city will be satisfied with the air quality in the city. Statement II need not be true because random samples, even when they are of the same size, are not necessarily identical with regard to percentages of people in them who have a certain opinion. Statement III need not be true for the same reason that statement II need not be true: results from different samples can vary. The variation may be even bigger for this sample since it would be selected from a different city. Therefore, none of the statements must be true. Choices B, C, and D are incorrect because none of the statements must be true. Medium SAT Math',
+    'Choice A is correct. Statement I need not be true. The fact that 78% of the 1,000 adults who were surveyed responded that they were satisfied with the air quality in the city does not mean that the exact same percentage of all adults in the city will be satisfied with the air quality in the city. Statement II need not be true because random samples, even when they are of the same size, are not necessarily identical with regard to percentages of people in them who have a certain opinion. Statement III need not be true for the same reason that statement II need not be true: results from different samples can vary. The variation may be even bigger for this sample since it would be selected from a different city. Therefore, none of the statements must be true. Choices B, C, and D are incorrect because none of the statements must be true. ',
     '',
     1
 );
@@ -2840,7 +2840,7 @@ INSERT INTO questions (
     'A',
     '{"A":"0.004","B":"0.04","C":"0.4","D":"4"}',
     'Choice A is correct. The probability of randomly selecting a defective MP3 player from the shipment is equal to the number of defective MP3 players divided by the total number of MP3 players in the shipment. Therefore, the probability is , which is equivalent to 0.004. Choice B is incorrect because 0.04 represents 4 defective MP3 players out of 100 rather than out of 1,000. Choice C is incorrect because 0.4 represents 4 defective MP3 players out of 10 rather than out of 1,000. Choice D is incorrect. This is the number of defective MP3 players in the shipment.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -2860,7 +2860,7 @@ INSERT INTO questions (
     'B',
     '{"A":"The 35 students in the sample","B":"All students at the school","C":"All middle school students in the city","D":"All students in the city"}',
     'Choice B is correct. The largest group to which the results of a study can be generalized is the population from which the random sample was chosen. In this case, the psychologist chose a random sample from all students at one particular middle school. Therefore, the largest group to which the results can be generalized is all the students at the school. Choice A is incorrect because this isn’t the largest group the results can be generalized to. Choices C and D are incorrect because these groups are larger than the population from which the random sample was chosen. Therefore, the sample isn’t representative of these groups.',
-    'Hard SAT Math',
+    '',
     1
 );
 
@@ -2899,7 +2899,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Hard Question ID 7e6c745f ID: 7e6c745f FoodProtein Cost 1 large egg6 grams$0.36 1 cup of milk8 grams$0.24 The table above shows the amount of protein in two foods and the cost of each food. Based on the table, what is the ratio of the cost per gram of protein in a large egg to the cost per gram of protein in a cup of milk?',
     'D',
     '{"A":"1 : 2","B":"2 : 3","C":"3 : 4","D":"2 : 1"}',
-    'Choice D is correct. The cost per gram of protein in 1 large egg is $0.36 ÷ 6 = $0.06. The cost per gram of protein in 1 cup of milk is $0.24 ÷ 8 = $0.03. It follows that the ratio of the cost per gram of protein in a large egg to the cost per gram of protein in a cup of milk is 0.06:0.03, which can be rewritten as 2:1. Choice A is incorrect and may result from finding the ratio of the cost per gram of protein in a cup of milk to the cost per gram of protein in a large egg (the reciprocal of the ratio specified in the question). Choices B and C are incorrect and may result from incorrectly calculating the unit rates or from errors made when simplifying the ratio. Medium SAT Math',
+    'Choice D is correct. The cost per gram of protein in 1 large egg is $0.36 ÷ 6 = $0.06. The cost per gram of protein in 1 cup of milk is $0.24 ÷ 8 = $0.03. It follows that the ratio of the cost per gram of protein in a large egg to the cost per gram of protein in a cup of milk is 0.06:0.03, which can be rewritten as 2:1. Choice A is incorrect and may result from finding the ratio of the cost per gram of protein in a cup of milk to the cost per gram of protein in a large egg (the reciprocal of the ratio specified in the question). Choices B and C are incorrect and may result from incorrectly calculating the unit rates or from errors made when simplifying the ratio. ',
     '',
     1
 );
@@ -2919,7 +2919,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID ec787383 ID: ec787383 A distance of  furlongs is equivalent to how many feet?',
     'A',
     '{}',
-    'The correct answer is . It''s given that  and . It follows that a distance of furlongs is equivalent to , or  feet. Medium SAT Math',
+    'The correct answer is . It''s given that  and . It follows that a distance of furlongs is equivalent to , or  feet. ',
     '',
     1
 );
@@ -2939,7 +2939,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 4ff597db ID: 4ff597db The mean amount of time that the 20 employees of a construction company have worked for the company is 6.7 years. After one of the employees leaves the company, the mean amount of time that the remaining employees have worked for the company is reduced to 6.25 years. How many years did the employee who left the company work for the company?',
     'D',
     '{"A":"0.45","B":"2.30","C":"9.00","D":"15.25"}',
-    'Choice D is correct. The mean amount of time that the 20 employees worked for the company is 6.7 years. This means that the total number of years all 20 employees worked for the company is (6.7)(20) = 134 years. After the employee left, the mean amount of time that the remaining 19 employees worked for the company is 6.25 years. Therefore, the total number of years all 19 employees worked for the company is (6.25)(19) = 118.75 years. It follows that the number of years that the employee who left had worked for the company is 134 – 118.75 = 15.25 years. Choice A is incorrect; this is the change in the mean, which isn’t the same as the amount of time worked by the employee who left. Choice B is incorrect and likely results from making the assumption that there were still 20 employees, rather than 19, at the company after the employee left and then subtracting the original mean of 6.7 from that result. Choice C is incorrect and likely results from making the assumption that there were still 20 employees, rather than 19, at the company after the employee left. Hard SAT Math',
+    'Choice D is correct. The mean amount of time that the 20 employees worked for the company is 6.7 years. This means that the total number of years all 20 employees worked for the company is (6.7)(20) = 134 years. After the employee left, the mean amount of time that the remaining 19 employees worked for the company is 6.25 years. Therefore, the total number of years all 19 employees worked for the company is (6.25)(19) = 118.75 years. It follows that the number of years that the employee who left had worked for the company is 134 – 118.75 = 15.25 years. Choice A is incorrect; this is the change in the mean, which isn’t the same as the amount of time worked by the employee who left. Choice B is incorrect and likely results from making the assumption that there were still 20 employees, rather than 19, at the company after the employee left and then subtracting the original mean of 6.7 from that result. Choice C is incorrect and likely results from making the assumption that there were still 20 employees, rather than 19, at the company after the employee left. ',
     '',
     1
 );
@@ -2959,7 +2959,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID 585de39a ID: 585de39a On May 10, 2015, there were 83 million Internet subscribers in Nigeria. The major Internet providers were MTN, Globacom, Airtel, Etisalat, and Visafone. By September 30, 2015, the number of Internet subscribers in Nigeria had increased to 97 million. If an Internet subscriber in Nigeria on September 30, 2015, is selected at random, the probability that the person selected was an MTN subscriber is 0.43. There were p million MTN subscribers in Nigeria on September 30, 2015. To the nearest integer, what is the value of p ?',
     'A',
     '{}',
-    'The correct answer is 42. It’s given that in Nigeria on September 30, 2015, the probability of selecting an MTN subscriber from all Internet subscribers is 0.43, that there were p million, or , MTN subscribers, and that there were 97 million, or 97,000,000, Internet subscribers. The probability of selecting an MTN subscriber from all Internet subscribers can be found by dividing the number of MTN subscribers by the total number of Internet subscribers. Therefore, the equation can be used to solve for p. Dividing 1,000,000 from the numerator and denominator of the expression on the left-hand side yields . Multiplying both sides of this equation by 97 yields , which, to the nearest integer, is 42. Hard SAT Math',
+    'The correct answer is 42. It’s given that in Nigeria on September 30, 2015, the probability of selecting an MTN subscriber from all Internet subscribers is 0.43, that there were p million, or , MTN subscribers, and that there were 97 million, or 97,000,000, Internet subscribers. The probability of selecting an MTN subscriber from all Internet subscribers can be found by dividing the number of MTN subscribers by the total number of Internet subscribers. Therefore, the equation can be used to solve for p. Dividing 1,000,000 from the numerator and denominator of the expression on the left-hand side yields . Multiplying both sides of this equation by 97 yields , which, to the nearest integer, is 42. ',
     '',
     1
 );
@@ -2979,7 +2979,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Question ID 374b18f9 ID: 374b18f9 The number of acres of useful timberland in 13 counties in California is summarized in the box plot above. Which of the following is closest to the median number of acres?',
     'B',
     '{"A":"4,399","B":"7,067","C":"8,831","D":"10,595"}',
-    'Choice B is correct. The median of the data summarized by a box plot is the value associated with the vertical line segment within the box. According to the box plot shown, this value is slightly greater than 7,000. Therefore, the closest value for the median number of acres is 7,067. Choice A is incorrect. This is the value associated with the vertical line segment forming the left-hand side of the box. Choice C is incorrect. This value is greater than the value associated with the vertical line segment within the box. Choice D is incorrect. This is the value associated with the vertical line segment forming the right-hand side of the box. Easy SAT Math',
+    'Choice B is correct. The median of the data summarized by a box plot is the value associated with the vertical line segment within the box. According to the box plot shown, this value is slightly greater than 7,000. Therefore, the closest value for the median number of acres is 7,067. Choice A is incorrect. This is the value associated with the vertical line segment forming the left-hand side of the box. Choice C is incorrect. This value is greater than the value associated with the vertical line segment within the box. Choice D is incorrect. This is the value associated with the vertical line segment forming the right-hand side of the box. ',
     '',
     1
 );
@@ -2999,7 +2999,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID cf0ae57a ID: cf0ae57a The scatterplot above shows the densities of 7 planetoids, in grams per cubic centimeter, with respect to their average distances from the Sun in astronomical units (AU). The line of best fit is also shown. An astronomer has discovered a new planetoid about 1.2 AU from the Sun. According to the line of best fit, which of the following best approximates the density of the planetoid, in grams per cubic centimeter?',
     'C',
     '{"A":"3.6","B":"4.1","C":"4.6","D":"5.5"}',
-    'Choice C is correct. According to the line of best fit, a planetoid with a distance from the Sun of 1.2 AU has a predicted density between  and . The only choice in this range is 4.6. Choices A, B, and D are incorrect and may result from misreading the information in the scatterplot. Easy SAT Math',
+    'Choice C is correct. According to the line of best fit, a planetoid with a distance from the Sun of 1.2 AU has a predicted density between  and . The only choice in this range is 4.6. Choices A, B, and D are incorrect and may result from misreading the information in the scatterplot. ',
     '',
     1
 );
@@ -3039,7 +3039,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty values farther from the mean. The two histograms shown have the same scale on the horizontal axis. Therefore, their standard deviations can be compared by visually comparing the spreads of their histograms. The distribution summarized by each histogram is symmetric. Therefore, the mean of the data set for each histogram is a value in the middle bar of that histogram. The middle bar of each histogram has a value of at least  thousand units sold but less than  thousand units sold. Therefore, the mean of the data set for each histogram is at least  thousand and less than  thousand. The histogram for company A shows all the values in that data set are close to the mean. For company B, the histogram shows there are fewer values close to the mean and more values farther from the mean. Therefore, the standard deviation of number of units sold for company A is less than the standard deviation of number of units sold for company B. Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. Medium Question ID d6456c7a ID: d6456c7a A certain park has an area of  square yards. What is the area, in square miles, of this park? A. B. C. D.',
     'B',
     '{}',
-    'Choice B is correct. Since  mile is equal to  yards,  square mile is equal to , or , square yards. It’s given that the park has an area of  square yards. Therefore, the park has an area of , or  square miles. Thus, the area, in square miles, of the park is . Choice A is incorrect and may result from conceptual or calculation errors. Choice C is incorrect. This is the square root of the area of the park in square yards, not the area of the park in square miles. Choice D is incorrect and may result from converting  yards to miles, rather than converting  square yards to square miles. Hard SAT Math',
+    'Choice B is correct. Since  mile is equal to  yards,  square mile is equal to , or , square yards. It’s given that the park has an area of  square yards. Therefore, the park has an area of , or  square miles. Thus, the area, in square miles, of the park is . Choice A is incorrect and may result from conceptual or calculation errors. Choice C is incorrect. This is the square root of the area of the park in square yards, not the area of the park in square miles. Choice D is incorrect and may result from converting  yards to miles, rather than converting  square yards to square miles. ',
     '',
     1
 );
@@ -3059,7 +3059,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 11b06e35 ID: 11b06e35 The density of a certain solid substance is  kilograms per cubic meter. A sample of this substance is in the shape of a cube, where each edge has a length of  meters. To the nearest whole number, what is the mass, in kilograms, of this sample? A. B. C. D.',
     'A',
     '{}',
-    'Choice A is correct. It''s given that the sample is in the shape of a cube with edge lengths of  meters. Therefore, the volume of the sample is , or , cubic meters. It''s also given that the sample has a density of  kilograms per cubic meter. Therefore, the mass of this sample is , or  kilograms. Rounding this mass to the nearest whole number gives  kilograms. Therefore, to the nearest whole number, the mass, in kilograms, of this sample is . Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. Hard SAT Math',
+    'Choice A is correct. It''s given that the sample is in the shape of a cube with edge lengths of  meters. Therefore, the volume of the sample is , or , cubic meters. It''s also given that the sample has a density of  kilograms per cubic meter. Therefore, the mass of this sample is , or  kilograms. Rounding this mass to the nearest whole number gives  kilograms. Therefore, to the nearest whole number, the mass, in kilograms, of this sample is . Choice B is incorrect and may result from conceptual or calculation errors. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. ',
     '',
     1
 );
@@ -3080,7 +3080,7 @@ INSERT INTO questions (
     'C',
     '{"A":"2.5","B":"2.0","C":"1.5","D":"1.0"}',
     'Choice C is correct. The predicted increase in total fat, in grams, for every increase of 1 gram in total protein is represented by the slope of the line of best fit. Any two points on the line can be used to calculate the slope of the line as the change in total fat over the change in total protein. For instance, it can be estimated that the points  and  are on the line of best fit, and the slope of the line that passes through them is , or 1.4. Of the choices given, 1.5 is the closest to the slope of the line of best fit. Choices A, B, and D are incorrect and may be the result of incorrectly finding ordered pairs that lie on the line of best fit or of incorrectly calculating the slope.',
-    'Hard SAT Math',
+    '',
     1
 );
 
@@ -3120,7 +3120,7 @@ INSERT INTO questions (
     'D',
     '{"A":"Exactly 5 ounces","B":"3 ounces more than the amount of yellow paint used in the first batch","C":"1.5 times the amount of yellow paint used in the first batch","D":"1.5 times the amount of blue paint used in the second batch"}',
     'Choice D is correct. It’s given that Anita used a ratio of 2 ounces of blue paint to 3 ounces of yellow paint for the first batch. For any batch of paint that uses the same ratio, the amount of yellow paint used will be , or 1.5, times the amount of blue paint used in the batch. Therefore, the amount of yellow paint Anita will use in the second batch will be 1.5 times the amount of blue paint used in the second batch. Alternate approach: It’s given that Anita used a ratio of 2 ounces of blue paint to 3 ounces of yellow paint for the first batch and that she will use 5 ounces of blue paint for the second batch. A proportion can be set up to solve for x, the amount of yellow paint she will use for the second batch: . Multiplying both sides of this equation by 3 yields , and multiplying both sides of this equation by x yields . Dividing both sides of this equation by 2 yields . Since Anita will use 7.5 ounces of yellow paint for the second batch, this is  times the amount of blue paint (5 ounces) used in the second batch. Choices A, B, and C are incorrect and may result from incorrectly interpreting the ratio of blue paint to yellow paint used.',
-    'Hard SAT Math',
+    '',
     1
 );
 
@@ -3139,7 +3139,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID 6fca0144 ID: 6fca0144 For a baobab tree habitat in South Africa, a scientist randomly selected  baobab trees that were  years old and randomly assigned them to two groups. Each group was subjected to a different watering pattern for  consecutive years to observe whether the watering pattern affects the trees’ growth rate. Based on the design of the study, what is the largest group to which these results can be applied?',
     'D',
     '{"A":"All the  baobab trees that were selected in this habitat","B":"All the baobab trees that were  years old in this habitat","C":"All the baobab trees that were  years old in South Africa","D":"All the baobab trees that were  years old in this habitat"}',
-    'Choice D is correct. When a study uses a randomly selected sample, the largest group to which the results of the study can be applied is the population from which the sample was selected. It''s given that the scientist randomly selected the trees from the baobab trees in a certain habitat that were  years old. Therefore, the largest group to which the results of this study can be applied is all the baobab trees that were  years old in this habitat. Choice A is incorrect. Since the sample was randomly selected from a population, the results can be applied to a larger group than the sample. Choice B is incorrect. The sample was selected from a population of baobab trees that were  years old, not  years old. Choice C is incorrect. The sample was selected from a certain tree habitat in South Africa, not from all the baobab trees that were  years old in South Africa. Hard SAT Math',
+    'Choice D is correct. When a study uses a randomly selected sample, the largest group to which the results of the study can be applied is the population from which the sample was selected. It''s given that the scientist randomly selected the trees from the baobab trees in a certain habitat that were  years old. Therefore, the largest group to which the results of this study can be applied is all the baobab trees that were  years old in this habitat. Choice A is incorrect. Since the sample was randomly selected from a population, the results can be applied to a larger group than the sample. Choice B is incorrect. The sample was selected from a population of baobab trees that were  years old, not  years old. Choice C is incorrect. The sample was selected from a certain tree habitat in South Africa, not from all the baobab trees that were  years old in South Africa. ',
     '',
     1
 );
@@ -3159,7 +3159,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Evaluating statistical claims: Observational studies and experiments Difficulty Question ID 34f8cd89 ID: 34f8cd89 of the items in a box are green. Of those,  are also rectangular. Of the green rectangular items,  are also metal. Which of the following is closest to the percentage of the items in the box that are not rectangular green metal items? A. B. C. D.',
     'C',
     '{}',
-    'Choice C is correct. It''s given that  of the items in a box are green. Let  represent the total number of items in the box. It follows that , or , items in the box are green. It''s also given that of those,  are also rectangular. Therefore, , or , items in the box are green rectangular items. It''s also given that of the green rectangular items, are also metal. Therefore, , or , items in the box are rectangular green metal items. The number of the items in the box that are not rectangular green metal items is the total number of items in the box minus the number of rectangular green metal items in the box. Therefore, the number of items in the box that are not rectangular green metal items is , or . The percentage of items in the box that are not rectangular green metal items is the percentage that  is of . If  represents this percentage, the value of  is , or . Of the given choices,  is closest to the percentage of items in the box that are not rectangular green metal items. Choice A is incorrect and may result from conceptual or calculation errors. Choice B is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. Hard SAT Math',
+    'Choice C is correct. It''s given that  of the items in a box are green. Let  represent the total number of items in the box. It follows that , or , items in the box are green. It''s also given that of those,  are also rectangular. Therefore, , or , items in the box are green rectangular items. It''s also given that of the green rectangular items, are also metal. Therefore, , or , items in the box are rectangular green metal items. The number of the items in the box that are not rectangular green metal items is the total number of items in the box minus the number of rectangular green metal items in the box. Therefore, the number of items in the box that are not rectangular green metal items is , or . The percentage of items in the box that are not rectangular green metal items is the percentage that  is of . If  represents this percentage, the value of  is , or . Of the given choices,  is closest to the percentage of items in the box that are not rectangular green metal items. Choice A is incorrect and may result from conceptual or calculation errors. Choice B is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. ',
     '',
     1
 );
@@ -3199,7 +3199,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Medium Question ID 8213b1b3 ID: 8213b1b3 According to a set of standards, a certain type of substance can contain a maximum of  phosphorus by mass. If a sample of this substance has a mass of  grams, what is the maximum mass, in grams, of phosphorus the sample can contain to meet these standards?',
     'A',
     '{}',
-    'The correct answer is . It''s given that a certain type of substance can contain a maximum of  phosphorus by mass to meet a set of standards. If a sample of the substance has a mass of  grams, it follows that the maximum mass, in grams, of phosphorus the sample can contain to meet the standards is  of , or , which is equivalent to , or . Note that .0014 and 0.001 are examples of ways to enter a correct answer. Hard SAT Math',
+    'The correct answer is . It''s given that a certain type of substance can contain a maximum of  phosphorus by mass to meet a set of standards. If a sample of the substance has a mass of  grams, it follows that the maximum mass, in grams, of phosphorus the sample can contain to meet the standards is  of , or , which is equivalent to , or . Note that .0014 and 0.001 are examples of ways to enter a correct answer. ',
     '',
     1
 );
@@ -3219,7 +3219,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 46b2e169 ID: 46b2e169 A box contains  red pens and  blue pens. If one of these pens is selected at random, what is the probability of selecting a red pen? (Express your answer as a decimal or fraction, not as a percent.)',
     'A',
     '{}',
-    'The correct answer is . It''s given that a box contains  red pens and  blue pens. If one of these pens is selected at random, the probability of selecting a red pen is the number of red pens in the box divided by the number of red and blue pens in the box. The number of red and blue pens in the box is , or . Since there are  red pens in the box, it follows that the probability of selecting a red pen is . Note that 13/50 and .26 are examples of ways to enter a correct answer. Medium SAT Math',
+    'The correct answer is . It''s given that a box contains  red pens and  blue pens. If one of these pens is selected at random, the probability of selecting a red pen is the number of red pens in the box divided by the number of red and blue pens in the box. The number of red and blue pens in the box is , or . Since there are  red pens in the box, it follows that the probability of selecting a red pen is . Note that 13/50 and .26 are examples of ways to enter a correct answer. ',
     '',
     1
 );
@@ -3240,7 +3240,7 @@ INSERT INTO questions (
     'B',
     '{"A":"50","B":"72","C":"75","D":"132"}',
     'Choice B is correct. The decimal equivalent of 20% is 0.2. The number that is 20% greater than 60 is also 120% of 60. The decimal equivalent of 120% is 1.2, and . Alternate approach: 10% of 60 is 6, and 20% of 60 is double that amount, or 12. It follows that the number that is 20% greater than 60 is 12 more than 60, or . Choice A is incorrect and may result from dividing, instead of multiplying, 60 by 1.2. Choice C is incorrect because it’s 25% greater than 60, rather than 20% greater than 60. Choice D is incorrect and may result from multiplying 60 by 2.2 instead of 1.2.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -3259,7 +3259,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 9ee22c16 ID: 9ee22c16 A random sample of 400 town voters were asked if they plan to vote for Candidate A or Candidate B for mayor. The results were sorted by gender and are shown in the table below. Plan to vote for Candidate A Plan to vote for Candidate B Female20220 Male34144 The town has a total of 6,000 voters. Based on the table, what is the best estimate of the number of voters who plan to vote for Candidate A?',
     'A',
     '{}',
-    'The correct answer is 3,540. According to the table, of 400 voters randomly sampled, the total number of men and women who plan to vote for Candidate A is . The best estimate of the total number of voters in the town who plan to vote for Candidate A is the fraction of voters in the sample who plan to vote for Candidate A, , multiplied by the total voter population of 6000. Therefore, the answer is . Medium SAT Math',
+    'The correct answer is 3,540. According to the table, of 400 voters randomly sampled, the total number of men and women who plan to vote for Candidate A is . The best estimate of the total number of voters in the town who plan to vote for Candidate A is the fraction of voters in the sample who plan to vote for Candidate A, , multiplied by the total voter population of 6000. Therefore, the answer is . ',
     '',
     1
 );
@@ -3279,7 +3279,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Inference from sample statistics and margin of error Difficulty Question ID 6e4a60dd ID: 6e4a60dd Rita’s total bill at a restaurant was $25.00, including tax. If she left a tip of 20% of the total bill, what was the amount of the tip?',
     'D',
     '{"A":"$3.50","B":"$4.00","C":"$4.50","D":"$5.00"}',
-    'Choice D is correct. The total bill was $25.00. The percentage 20% is equivalent to the decimal 0.2. The tip is the product of the percentage and the total bill; therefore, , so the tip was $5.00. Choices A, B, and C are incorrect and may be the result of incorrectly converting the given percentage or a calculation error. Easy SAT Math',
+    'Choice D is correct. The total bill was $25.00. The percentage 20% is equivalent to the decimal 0.2. The tip is the product of the percentage and the total bill; therefore, , so the tip was $5.00. Choices A, B, and C are incorrect and may be the result of incorrectly converting the given percentage or a calculation error. ',
     '',
     1
 );
@@ -3300,7 +3300,7 @@ INSERT INTO questions (
     'A',
     '{"A":"$480","B":"$512","C":"$556","D":"$640"}',
     'Choice B is correct. If the stove’s value depreciates by 20% of the previous year’s estimated value, then each year it retains 100% – 20% = 80%, or 0.80, of the previous year’s estimated value. Since the stove’s value was $800 when Thomas installed it, the estimated value after two years would be (0.80)(0.80)($800) = $512. Choice A is incorrect. This is the value of the stove if each year it had depreciated by 20% of the original value rather than by 20% of the previous year’s estimated value. Choice C is incorrect and may be the result of a computational error. Choice D is incorrect. This is the estimated value of the stove 1 year after Thomas installed it, not 2 years.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -3319,7 +3319,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID af142f8d ID: af142f8d Amount investedBalance increase Account A   $5006% annual interest Account B$1,000$25 per year Two investments were made as shown in the table above. The interest in Account A is compounded once per year. Which of the following is true about the investments?',
     'A',
     '{"A":"Account A always earns more money per year than Account B.","B":"Account A always earns less money per year than Account B.","C":"Account A earns more money per year than Account B at first but eventually earns less money per year.","D":"Account A earns less money per year than Account B at first but eventually earns more money per year."}',
-    'Choice A is correct. Account A starts with $500 and earns interest at 6% per year, so in the first year Account A earns (500) (0.06) = $30, which is greater than the $25 that Account B earns that year. Compounding interest can be modeled by an increasing exponential function, so each year Account A will earn more money than it did the previous year. Therefore, each year Account A earns at least $30 in interest. Since Account B always earns $25 each year, Account A always earns more money per year than Account B. Choices B and D are incorrect. Account A earns $30 in the first year, which is greater than the $25 Account B earns in the first year. Therefore, neither the statement that Account A always earns less money per year than Account B nor the statement that Account A earns less money than Account B at first can be true. Choice C is incorrect. Since compounding interest can be modeled by an increasing exponential function, each year Account A will earn more money than it did the previous year. Therefore, Account A always earns at least $30 per year, which is more than the $25 per year that Account B earns. Hard SAT Math',
+    'Choice A is correct. Account A starts with $500 and earns interest at 6% per year, so in the first year Account A earns (500) (0.06) = $30, which is greater than the $25 that Account B earns that year. Compounding interest can be modeled by an increasing exponential function, so each year Account A will earn more money than it did the previous year. Therefore, each year Account A earns at least $30 in interest. Since Account B always earns $25 each year, Account A always earns more money per year than Account B. Choices B and D are incorrect. Account A earns $30 in the first year, which is greater than the $25 Account B earns in the first year. Therefore, neither the statement that Account A always earns less money per year than Account B nor the statement that Account A earns less money than Account B at first can be true. Choice C is incorrect. Since compounding interest can be modeled by an increasing exponential function, each year Account A will earn more money than it did the previous year. Therefore, Account A always earns at least $30 per year, which is more than the $25 per year that Account B earns. ',
     '',
     1
 );
@@ -3340,7 +3340,7 @@ INSERT INTO questions (
     'A',
     '{}',
     'Choice A is correct. It’s given that . Multiplying both sides of this equation by 2 yields , or . Choice B is incorrect and may result from dividing, instead of multiplying, the right-hand side of the equation by 2. Choices C and D are incorrect and may result from calculation errors.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -3399,7 +3399,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Choices B, C, and D are incorrect and may result from reading data from the table incorrectly. Since the total female penguin population is 180,  of the total female penguin population is 60. The numbers of female emperor (27), female gentoo (54), and female macaroni (40) penguins are not as close to 60 as the number of female chinstrap penguins (59). Medium Question ID 869a32f1 ID: 869a32f1 The high temperature, in degrees Fahrenheit (°F), in a certain city was recorded for each of 5 days. The data are shown below. Day12345 High temperature (°F)8180818182 Over this 5-day period, which of the following is NOT equal to 81°F?',
     'D',
     '{"A":"Median of the high temperatures","B":"Mean of the high temperatures","C":"Mode of the high temperatures","D":"Range of the high temperatures"}',
-    'Choice D is correct. The range of a data set is the difference between the maximum and the minimum values in the set. The maximum value among the high temperatures in the table is 82°F and the minimum value is 80°F. Therefore, the range is 82°F – 80°F = 2°F. Choice A is incorrect. The median of a data set is the middle value when the values in the set are ordered from least to greatest. Ordering the high temperatures this way gives the list 80, 81, 81, 81, 82. Therefore, the median high temperature is 81°F. Choice B is incorrect. The mean high temperature is . Choice C is incorrect. The mode is the value that occurs the greatest number of times. For the set of high temperatures shown, 81 is the value that occurs 3 times, and therefore, 81°F is the mode of the high temperatures. Easy SAT Math',
+    'Choice D is correct. The range of a data set is the difference between the maximum and the minimum values in the set. The maximum value among the high temperatures in the table is 82°F and the minimum value is 80°F. Therefore, the range is 82°F – 80°F = 2°F. Choice A is incorrect. The median of a data set is the middle value when the values in the set are ordered from least to greatest. Ordering the high temperatures this way gives the list 80, 81, 81, 81, 82. Therefore, the median high temperature is 81°F. Choice B is incorrect. The mean high temperature is . Choice C is incorrect. The mode is the value that occurs the greatest number of times. For the set of high temperatures shown, 81 is the value that occurs 3 times, and therefore, 81°F is the mode of the high temperatures. ',
     '',
     1
 );
@@ -3419,7 +3419,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID 048811bd ID: 048811bd What is  of ? A. B. C. D.',
     'B',
     '{}',
-    'Choice B is correct.  of a quantity means  times the quantity. Therefore,  of  can be represented as , which is equivalent to , or . Therefore,  of  is . Choice A is incorrect. This is  of , not  of . Choice C is incorrect. This is  of , not  of . Choice D is incorrect. This is , not  of . Easy SAT Math',
+    'Choice B is correct.  of a quantity means  times the quantity. Therefore,  of  can be represented as , which is equivalent to , or . Therefore,  of  is . Choice A is incorrect. This is  of , not  of . Choice C is incorrect. This is  of , not  of . Choice D is incorrect. This is , not  of . ',
     '',
     1
 );
@@ -3439,7 +3439,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 6a305cd0 ID: 6a305cd0 In a study, the data from a random sample of a population had a mean of 37, with an associated margin of error of 3. Which of the following is the most appropriate conclusion that can be made about the population mean?',
     'C',
     '{"A":"It is less than 37.","B":"It is greater than 37.","C":"It is between 34 and 40.","D":"It is less than 34 or greater than 40."}',
-    'Choice C is correct. It’s given that the mean of the data from a random sample of a population is 37, with an associated margin of error of 3. The most appropriate conclusion that can be made is that the mean of the entire population will fall between 37, plus or minus 3. Therefore, the population mean is between  and . Choice A is incorrect. While it’s an appropriate conclusion that the population mean is as low as , or 34, it isn’t appropriate to conclude that the population mean is less than 34. Choice B is incorrect. While it’s an appropriate conclusion that the population mean is as high as , or 40, it isn’t appropriate to conclude that the population mean is greater than 40. Choice D is incorrect. It isn’t an appropriate conclusion that the population mean is less than 34 or greater than 40. Easy SAT Math',
+    'Choice C is correct. It’s given that the mean of the data from a random sample of a population is 37, with an associated margin of error of 3. The most appropriate conclusion that can be made is that the mean of the entire population will fall between 37, plus or minus 3. Therefore, the population mean is between  and . Choice A is incorrect. While it’s an appropriate conclusion that the population mean is as low as , or 34, it isn’t appropriate to conclude that the population mean is less than 34. Choice B is incorrect. While it’s an appropriate conclusion that the population mean is as high as , or 40, it isn’t appropriate to conclude that the population mean is greater than 40. Choice D is incorrect. It isn’t an appropriate conclusion that the population mean is less than 34 or greater than 40. ',
     '',
     1
 );
@@ -3460,7 +3460,7 @@ INSERT INTO questions (
     'A',
     '{}',
     'The correct answer is 2.6. Since the mean of a set of numbers can be found by adding the numbers together and dividing by how many numbers there are in the set, the mean mass, in kilograms, of the rocks Andrew collected is , or 2.8. Since the mean mass of the rocks Maria collected is 0.1 kilogram greater than the mean mass of rocks Andrew collected, the mean mass of the rocks Maria collected is kilograms. The value of x can be found by writing an equation for finding the mean: . Solving this equation gives . Note that 2.6 and 13/5 are examples of ways to enter a correct answer.',
-    'Hard SAT Math',
+    '',
     1
 );
 
@@ -3480,7 +3480,7 @@ INSERT INTO questions (
     'D',
     '{"A":"Exactly 75 customers must have purchased fruit last Thursday.","B":"Exactly 375 customers must have purchased fruit last Thursday.","C":"The best estimate for the number of customers who purchased fruit last Thursday is 75.","D":"The best estimate for the number of customers who purchased fruit last Thursday is 375."}',
     'Choice D is correct. It’s given that the manager took a random selection of the receipts of 80 customers from a total of 1,500. It’s also given that of those 80 receipts, 20 showed that the customer had purchased fruit. This means that an appropriate estimate of the fraction of customers who purchased fruit is , or . Multiplying this fraction by the total number of customers yields . Therefore, the best estimate for the number of customers who purchased fruit is 375. Choices A and B are incorrect because an exact number of customers can’t be known from taking a random selection. Additionally, choice A may also be the result of a calculation error. Choice C is incorrect and may result from a calculation error.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -3499,7 +3499,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Inference from sample statistics and margin of error Difficulty Question ID 34e18ce4 ID: 34e18ce4 There are  objects in a box. Of these objects,  are balls. How many balls are in the box? A. B. C. D.',
     'B',
     '{}',
-    'Choice B is correct. It’s given that  of the  objects in the box are balls. Therefore, the number of balls in the box can be found by calculating  of , which is equal to , or . Choice A is incorrect. This is the percentage of objects in the box that are balls, not the number of balls in the box. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. Easy SAT Math',
+    'Choice B is correct. It’s given that  of the  objects in the box are balls. Therefore, the number of balls in the box can be found by calculating  of , which is equal to , or . Choice A is incorrect. This is the percentage of objects in the box that are balls, not the number of balls in the box. Choice C is incorrect and may result from conceptual or calculation errors. Choice D is incorrect and may result from conceptual or calculation errors. ',
     '',
     1
 );
@@ -3539,7 +3539,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Medium Question ID 1dcea480 ID: 1dcea480 A bag contains a total of 60 marbles. A marble is to be chosen at random from the bag. If the probability that a blue marble will be chosen is 0.35, how many marbles in the bag are blue?',
     'A',
     '{"A":"21","B":"25","C":"35","D":"39"}',
-    'Choice A is correct. Multiplying the number of marbles in the bag by the probability of selecting a blue marble gives the number of blue marbles in the bag. Since the bag contains a total of 60 marbles and the probability that a blue marble will be selected from the bag is 0.35, there are a total of  blue marbles in the bag. Choice B is incorrect and may result from subtracting 35 from 60. Choice C is incorrect. This would be the number of blue marbles in the bag if there were a total of 100 marbles, not 60 marbles. Choice D is incorrect. This is the number of marbles in the bag that aren’t blue. Easy SAT Math',
+    'Choice A is correct. Multiplying the number of marbles in the bag by the probability of selecting a blue marble gives the number of blue marbles in the bag. Since the bag contains a total of 60 marbles and the probability that a blue marble will be selected from the bag is 0.35, there are a total of  blue marbles in the bag. Choice B is incorrect and may result from subtracting 35 from 60. Choice C is incorrect. This would be the number of blue marbles in the bag if there were a total of 100 marbles, not 60 marbles. Choice D is incorrect. This is the number of marbles in the bag that aren’t blue. ',
     '',
     1
 );
@@ -3599,7 +3599,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Probability and conditional probability Difficulty Choice D is incorrect. This is the probability of randomly selecting a participant who is at least  years of age, given that the participant is in group A. Hard Question ID 661dfddd ID: 661dfddd The scatterplot above shows the high temperature on a certain day and the elevation of 8 different locations in the Lake Tahoe Basin. A line of best fit for the data is also shown. Which of the following statements best describes the association between the elevation and the temperature of locations in the Lake Tahoe Basin?',
     'B',
     '{"A":"As the elevation increases, the temperature tends to increase.","B":"As the elevation increases, the temperature tends to decrease.","C":"As the elevation decreases, the temperature tends to decrease.","D":"There is no association between the elevation and the temperature."}',
-    'Choice B is correct. The association between the elevation and the temperature of locations in the Lake Tahoe Basin can be described by looking at the direction of the line of best fit. The line of best fit slopes downward, which corresponds to the temperature decreasing as the elevation increases. Choices A and C are incorrect. Both of these choices would be represented by a line of best fit that slopes from the lower left to the upper right of the graph, which isn’t what’s shown on the graph. Choice D is incorrect. This choice would be represented by a line of best fit that is horizontal or has a slope very close to 0. This is not what’s shown on the graph. Easy SAT Math',
+    'Choice B is correct. The association between the elevation and the temperature of locations in the Lake Tahoe Basin can be described by looking at the direction of the line of best fit. The line of best fit slopes downward, which corresponds to the temperature decreasing as the elevation increases. Choices A and C are incorrect. Both of these choices would be represented by a line of best fit that slopes from the lower left to the upper right of the graph, which isn’t what’s shown on the graph. Choice D is incorrect. This choice would be represented by a line of best fit that is horizontal or has a slope very close to 0. This is not what’s shown on the graph. ',
     '',
     1
 );
@@ -3619,7 +3619,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Question ID 8193e8cd ID: 8193e8cd The mean of the list of numbers above is what fraction of the sum of the five numbers?',
     'A',
     '{}',
-    'The correct answer is . The mean of the list of numbers is found by dividing the sum of the numbers by the number of values in the list. Since there are 5 numbers in the list, the mean is  of the sum of the numbers. Note that 1/5 and .2 are examples of ways to enter a correct answer. Medium SAT Math',
+    'The correct answer is . The mean of the list of numbers is found by dividing the sum of the numbers by the number of values in the list. Since there are 5 numbers in the list, the mean is  of the sum of the numbers. Note that 1/5 and .2 are examples of ways to enter a correct answer. ',
     '',
     1
 );
@@ -3639,7 +3639,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID 89c39d77 ID: 89c39d77 A competition consisted of four different events. One participant completed the first event with an average speed of miles per hour. What was this average speed, in yards per hour?',
     'A',
     '{}',
-    'The correct answer is . It''s given that . It follows that an average speed of  miles per hour is equivalent to , or  yards per hour. Medium SAT Math',
+    'The correct answer is . It''s given that . It follows that an average speed of  miles per hour is equivalent to , or  yards per hour. ',
     '',
     1
 );
@@ -3660,7 +3660,7 @@ INSERT INTO questions (
     'D',
     '{"A":"$12","B":"$30","C":"$36","D":"$40"}',
     'Choice D is correct. It’s given that the original price of the jacket has been reduced by 20%. Multiplying the original price, $50, by 20% gives the amount, in dollars, that the price of the jacket is reduced by: . Subtracting this value from the original price results in the sale price of the jacket: , or $40. Choices A, B, and C are incorrect and may result from a conceptual or calculation error.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -3679,7 +3679,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID a9647302 ID: a9647302 For quality control, a company that manufactures lightbulbs conducted five different trials. In each trial, 500 different lightbulbs were tested. The bar graph above shows the number of defective lightbulbs found in each trial. What is the mean number of defective lightbulbs for the five trials?',
     'B',
     '{"A":"4.0","B":"4.2","C":"4.6","D":"5.0"}',
-    'Choice B is correct. The numbers of defective lightbulbs found for the five trials are 4, 7, 1, 3, and 6, respectively. The mean is therefore . Choice A is incorrect. This is the median number of defective lightbulbs for the five trials. Choice C is incorrect and may result from an arithmetic error. Choice D is incorrect and may result from mistaking the number of trials for the number of defective lightbulbs. Easy SAT Math',
+    'Choice B is correct. The numbers of defective lightbulbs found for the five trials are 4, 7, 1, 3, and 6, respectively. The mean is therefore . Choice A is incorrect. This is the median number of defective lightbulbs for the five trials. Choice C is incorrect and may result from an arithmetic error. Choice D is incorrect and may result from mistaking the number of trials for the number of defective lightbulbs. ',
     '',
     1
 );
@@ -3700,7 +3700,7 @@ INSERT INTO questions (
     'B',
     '{"A":"4.5","B":"8","C":"13.5","D":"15"}',
     'Choice B is correct. The median of a set of numbers is the middle number when the values in the set are ordered from least to greatest. There are 33 fish, so in an ordered list of the weights, the 17th value would be the median weight. The 10 fish in tank A weigh the least, and these 10 weights would be the first 10 values on the ordered list. The 11 fish in tank B have the next set of higher weights, and so would be the 11th through 21st weights in the ordered list, which includes the median weight as the 17th value. The fish in tank B weigh at least 5 ounces but no more than 13 ounces; of the given choices, only 8 ounces falls within this range of values. Choice A is incorrect. It’s given that tank A has ten fish weighing less than 5 ounces. Since there are more than ten fish in tanks B and C combined, the median weight cannot be less than 5 ounces. Choice C and D are incorrect. It’s given that tank C has twelve fish weighing more than 13 ounces. There are more than twelve fish in tanks A and B combined, so the median weight can’t be more than 13 ounces.',
-    'Medium SAT Math',
+    '',
     1
 );
 
@@ -3719,7 +3719,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Question ID 9ba3e283 ID: 9ba3e283 In State X, Mr. Camp’s eighth-grade class consisting of 26 students was surveyed and 34.6 percent of the students reported that they had at least two siblings. The average eighth‑grade class size in the state is 26. If the students in Mr. Camp’s class are representative of students in the state’s eighth-grade classes and there are 1,800 eighth-grade classes in the state, which of the following best estimates the number of eighth‑grade students in the state who have fewer than two siblings?',
     'C',
     '{"A":"16,200","B":"23,400","C":"30,600","D":"46,800"}',
-    'Choice C is correct. It is given that 34.6% of 26 students in Mr. Camp’s class reported that they had at least two siblings. Since 34.6% of 26 is 8.996, there must have been 9 students in the class who reported having at least two siblings and 17 students who reported that they had fewer than two siblings. It is also given that the average eighth-grade class size in the state is 26 and that Mr. Camp’s class is representative of all eighth-grade classes in the state. This means that in each eighth-grade class in the state there are about 17 students who have fewer than two siblings. Therefore, the best estimate of the number of eighth-grade students in the state who have fewer than two siblings is 17 × (number of eighth-grade classes in the state), or . Choice A is incorrect because 16,200 is the best estimate for the number of eighth-grade students in the state who have at least, not fewer than, two siblings. Choice B is incorrect because 23,400 is half of the estimated total number of eighth-grade students in the state; however, since the students in Mr. Camp’s class are representative of students in the eighth-grade classes in the state and more than half of the students in Mr. Camp’s class have fewer than two siblings, more than half of the students in each eighth-grade class in the state have fewer than two siblings, too. Choice D is incorrect because 46,800 is the estimated total number of eighth-grade students in the state. Hard SAT Math',
+    'Choice C is correct. It is given that 34.6% of 26 students in Mr. Camp’s class reported that they had at least two siblings. Since 34.6% of 26 is 8.996, there must have been 9 students in the class who reported having at least two siblings and 17 students who reported that they had fewer than two siblings. It is also given that the average eighth-grade class size in the state is 26 and that Mr. Camp’s class is representative of all eighth-grade classes in the state. This means that in each eighth-grade class in the state there are about 17 students who have fewer than two siblings. Therefore, the best estimate of the number of eighth-grade students in the state who have fewer than two siblings is 17 × (number of eighth-grade classes in the state), or . Choice A is incorrect because 16,200 is the best estimate for the number of eighth-grade students in the state who have at least, not fewer than, two siblings. Choice B is incorrect because 23,400 is half of the estimated total number of eighth-grade students in the state; however, since the students in Mr. Camp’s class are representative of students in the eighth-grade classes in the state and more than half of the students in Mr. Camp’s class have fewer than two siblings, more than half of the students in each eighth-grade class in the state have fewer than two siblings, too. Choice D is incorrect because 46,800 is the estimated total number of eighth-grade students in the state. ',
     '',
     1
 );
@@ -3739,7 +3739,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Inference from sample statistics and margin of error Difficulty Question ID 5c24c861 ID: 5c24c861 A study was done to determine a new car’s stopping distance when it was traveling at different speeds. The study was done on a dry road with good surface conditions. The results are shown below, along with the graph of a quadratic function that models the data. According to the model, which of the following is the best estimate for the stopping distance, in feet, if the vehicle was traveling 55 miles per hour?',
     'C',
     '{"A":"25","B":"30","C":"210","D":"250"}',
-    'Correct Answer Rationale Choice C is correct. According to the model, the stopping distance, in feet, of a vehicle traveling 55 miles per hour is about 200 feet. Of the choices given, the best estimate of the stopping distance for a car traveling 55 miles per hour is 210 feet. Incorrect Answer Rationale Choices A, B, and D are incorrect and may be the result of incorrectly reading the given quadratic model. The corresponding x-values to the y-values of 25 and 30 are not part of the model. The corresponding x-value to a y-value of 250 is approximately 60 mph, not 55 mph. Easy SAT Math',
+    'Correct Answer Rationale Choice C is correct. According to the model, the stopping distance, in feet, of a vehicle traveling 55 miles per hour is about 200 feet. Of the choices given, the best estimate of the stopping distance for a car traveling 55 miles per hour is 210 feet. Incorrect Answer Rationale Choices A, B, and D are incorrect and may be the result of incorrectly reading the given quadratic model. The corresponding x-values to the y-values of 25 and 30 are not part of the model. The corresponding x-value to a y-value of 250 is approximately 60 mph, not 55 mph. ',
     '',
     1
 );
@@ -3779,7 +3779,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Choice A is incorrect. This is the total number of students born in July and August. Choice B is incorrect. This is the number of students born in August. Choice C is incorrect. This is the number of students born in July. Easy Question ID 8c5dbd3e ID: 8c5dbd3e The number  is  greater than the number . The number  is  less than . What is the value of ?',
     'A',
     '{}',
-    'The correct answer is . It’s given that the number  is  greater than the number . It follows that , or . It’s also given that the number  is  less than . It follows that , or , which yields . Substituting  for  in the equation  yields , which is equivalent to . Therefore, the value of  is . Note that 47.25 and 189/4 are examples of ways to enter a correct answer. Hard SAT Math',
+    'The correct answer is . It’s given that the number  is  greater than the number . It follows that , or . It’s also given that the number  is  less than . It follows that , or , which yields . Substituting  for  in the equation  yields , which is equivalent to . Therefore, the value of  is . Note that 47.25 and 189/4 are examples of ways to enter a correct answer. ',
     '',
     1
 );
@@ -3819,7 +3819,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis One-variable data: Distributions and measures of center and spread Difficulty Hard Question ID 99550621 ID: 99550621 Makayla is planning an event in a 5,400-square-foot room. If there should be at least 8 square feet per person, what is the maximum number of people that could attend this event?',
     'B',
     '{"A":"588","B":"675","C":"15,274","D":"43,200"}',
-    'Choice B is correct. It’s given that the event will be in a 5,400-square-foot room and that there should be at least 8 square feet per person. The maximum number of people that could attend the event can be found by dividing the total square feet in the room by the minimum number of square feet needed per person, which gives . Choices A and C are incorrect and may result from conceptual or computational errors. Choice D is incorrect and may result from multiplying, rather than dividing, 5,400 by 8. Easy SAT Math',
+    'Choice B is correct. It’s given that the event will be in a 5,400-square-foot room and that there should be at least 8 square feet per person. The maximum number of people that could attend the event can be found by dividing the total square feet in the room by the minimum number of square feet needed per person, which gives . Choices A and C are incorrect and may result from conceptual or computational errors. Choice D is incorrect and may result from multiplying, rather than dividing, 5,400 by 8. ',
     '',
     1
 );
@@ -3839,7 +3839,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Ratios, rates, proportional relationships, and units Difficulty Question ID a8fabad0 ID: a8fabad0 A waiter receives tips from each customer. On average, the tip is 15% of the customer’s bill. At this rate, which of the following is closest to the tip the waiter can expect when a customer has a bill that is $78.20?',
     'C',
     '{"A":"$8.00","B":"$10.00","C":"$12.00","D":"$14.00"}',
-    'Choice C is correct. If the bill is $78.20, 15% of the bill can be found by multiplying 78.20 by the decimal conversion of 15%, 78.20 × 0.15 = $11.73. The exact amount $11.73 is closest in value to $12.00. Choices A, B, and D are incorrect and may be the result of errors when calculating 15% of the total $78.20. Easy SAT Math',
+    'Choice C is correct. If the bill is $78.20, 15% of the bill can be found by multiplying 78.20 by the decimal conversion of 15%, 78.20 × 0.15 = $11.73. The exact amount $11.73 is closest in value to $12.00. Choices A, B, and D are incorrect and may be the result of errors when calculating 15% of the total $78.20. ',
     '',
     1
 );
@@ -3859,7 +3859,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Percentages Difficulty Question ID 79340403 ID: 79340403 The bar graph shows the distribution of  books collected by  different groups for a book drive. How many books were collected by group ?',
     'A',
     '{}',
-    'The correct answer is . The height of each bar in the bar graph shown represents the number of books collected by the group specified at the bottom of the bar. The bar for group  reaches a height of . Therefore, group  collected  books. Easy SAT Math',
+    'The correct answer is . The height of each bar in the bar graph shown represents the number of books collected by the group specified at the bottom of the bar. The bar for group  reaches a height of . Therefore, group  collected  books. ',
     '',
     1
 );
@@ -3880,7 +3880,7 @@ INSERT INTO questions (
     'D',
     '{"A":"115,900","B":"116,300","C":"142,000","D":"145,800"}',
     'Choice D is correct. The decimal equivalent of 29% is 0.29. It’s given that the 113,000 occupational therapy jobs in the United States in 2012 are projected to increase by 29% by 2022. Increasing 113,000 by 29% can be expressed as , or . Evaluating this expression yields 145,770. The closest number is 145,800 in choice D. Choice A is incorrect and may result from increasing 113,000 by 2,900 instead of by 29%. Choice B is incorrect and may result from increasing 113,000 by 2.9% instead of by 29%. Choice C is incorrect and may result from increasing 113,000 by 29,000 instead of by 29%.',
-    'Easy SAT Math',
+    '',
     1
 );
 
@@ -3939,7 +3939,7 @@ INSERT INTO questions (
     'Problem-Solving and Data Analysis Two-variable data: Models and scatterplots Difficulty Hard Question ID 8156d446 ID: 8156d446 Each dot in the scatterplot above represents the temperature and the number of people who visited a beach in Lagos, Nigeria, on one of eleven different days. The line of best fit for the data is also shown. According to the line of best fit, what is the number of people, rounded to the nearest 10, predicted to visit this beach on a day with an average temperature of 32°C?',
     'A',
     '{}',
-    'The correct answer is 480. An average temperature of  corresponds to the value 32 on the x-axis. On the line of best fit, an x-value of 32 corresponds to a y-value of 480. The values on the y-axis correspond to the number of people predicted to visit this beach. Therefore, 480 people are predicted to visit this beach on a day with an average temperature of . Easy SAT Math',
+    'The correct answer is 480. An average temperature of  corresponds to the value 32 on the x-axis. On the line of best fit, an x-value of 32 corresponds to a y-value of 480. The values on the y-axis correspond to the number of people predicted to visit this beach. Therefore, 480 people are predicted to visit this beach on a day with an average temperature of . ',
     '',
     1
 );

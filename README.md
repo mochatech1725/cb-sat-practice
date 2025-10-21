@@ -39,10 +39,11 @@ A comprehensive web application for generating customized SAT practice sets from
 
 ### Backend
 - **Express.js** for RESTful API
-- **SQLite** for data persistence
+- **MySQL** for data persistence
 - **Node.js** with ES6 modules
 - **CORS** and **Helmet** for security
 - **Rate limiting** for API protection
+- **Database abstraction layer** for flexibility
 
 ## Project Structure
 
@@ -68,18 +69,23 @@ cb-sat-practice/
 
 ## Database Schema
 
-The application uses SQLite with the following main tables:
+The application uses MySQL with the following main tables:
 
 - **questions**: Stores SAT questions with metadata
-- **practice_sets**: Stores practice session configurations
-- **practice_set_questions**: Links questions to practice sets
-- **practice_history**: Tracks completed practice sessions and scores
+- **users**: Stores user information
+- **practice_tests**: Stores practice session configurations
+- **practice_problems**: Links questions to practice tests
+- **user_test_attempts**: Tracks completed practice sessions and scores
+- **user_answers**: Stores individual question answers
+
+See [DATABASE-SETUP.md](DATABASE-SETUP.md) for detailed database configuration and setup instructions.
 
 ## Installation & Setup
 
 ### Prerequisites
 - Node.js (v16 or higher)
 - npm or yarn
+- MySQL (v5.7 or higher)
 
 ### Installation Steps
 
@@ -89,12 +95,30 @@ The application uses SQLite with the following main tables:
    cd cb-sat-practice
    ```
 
-2. **Install all dependencies**:
+2. **Set up MySQL database**:
+   ```bash
+   mysql -u root -p
+   CREATE DATABASE sat_practice CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+   exit;
+   ```
+
+3. **Configure environment variables**:
+   - Update the `.env.dev` file in the project root with your MySQL credentials
+   - The file should contain:
+   ```env
+   DB_HOST=localhost
+   DB_PORT=3306
+   DB_USER=root
+   DB_PASSWORD=your_password
+   DB_NAME=sat_practice
+   ```
+
+4. **Install all dependencies**:
    ```bash
    npm run install-all
    ```
 
-3. **Start the development servers**:
+5. **Start the development servers**:
    ```bash
    npm run dev
    ```
@@ -102,6 +126,8 @@ The application uses SQLite with the following main tables:
    This will start both the frontend (Vue.js) and backend (Express.js) servers concurrently:
    - Frontend: http://localhost:5173
    - Backend API: http://localhost:3001
+   
+   The database schema will be automatically created on first run.
 
 ### Individual Server Commands
 
@@ -179,20 +205,31 @@ The application comes with sample SAT questions across different domains and dif
 
 ### Database Changes
 
-1. Update schema in `server/database/schema.sql`
+1. Update schema in `server/database/schema-mysql.sql`
 2. Modify database initialization in `server/database/init.js`
 3. Update API endpoints as needed
+
+The project uses a database abstraction layer, making it easy to add support for other databases like PostgreSQL. See [DATABASE-SETUP.md](DATABASE-SETUP.md) for details.
 
 ## Production Deployment
 
 ### Environment Variables
 
-Create a `.env` file in the server directory:
+Update the `.env.dev` file in the project root directory:
 
 ```env
 NODE_ENV=production
 PORT=3001
 CLIENT_URL=https://your-frontend-domain.com
+
+# Database configuration
+DB_TYPE=mysql
+DB_HOST=your-database-host
+DB_PORT=3306
+DB_USER=your-db-user
+DB_PASSWORD=your-db-password
+DB_NAME=sat_practice
+DB_CONNECTION_LIMIT=20
 ```
 
 ### Build Commands
@@ -204,6 +241,15 @@ npm run build
 # Start production server
 cd server && npm start
 ```
+
+### Database Setup for Production
+
+1. Create a production MySQL database
+2. Update environment variables with production database credentials
+3. Ensure MySQL server is properly secured and configured
+4. Consider setting up database backups and monitoring
+
+For detailed database configuration, see [DATABASE-SETUP.md](DATABASE-SETUP.md).
 
 ## Contributing
 

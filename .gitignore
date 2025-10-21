@@ -48,3 +48,4 @@ server/database/mock/pdfs/*.pdf
 # server/database/mock/sql/*.sql
 # server/database/mock/sql/*.json
 
+.env.dev
