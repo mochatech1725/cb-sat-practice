@@ -6,14 +6,38 @@ This directory contains tools for loading SAT practice questions from various so
 
 ```
 mock/
-├── pdfs/                     # Place your College Board PDF files here
-├── parsed/                   # Parsed questions from PDFs (auto-generated)
-├── mock-data.json           # Basic mock questions
-├── extended-mock-data.json  # Extended mock questions
-├── mock-loader.js           # Main data loader
-├── pdf-parser.js            # PDF parsing utility
-└── README.md               # This file
+├── pdfs/                          # Place your College Board PDF files here
+├── sql/                           # Generated SQL files (auto-generated)
+├── parsed/                        # Parsed questions from PDFs (auto-generated)
+├── pdf-parser.js                  # Original PDF parsing utility
+├── pdf-parser-improved.js         # ⭐ NEW: Improved parser (supports free response)
+├── PDF-PARSER-IMPROVED-GUIDE.md   # Detailed guide for improved parser
+├── mock-data.json                 # Basic mock questions
+├── extended-mock-data.json        # Extended mock questions
+├── mock-loader.js                 # Main data loader
+└── README.md                      # This file
 ```
+
+## ⭐ NEW: Improved PDF Parser
+
+We now have an **improved PDF parser** that correctly handles:
+- ✅ **Free response questions** (numeric answers like "403", "-29")
+- ✅ **Multiple choice questions** (A-D options)
+- ✅ Question ID extraction from PDFs
+- ✅ Better rationale/explanation parsing
+
+**See [PDF-PARSER-IMPROVED-GUIDE.md](./PDF-PARSER-IMPROVED-GUIDE.md) for complete documentation.**
+
+### Quick Start with Improved Parser
+
+```bash
+cd server/database/mock
+node pdf-parser-improved.js
+```
+
+This generates output files per PDF:
+- `sql/<PDFBasename>.json` - Parsed questions for that PDF
+- `sql/<PDFBasename>.sql` - Ready-to-import SQL for that PDF
 
 ## Using College Board PDFs
 
@@ -87,53 +111,97 @@ The parser recognizes:
 
 If you prefer to create questions manually, use this JSON format:
 
+### Multiple Choice Question:
 ```json
 {
   "questions": [
     {
       "question_id": "SAT_MATH_001",
-      "test_type": "SAT",
-      "domain": "Math",
-      "subdomain": "Algebra",
+      "assessment": "SAT",
+      "test_type": "Math",
+      "domain": "Algebra",
       "difficulty": "Easy",
-      "skill": "Linear Equations",
+      "skill": "Linear equations in one variable",
       "question_text": "If 2x + 3 = 7, what is the value of x?",
       "correct_answer": "A",
       "answer_choices": {
-        "A": "2",
-        "B": "3",
-        "C": "4",
-        "D": "5"
+        "type": "multiple_choice",
+        "choices": {
+          "A": "2",
+          "B": "3",
+          "C": "4",
+          "D": "5"
+        }
       },
       "answer_analysis": "To solve, subtract 3 from both sides then divide by 2.",
       "explanation": "Basic linear equation solving.",
       "is_active": 0
     }
-  ],
-  "metadata": {
-    "total_questions": 1,
-    "domains": ["Math"],
-    "difficulties": ["Easy"],
-    "test_types": ["SAT"]
-  }
+  ]
+}
+```
+
+### Free Response Question:
+```json
+{
+  "questions": [
+    {
+      "question_id": "128c75e2",
+      "assessment": "SAT",
+      "test_type": "Math",
+      "domain": "Advanced Math",
+      "difficulty": "Hard",
+      "skill": "Nonlinear functions",
+      "question_text": "The function g is defined by g(x) = |x|/a - 14, where a < 0. What is the product of g(15a) and g(7a)?",
+      "correct_answer": "403",
+      "answer_choices": {
+        "type": "free_response"
+      },
+      "answer_analysis": "For a linear equation to have infinitely many solutions...",
+      "explanation": "Detailed step-by-step solution.",
+      "is_active": 0
+    }
+  ]
 }
 ```
 
 ## Data Fields
 
 ### Required Fields
-- `question_id`: Unique identifier (e.g., "SAT_MATH_001")
-- `test_type`: "SAT", "PSAT", etc.
-- `domain`: "Math", "Reading", or "Writing and Language"
+- `question_id`: Unique identifier (e.g., "128c75e2", "SAT_MATH_001")
+- `assessment`: "SAT", "PSAT/NMSQT & PSAT 10", "PSAT 8/9"
+- `test_type`: "Math", "Reading and Writing"
+- `domain`: Specific domain (e.g., "Algebra", "Information and Ideas")
 - `difficulty`: "Easy", "Medium", or "Hard"
-- `skill`: Specific skill being tested
-- `question_text`: The actual question
-- `correct_answer`: "A", "B", "C", or "D"
+- `skill`: Specific skill being tested (e.g., "Linear equations in one variable")
+- `question_text`: The actual question (preserves formatting)
+- `correct_answer`: Answer value (e.g., "A", "403", "-29")
+- `answer_choices`: JSON object with question type and choices
+
+### Answer Choices Format
+
+**For Multiple Choice:**
+```json
+{
+  "type": "multiple_choice",
+  "choices": {
+    "A": "Option A text",
+    "B": "Option B text",
+    "C": "Option C text",
+    "D": "Option D text"
+  }
+}
+```
+
+**For Free Response:**
+```json
+{
+  "type": "free_response"
+}
+```
 
 ### Optional Fields
-- `subdomain`: More specific categorization
-- `answer_choices`: JSON object with choices
-- `answer_analysis`: Detailed explanation
+- `answer_analysis`: Detailed explanation/rationale
 - `explanation`: Additional notes
 - `is_active`: Whether question is on actual SAT tests (0 or 1)
 

@@ -87,15 +87,9 @@
         </div>
 
         <!-- Domains -->
-        <div class="form-group">
+        <div v-if="filters.testType" class="form-group">
           <label class="form-label">Domains *</label>
-          <div v-if="!filters.assessment" class="text-muted">
-            Please select an assessment first
-          </div>
-          <div v-else-if="!filters.testType" class="text-muted">
-            Please select a test type
-          </div>
-          <div v-else-if="availableDomains.length === 0" class="text-muted">
+          <div v-if="availableDomains.length === 0" class="text-muted">
             No domains available for selected test type
           </div>
           <div v-else class="checkbox-group">
@@ -110,6 +104,28 @@
                 v-model="filters.domains"
               >
               {{ domain }}
+            </label>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div v-if="filters.domains.length > 0" class="form-group">
+          <label class="form-label">Skills *</label>
+          <div v-if="availableSkills.length === 0" class="text-muted">
+            No skills available for selected domains
+          </div>
+          <div v-else class="checkbox-group skills-grid">
+            <label 
+              v-for="skill in availableSkills" 
+              :key="skill" 
+              class="checkbox-item"
+            >
+              <input 
+                type="checkbox" 
+                :value="skill" 
+                v-model="filters.skills"
+              >
+              {{ skill }}
             </label>
           </div>
         </div>
@@ -141,31 +157,6 @@
                 v-model="filters.difficulties"
               >
               Hard
-            </label>
-          </div>
-        </div>
-
-        <!-- Skills -->
-        <div class="form-group">
-          <label class="form-label">Skills *</label>
-          <div v-if="filters.domains.length === 0" class="text-muted">
-            Please select at least one domain first
-          </div>
-          <div v-else-if="availableSkills.length === 0" class="text-muted">
-            No skills available for selected domains
-          </div>
-          <div v-else class="checkbox-group skills-grid">
-            <label 
-              v-for="skill in availableSkills" 
-              :key="skill" 
-              class="checkbox-item"
-            >
-              <input 
-                type="checkbox" 
-                :value="skill" 
-                v-model="filters.skills"
-              >
-              {{ skill }}
             </label>
           </div>
         </div>
@@ -259,22 +250,54 @@
 
       <div class="question-container">
         <div class="question">
-          <h3>Question {{ currentQuestionIndex + 1 }}</h3>
-          <p class="question-text">{{ currentQuestions[currentQuestionIndex].question_text }}</p>
-          <p class="question-meta">
-            <span class="badge">{{ currentQuestions[currentQuestionIndex].domain }}</span>
-            <span class="badge">{{ currentQuestions[currentQuestionIndex].difficulty }}</span>
-            <span class="badge">{{ currentQuestions[currentQuestionIndex].skill }}</span>
-          </p>
+          <div class="question-header">
+            <h3>Question {{ currentQuestionIndex + 1 }}</h3>
+            <div class="question-meta">
+              <span class="badge badge-domain">{{ currentQuestions[currentQuestionIndex].domain }}</span>
+              <span class="badge badge-difficulty">{{ currentQuestions[currentQuestionIndex].difficulty }}</span>
+              <span class="badge badge-skill">{{ currentQuestions[currentQuestionIndex].skill }}</span>
+            </div>
+          </div>
+          
+          <div class="question-content">
+            <pre class="question-text">{{ currentQuestions[currentQuestionIndex].question_text }}</pre>
+          </div>
         </div>
 
         <div class="answer-section">
+          <label class="form-label">Your Answer:</label>
           <textarea 
             v-model="currentAnswer" 
-            class="form-control"
-            rows="4"
+            class="form-control answer-input"
+            rows="3"
             placeholder="Enter your answer here..."
           ></textarea>
+        </div>
+
+        <div class="correct-answer-section">
+          <button 
+            @click="toggleAnswer" 
+            class="btn btn-outline"
+            type="button"
+          >
+            {{ showCorrectAnswer ? 'Hide Answer' : 'Show Answer' }}
+          </button>
+          
+          <div v-if="showCorrectAnswer" class="answer-reveal">
+            <div class="correct-answer">
+              <strong>Correct Answer:</strong> {{ currentQuestions[currentQuestionIndex].correct_answer }}
+            </div>
+            
+            <div v-if="currentQuestions[currentQuestionIndex].explanation" class="explanation">
+              <strong>Explanation:</strong>
+              <pre class="explanation-text">{{ currentQuestions[currentQuestionIndex].explanation }}</pre>
+            </div>
+            
+            <div v-if="currentQuestions[currentQuestionIndex].answer_analysis" class="rationale">
+              <strong>Rationale:</strong>
+              <pre class="rationale-text">{{ currentQuestions[currentQuestionIndex].answer_analysis }}</pre>
+            </div>
+          </div>
         </div>
 
         <div class="question-navigation">
@@ -283,14 +306,14 @@
             class="btn btn-secondary"
             :disabled="currentQuestionIndex === 0"
           >
-            Previous
+            ← Previous
           </button>
           <button 
             @click="nextQuestion" 
             class="btn btn-primary"
             :disabled="currentQuestionIndex === currentQuestions.length - 1"
           >
-            Next
+            Next →
           </button>
         </div>
       </div>
@@ -338,6 +361,7 @@ const showPracticeSession = ref(false)
 const currentQuestionIndex = ref(0)
 const currentAnswer = ref('')
 const answers = ref<Array<{ questionId: number; userAnswer: string }>>([])
+const showCorrectAnswer = ref(false)
 
 // User data
 interface UserOption {
@@ -422,6 +446,11 @@ function startPractice() {
   currentQuestionIndex.value = 0
   currentAnswer.value = ''
   answers.value = []
+  showCorrectAnswer.value = false
+}
+
+function toggleAnswer() {
+  showCorrectAnswer.value = !showCorrectAnswer.value
 }
 
 function nextQuestion() {
@@ -429,6 +458,7 @@ function nextQuestion() {
   if (currentQuestionIndex.value < currentQuestions.value.length - 1) {
     currentQuestionIndex.value++
     loadCurrentAnswer()
+    showCorrectAnswer.value = false // Hide answer when moving to next question
   }
 }
 
@@ -437,6 +467,7 @@ function previousQuestion() {
   if (currentQuestionIndex.value > 0) {
     currentQuestionIndex.value--
     loadCurrentAnswer()
+    showCorrectAnswer.value = false // Hide answer when moving to previous question
   }
 }
 
@@ -490,6 +521,7 @@ function exitPractice() {
   currentQuestionIndex.value = 0
   currentAnswer.value = ''
   answers.value = []
+  showCorrectAnswer.value = false
 }
 
 function clearPracticeSet() {
@@ -599,42 +631,172 @@ onMounted(async () => {
 }
 
 .question {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #dee2e6;
 }
 
 .question h3 {
   color: #333;
-  margin-bottom: 1rem;
+  margin: 0;
+}
+
+.question-content {
+  margin-top: 1rem;
 }
 
 .question-text {
+  font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: #212529;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+  margin: 0;
 }
 
 .question-meta {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .badge {
-  background-color: #e9ecef;
-  color: #495057;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
   font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.badge-domain {
+  background-color: #e7f3ff;
+  color: #0056b3;
+}
+
+.badge-difficulty {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.badge-skill {
+  background-color: #d1ecf1;
+  color: #0c5460;
 }
 
 .answer-section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.answer-section .form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.answer-input {
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 2px solid #ced4da;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.answer-input:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.correct-answer-section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.btn-outline {
+  background-color: white;
+  border: 2px solid #667eea;
+  color: #667eea;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: #667eea;
+  color: white;
+}
+
+.answer-reveal {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+}
+
+.correct-answer {
+  padding: 1rem;
+  background-color: #d4edda;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  color: #155724;
+}
+
+.correct-answer strong {
+  color: #155724;
+}
+
+.explanation,
+.rationale {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.explanation-text,
+.rationale-text {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #495057;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
 }
 
 .question-navigation {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.question-navigation .btn {
+  min-width: 120px;
 }
 
 .practice-actions {

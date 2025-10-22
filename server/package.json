@@ -8,17 +8,18 @@
     "dev": "nodemon index.js",
     "start": "node index.js",
     "user:create": "node scripts/create-user.js",
-    "user:list": "node scripts/list-users.js"
+    "user:list": "node scripts/list-users.js",
+    "postinstall": "node scripts/fix-pdf-parse.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
-    "mysql2": "^3.6.5",
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.2",
-    "helmet": "^7.1.0",
+    "express": "^4.18.2",
     "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.5",
     "pdf-parse": "^1.1.1"
   },
   "devDependencies": {

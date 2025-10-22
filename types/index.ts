@@ -67,7 +67,7 @@ export interface Question {
     question_text: string;
     question_type?: string;
     correct_answer: string;
-    answer_choices?: AnswerChoices | string;
+    answer_choices?: AnswerChoicesFormat | AnswerChoices | string; // Support new and legacy formats
     explanation?: string | null;
     answer_analysis?: string | null;
     is_active: boolean | number;
@@ -75,6 +75,19 @@ export interface Question {
     updated_at?: string;
 }
 
+// New format: supports both multiple choice and free response
+export interface AnswerChoicesFormat {
+    type: 'multiple_choice' | 'free_response';
+    choices?: {
+        A?: string;
+        B?: string;
+        C?: string;
+        D?: string;
+        [key: string]: string | undefined;
+    };
+}
+
+// Legacy format: direct A-D mapping (for backward compatibility)
 export interface AnswerChoices {
     A?: string;
     B?: string;
