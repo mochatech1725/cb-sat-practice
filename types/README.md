@@ -35,6 +35,40 @@ const createUser = async (req: Request, res: Response) => {
 };
 ```
 
+## Assessment Hierarchy
+
+The College Board assessment structure is defined in `hierarchy.json`:
+
+```
+Assessment → Test Type → Domain → Skills
+```
+
+**Example:**
+```
+SAT → Math → Algebra → Linear equations in one variable
+```
+
+### Using the Hierarchy
+
+```typescript
+import { ASSESSMENT_HIERARCHY, getDomainsForTestType, getSkillsForDomain } from '../../types/hierarchy';
+
+// Get all domains for SAT Math
+const domains = getDomainsForTestType('SAT', 'Math');
+// Returns: ['Algebra', 'Advanced Math', 'Problem-Solving and Data Analysis', 'Geometry and Trigonometry']
+
+// Get all skills for SAT Math Algebra
+const skills = getSkillsForDomain('SAT', 'Math', 'Algebra');
+// Returns: ['Linear equations in one variable', 'Linear functions', ...]
+```
+
+### Updating the Hierarchy
+
+To add or modify assessments, test types, domains, or skills:
+1. Edit `hierarchy.json`
+2. Restart the development servers
+3. No code changes required
+
 ## Available Types
 
 ### User Types

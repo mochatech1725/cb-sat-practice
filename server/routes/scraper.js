@@ -123,24 +123,15 @@ export default function scraperRoutes(db) {
     router.get('/status', async (req, res) => {
         try {
             // Get question count from database
-            const questionCount = await new Promise((resolve, reject) => {
-                db.db.get('SELECT COUNT(*) as count FROM questions', (err, row) => {
-                    if (err) reject(err);
-                    else resolve(row.count);
-                });
-            });
+            const result = await db.adapter.get('SELECT COUNT(*) as count FROM questions');
+            const questionCount = result.count;
 
-            // Get recent sync activity
-            const recentSyncs = await new Promise((resolve, reject) => {
-                db.db.all(`
-                    SELECT COUNT(*) as count, MAX(created_at) as last_sync 
-                    FROM questions 
-                    WHERE created_at > datetime('now', '-7 days')
-                `, (err, rows) => {
-                    if (err) reject(err);
-                    else resolve(rows[0]);
-                });
-            });
+            // Get recent sync activity (MySQL version)
+            const recentSyncs = await db.adapter.get(`
+                SELECT COUNT(*) as count, MAX(created_at) as last_sync 
+                FROM questions 
+                WHERE created_at > DATE_SUB(NOW(), INTERVAL 7 DAY)
+            `);
 
             res.json({
                 success: true,

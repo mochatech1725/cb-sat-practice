@@ -3,6 +3,9 @@
  * Used by both client and server
  */
 
+// Export hierarchy
+export * from './hierarchy'
+
 // ============================================================================
 // User Types
 // ============================================================================
@@ -112,7 +115,6 @@ export interface PracticeTest {
     difficulties: string[] | string;
     skills: string[] | string;
     question_count: number;
-    exclude_active: boolean | number;
     exclude_previous: boolean | number;
     created_at: string;
     completed_at?: string | null;
@@ -128,7 +130,6 @@ export interface PracticeSet {
     difficulties: string[];
     skills: string[];
     question_count: number;
-    exclude_active: boolean;
     exclude_previous: boolean;
     created_at: string;
     completed_at?: string;

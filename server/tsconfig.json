@@ -16,7 +16,7 @@
       "@types/*": ["../types/*"]
     }
   },
-  "include": ["**/*.js", "../types/**/*.ts"],
+  "include": ["**/*.js", "../types/**/*.ts", "../types/**/*.json"],
   "exclude": ["node_modules", "dist"]
 }
 

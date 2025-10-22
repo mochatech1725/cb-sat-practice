@@ -17,6 +17,7 @@ export const usePracticeStore = defineStore('practice', () => {
   const practiceHistory = ref<PracticeHistory[]>([])
   const loading = ref(false)
   const error = ref<string | null>(null)
+  const selectedUserId = ref<string>('')
 
   // Getters
   const availableDomains = computed(() => filterOptions.value.domains)
@@ -40,12 +41,12 @@ export const usePracticeStore = defineStore('practice', () => {
   }
 
   async function generatePracticeSet(params: {
+    assessment: string
     testType: string
     domains: string[]
     difficulties: string[]
     skills: string[]
     questionCount: number
-    excludeActive: boolean
     excludePrevious: boolean
     setName?: string
   }) {
@@ -53,21 +54,31 @@ export const usePracticeStore = defineStore('practice', () => {
       loading.value = true
       error.value = null
 
+      if (!selectedUserId.value) {
+        throw new Error('Please select a user first')
+      }
+
       const result = await practiceAPI.create({
-        ...params,
-        userId: 'anonymous' // For now, using anonymous user
+        assessment: params.assessment,
+        testType: params.testType,
+        domains: params.domains,
+        difficulties: params.difficulties,
+        skills: params.skills,
+        questionCount: params.questionCount,
+        excludePrevious: params.excludePrevious,
+        setName: params.setName,
+        userId: selectedUserId.value
       })
 
       currentPracticeSet.value = {
         id: result.practiceSetId,
-        user_id: 'anonymous',
+        user_id: selectedUserId.value,
         set_name: params.setName || `Practice Set ${new Date().toLocaleDateString()}`,
         test_type: params.testType,
         domains: params.domains,
         difficulties: params.difficulties,
         skills: params.skills,
         question_count: result.questions.length,
-        exclude_active: params.excludeActive,
         exclude_previous: params.excludePrevious,
         created_at: new Date().toISOString()
       }
@@ -178,6 +189,10 @@ export const usePracticeStore = defineStore('practice', () => {
     currentQuestions.value = []
   }
 
+  function setSelectedUser(userId: string) {
+    selectedUserId.value = userId
+  }
+
   return {
     // State
     filterOptions,
@@ -186,6 +201,7 @@ export const usePracticeStore = defineStore('practice', () => {
     practiceHistory,
     loading,
     error,
+    selectedUserId,
     
     // Getters
     availableDomains,
@@ -202,6 +218,7 @@ export const usePracticeStore = defineStore('practice', () => {
     resetPracticeHistory,
     getExcludedQuestionIds,
     clearError,
-    clearCurrentPracticeSet
+    clearCurrentPracticeSet,
+    setSelectedUser
   }
 })

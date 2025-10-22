@@ -50,6 +50,7 @@ A comprehensive web application for generating customized SAT practice sets from
 - **TypeScript definitions** shared between client and server
 - **Type-safe API contracts** for consistent data structures
 - **Auto-complete support** in both environments
+- **Assessment hierarchy** (Assessment → Test Type → Domain → Skills) defined in `hierarchy.json` for easy updates
 
 ## Project Structure
 
@@ -73,6 +74,8 @@ cb-sat-practice/
 │   └── index.js
 ├── types/                  # Shared TypeScript types
 │   ├── index.ts            # Type definitions
+│   ├── hierarchy.ts        # Hierarchy utilities
+│   ├── hierarchy.json      # Assessment structure (Assessment → Test Type → Domain → Skills)
 │   └── README.md           # Types documentation
 ├── package.json            # Root package.json for scripts
 └── README.md
@@ -89,7 +92,7 @@ The application uses MySQL with the following main tables:
 - **user_test_attempts**: Tracks completed practice sessions and scores
 - **user_answers**: Stores individual question answers
 
-See [DATABASE-SETUP.md](DATABASE-SETUP.md) for detailed database configuration and setup instructions.
+The database schema is automatically created when the server starts for the first time.
 
 ## Installation & Setup
 
@@ -152,6 +155,44 @@ npm run server
 npm run client
 ```
 
+## User Management
+
+The application includes command-line utilities for managing users in the database.
+
+### Create a User
+
+```bash
+cd server
+npm run user:create -- --first-name=<firstName> --last-name=<lastName>
+```
+
+**Example:**
+```bash
+$ npm run user:create -- --first-name=John --last-name=Doe
+
+=== Create New User ===
+
+✓ User created successfully!
+  User ID: 550e8400-e29b-41d4-a716-446655440000
+  First Name: John
+  Last Name: Doe
+```
+
+The user ID is automatically generated as a UUID by the database.
+
+### List All Users
+
+```bash
+cd server
+npm run user:list
+```
+
+This displays all users in a formatted table with their IDs, first names, last names, and creation dates.
+
+**Note:** An `anonymous` user is automatically created during database initialization for testing purposes.
+
+See `server/scripts/README.md` for more details on user management scripts.
+
 ## Shared Types
 
 The project uses a shared `types/` directory that provides TypeScript type definitions for both client and server. This ensures type safety and consistency across the application.
@@ -182,6 +223,39 @@ const handleCreateUser = async (req, res) => {
 ```
 
 See `types/README.md` for more details.
+
+## Updating Assessment Hierarchy
+
+The College Board assessment structure (Assessment → Test Type → Domain → Skills) is defined in `types/hierarchy.json`. 
+
+**Current Structure:**
+- **Assessment Level:** SAT, PSAT/NMSQT & PSAT 10, PSAT 8/9
+- **Test Type Level:** Math, Reading and Writing
+- **Domain Level:** Algebra, Advanced Math, Problem-Solving and Data Analysis, etc.
+- **Skill Level:** Linear equations in one variable, Linear functions, etc.
+
+To update:
+
+1. **Edit** `types/hierarchy.json`:
+   ```json
+   {
+     "SAT": {
+       "Math": {
+         "Algebra": [
+           "Linear equations in one variable",
+           "Linear functions",
+           ...
+         ]
+       }
+     }
+   }
+   ```
+
+2. **Restart** the development servers
+
+3. **Test** the form to ensure changes appear correctly
+
+**Note:** Currently, only SAT is enabled in the UI. Other assessments are defined in the JSON but not yet accessible.
 
 ## API Service Layer
 
@@ -223,11 +297,12 @@ The client uses a centralized API service (`client/src/services/api.ts`) for all
 ### Creating a Practice Set
 
 1. Navigate to the home page
-2. Select your desired filters:
-   - Test type (required)
-   - Domains (multiple selection, required)
-   - Difficulties (multiple selection, required)
-   - Skills (multiple selection, required)
+2. The form defaults to **SAT** assessment
+3. Select your desired filters:
+   - Test type: Math or Reading and Writing (required)
+   - Domains: Multiple selection, options depend on test type (required)
+   - Difficulties: Multiple selection (required)
+   - Skills: Multiple selection, options depend on selected domains (required)
    - Number of questions (1-100)
    - Optional filters (exclude active/previous questions)
 3. Click "Generate Practice Set"

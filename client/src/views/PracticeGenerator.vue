@@ -10,18 +10,60 @@
       <h2>Practice Set Configuration</h2>
       
       <form @submit.prevent="handleGeneratePractice">
+        <!-- User Selection -->
+        <div class="form-group">
+          <label class="form-label">User *</label>
+          <select 
+            v-model="selectedUser" 
+            class="form-control"
+            required
+          >
+            <option value="">Select user</option>
+            <option 
+              v-for="user in users" 
+              :key="user.userId" 
+              :value="user.userId"
+            >
+              {{ user.name }}
+            </option>
+          </select>
+          <small class="form-text text-muted">
+            Selected User ID: {{ selectedUser || 'None' }}
+          </small>
+        </div>
+
         <div class="grid grid-2">
+          <!-- Assessment -->
+          <div class="form-group">
+            <label class="form-label">Assessment *</label>
+            <select 
+              v-model="filters.assessment" 
+              class="form-control"
+              required
+            >
+              <option value="">Select assessment</option>
+              <option 
+                v-for="assessment in availableAssessments" 
+                :key="assessment" 
+                :value="assessment"
+              >
+                {{ assessment }}
+              </option>
+            </select>
+          </div>
+
           <!-- Test Type -->
           <div class="form-group">
             <label class="form-label">Test Type *</label>
             <select 
               v-model="filters.testType" 
-              class="form-control form-select"
+              class="form-control"
               required
+              :disabled="!filters.assessment"
             >
               <option value="">Select test type</option>
               <option 
-                v-for="testType in availableTestTypes" 
+                v-for="testType in availableTestTypesFromHierarchy" 
                 :key="testType" 
                 :value="testType"
               >
@@ -47,7 +89,16 @@
         <!-- Domains -->
         <div class="form-group">
           <label class="form-label">Domains *</label>
-          <div class="checkbox-group">
+          <div v-if="!filters.assessment" class="text-muted">
+            Please select an assessment first
+          </div>
+          <div v-else-if="!filters.testType" class="text-muted">
+            Please select a test type
+          </div>
+          <div v-else-if="availableDomains.length === 0" class="text-muted">
+            No domains available for selected test type
+          </div>
+          <div v-else class="checkbox-group">
             <label 
               v-for="domain in availableDomains" 
               :key="domain" 
@@ -63,21 +114,33 @@
           </div>
         </div>
 
-        <!-- Difficulties -->
+        <!-- Difficulty -->
         <div class="form-group">
-          <label class="form-label">Difficulties *</label>
+          <label class="form-label">Difficulty *</label>
           <div class="checkbox-group">
-            <label 
-              v-for="difficulty in availableDifficulties" 
-              :key="difficulty" 
-              class="checkbox-item"
-            >
+            <label class="checkbox-item">
               <input 
                 type="checkbox" 
-                :value="difficulty" 
+                value="Easy" 
                 v-model="filters.difficulties"
               >
-              {{ difficulty }}
+              Easy
+            </label>
+            <label class="checkbox-item">
+              <input 
+                type="checkbox" 
+                value="Medium" 
+                v-model="filters.difficulties"
+              >
+              Medium
+            </label>
+            <label class="checkbox-item">
+              <input 
+                type="checkbox" 
+                value="Hard" 
+                v-model="filters.difficulties"
+              >
+              Hard
             </label>
           </div>
         </div>
@@ -85,7 +148,13 @@
         <!-- Skills -->
         <div class="form-group">
           <label class="form-label">Skills *</label>
-          <div class="checkbox-group">
+          <div v-if="filters.domains.length === 0" class="text-muted">
+            Please select at least one domain first
+          </div>
+          <div v-else-if="availableSkills.length === 0" class="text-muted">
+            No skills available for selected domains
+          </div>
+          <div v-else class="checkbox-group skills-grid">
             <label 
               v-for="skill in availableSkills" 
               :key="skill" 
@@ -105,13 +174,6 @@
         <div class="form-group">
           <label class="form-label">Options</label>
           <div class="checkbox-group">
-            <label class="checkbox-item">
-              <input 
-                type="checkbox" 
-                v-model="filters.excludeActive"
-              >
-              Exclude Active Questions (questions from actual SAT tests)
-            </label>
             <label class="checkbox-item">
               <input 
                 type="checkbox" 
@@ -143,7 +205,7 @@
           <button 
             type="submit" 
             class="btn btn-primary"
-            :disabled="loading || !isFormValid"
+            :disabled="loading || !showGenerateButton"
           >
             <span v-if="loading" class="spinner"></span>
             {{ loading ? 'Generating...' : 'Generate Practice Set' }}
@@ -160,7 +222,7 @@
         <p><strong>Test Type:</strong> {{ currentPracticeSet.test_type }}</p>
         <p><strong>Questions:</strong> {{ currentPracticeSet.question_count }}</p>
         <p><strong>Domains:</strong> {{ currentPracticeSet.domains.join(', ') }}</p>
-        <p><strong>Difficulties:</strong> {{ currentPracticeSet.difficulties.join(', ') }}</p>
+        <p><strong>Difficulty:</strong> {{ currentPracticeSet.difficulties.join(', ') }}</p>
         <p><strong>Skills:</strong> {{ currentPracticeSet.skills.join(', ') }}</p>
       </div>
       
@@ -254,20 +316,20 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted, watch } from 'vue'
-import { useRouter } from 'vue-router'
 import { usePracticeStore } from '@/stores/practice'
+import { userAPI } from '@/services'
+import { ASSESSMENT_HIERARCHY } from '../../../types/hierarchy'
 
-const router = useRouter()
 const practiceStore = usePracticeStore()
 
 // Reactive data
 const filters = ref({
+  assessment: '',
   testType: '',
   domains: [] as string[],
   difficulties: [] as string[],
   skills: [] as string[],
   questionCount: 10,
-  excludeActive: false,
   excludePrevious: false,
   setName: ''
 })
@@ -277,22 +339,66 @@ const currentQuestionIndex = ref(0)
 const currentAnswer = ref('')
 const answers = ref<Array<{ questionId: number; userAnswer: string }>>([])
 
+// User data
+interface UserOption {
+  userId: string
+  name: string
+  firstName: string
+  lastName: string
+}
+const users = ref<UserOption[]>([])
+const selectedUser = ref('')
+
 // Computed properties
-const availableTestTypes = computed(() => practiceStore.availableTestTypes)
-const availableDomains = computed(() => practiceStore.availableDomains)
-const availableDifficulties = computed(() => practiceStore.availableDifficulties)
-const availableSkills = computed(() => practiceStore.availableSkills)
 const loading = computed(() => practiceStore.loading)
 const error = computed(() => practiceStore.error)
 const currentPracticeSet = computed(() => practiceStore.currentPracticeSet)
 const currentQuestions = computed(() => practiceStore.currentQuestions)
 
-const isFormValid = computed(() => {
-  return filters.value.testType && 
+// Available assessments from hierarchy
+const availableAssessments = computed(() => {
+  return Object.keys(ASSESSMENT_HIERARCHY)
+})
+
+// Filtered test types based on selected assessment
+const availableTestTypesFromHierarchy = computed(() => {
+  if (!filters.value.assessment) return []
+  const assessmentData = ASSESSMENT_HIERARCHY[filters.value.assessment]
+  return assessmentData ? Object.keys(assessmentData) : []
+})
+
+// Filtered domains based on selected assessment and test type
+const availableDomains = computed(() => {
+  if (!filters.value.assessment || !filters.value.testType) return []
+  const assessmentData = ASSESSMENT_HIERARCHY[filters.value.assessment]
+  if (!assessmentData) return []
+  return Object.keys(assessmentData[filters.value.testType] || {})
+})
+
+// Filtered skills based on selected domains
+const availableSkills = computed(() => {
+  if (!filters.value.assessment || !filters.value.testType || filters.value.domains.length === 0) return []
+  
+  const skills: string[] = []
+  const assessmentData = ASSESSMENT_HIERARCHY[filters.value.assessment]
+  if (!assessmentData) return []
+  
+  const testTypeData = assessmentData[filters.value.testType] || {}
+  
+  filters.value.domains.forEach(domain => {
+    const domainSkills = testTypeData[domain] || []
+    skills.push(...domainSkills)
+  })
+  
+  return skills
+})
+
+const showGenerateButton = computed(() => {
+  return selectedUser.value.length > 0 &&
+         filters.value.assessment.length > 0 &&
+         filters.value.testType.length > 0 && 
          filters.value.domains.length > 0 && 
-         filters.value.difficulties.length > 0 && 
-         filters.value.skills.length > 0 &&
-         filters.value.questionCount > 0
+         filters.value.skills.length > 0
 })
 
 const allQuestionsAnswered = computed(() => {
@@ -304,8 +410,7 @@ const allQuestionsAnswered = computed(() => {
 async function handleGeneratePractice() {
   try {
     await practiceStore.generatePracticeSet({
-      ...filters.value,
-      userId: 'anonymous'
+      ...filters.value
     })
   } catch (err) {
     console.error('Error generating practice set:', err)
@@ -396,11 +501,51 @@ watch(currentQuestionIndex, () => {
   loadCurrentAnswer()
 })
 
+// Reset everything when assessment changes
+watch(() => filters.value.assessment, () => {
+  filters.value.testType = ''
+  filters.value.domains = []
+  filters.value.skills = []
+})
+
+// Reset domains and skills when test type changes
+watch(() => filters.value.testType, () => {
+  filters.value.domains = []
+  filters.value.skills = []
+})
+
+// Reset skills when domains change
+watch(() => filters.value.domains, () => {
+  // Remove skills that are no longer available
+  const currentAvailableSkills = availableSkills.value
+  filters.value.skills = filters.value.skills.filter(skill => 
+    currentAvailableSkills.includes(skill)
+  )
+})
+
+// Fetch users
+async function fetchUsers() {
+  try {
+    const response = await userAPI.getAll()
+    users.value = response.users as unknown as UserOption[]
+  } catch (err) {
+    console.error('Error fetching users:', err)
+  }
+}
+
+// Watch selectedUser and update store
+watch(selectedUser, (newUserId) => {
+  if (newUserId) {
+    practiceStore.setSelectedUser(newUserId)
+  }
+})
+
 // Lifecycle
-onMounted(() => {
+onMounted(async () => {
   if (practiceStore.filterOptions.testTypes.length === 0) {
     practiceStore.fetchFilterOptions()
   }
+  await fetchUsers()
 })
 </script>
 
@@ -516,5 +661,36 @@ onMounted(() => {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* Disabled button styles */
+.btn:disabled,
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-success:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 </style>

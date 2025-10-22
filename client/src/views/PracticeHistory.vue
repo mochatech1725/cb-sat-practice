@@ -65,17 +65,15 @@
                 <strong>Domains:</strong> {{ formatArray(item.domains) }}
               </div>
               <div class="detail-item">
-                <strong>Difficulties:</strong> {{ formatArray(item.difficulties) }}
+                <strong>Difficulty:</strong> {{ formatArray(item.difficulties) }}
               </div>
               <div class="detail-item">
                 <strong>Skills:</strong> {{ formatArray(item.skills) }}
               </div>
               <div class="detail-item">
                 <strong>Options:</strong> 
-                <span v-if="item.exclude_active">Excluded Active Questions</span>
-                <span v-if="item.exclude_active && item.exclude_previous">, </span>
                 <span v-if="item.exclude_previous">Excluded Previous Questions</span>
-                <span v-if="!item.exclude_active && !item.exclude_previous">None</span>
+                <span v-if="!item.exclude_previous">None</span>
               </div>
             </div>
 

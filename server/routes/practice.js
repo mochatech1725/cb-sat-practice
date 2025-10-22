@@ -6,22 +6,22 @@ export default function practiceRoutes(db) {
     // Create a new practice set
     router.post('/create', async (req, res) => {
         try {
-            const {
-                setName,
-                testType,
-                domains,
-                difficulties,
-                skills,
-                questionCount,
-                excludeActive,
-                excludePrevious,
-                userId = 'anonymous'
-            } = req.body;
+        const {
+            setName,
+            assessment = 'SAT', // Default to SAT if not provided
+            testType,
+            domains,
+            difficulties,
+            skills,
+            questionCount,
+            excludePrevious,
+            userId
+        } = req.body;
 
             // Validate required fields
-            if (!testType || !domains || !difficulties || !skills || !questionCount) {
+            if (!assessment || !testType || !domains || !difficulties || !skills || !questionCount || !userId) {
                 return res.status(400).json({ 
-                    error: 'Missing required fields: testType, domains, difficulties, skills, questionCount' 
+                    error: 'Missing required fields: assessment, testType, domains, difficulties, skills, questionCount, userId' 
                 });
             }
 
@@ -31,17 +31,42 @@ export default function practiceRoutes(db) {
                 excludedQuestionIds = await db.getExcludedQuestionIds(userId);
             }
 
+            // Ensure arrays are actually arrays (in case they were serialized)
+            const domainsArray = Array.isArray(domains) ? domains : [domains];
+            const difficultiesArray = Array.isArray(difficulties) ? difficulties : [difficulties];
+            const skillsArray = Array.isArray(skills) ? skills : [skills];
+
+            console.log('Received filters:', {
+                assessment,
+                testType,
+                domains: domainsArray,
+                difficulties: difficultiesArray,
+                skills: skillsArray,
+                questionCount
+            });
+
             // Search for questions with filters
             const filters = {
                 testType,
-                domains,
-                difficulties,
-                skills,
+                domains: domainsArray,
+                difficulties: difficultiesArray,
+                skills: skillsArray,
                 questionCount: Math.min(questionCount, 100),
-                excludeActive,
                 excludePrevious,
                 excludedQuestionIds
             };
+
+            console.log('Filters object before getFilteredQuestions:', {
+                domains: filters.domains,
+                domainsIsArray: Array.isArray(filters.domains),
+                domainsLength: filters.domains?.length,
+                difficulties: filters.difficulties,
+                difficultiesIsArray: Array.isArray(filters.difficulties),
+                difficultiesLength: filters.difficulties?.length,
+                skills: filters.skills,
+                skillsIsArray: Array.isArray(filters.skills),
+                skillsLength: filters.skills?.length
+            });
 
             const questions = await db.getFilteredQuestions(filters);
             
@@ -55,11 +80,10 @@ export default function practiceRoutes(db) {
             const practiceSetData = {
                 setName: setName || `Practice Set ${new Date().toLocaleDateString()}`,
                 testType,
-                domains,
-                difficulties,
-                skills,
+                domains: domainsArray,
+                difficulties: difficultiesArray,
+                skills: skillsArray,
                 questionCount: questions.length,
-                excludeActive,
                 excludePrevious,
                 userId
             };
@@ -99,16 +123,10 @@ export default function practiceRoutes(db) {
         try {
             const practiceSetId = req.params.practiceSetId;
             
-            const practiceSet = await new Promise((resolve, reject) => {
-                db.db.get(
-                    "SELECT * FROM practice_sets WHERE id = ?",
-                    [practiceSetId],
-                    (err, row) => {
-                        if (err) reject(err);
-                        else resolve(row);
-                    }
-                );
-            });
+            const practiceSet = await db.adapter.get(
+                "SELECT * FROM practice_sets WHERE id = ?",
+                [practiceSetId]
+            );
 
             if (!practiceSet) {
                 return res.status(404).json({ error: 'Practice set not found' });
@@ -120,18 +138,13 @@ export default function practiceRoutes(db) {
             practiceSet.skills = JSON.parse(practiceSet.skills);
 
             // Get questions for this practice set
-            const questions = await new Promise((resolve, reject) => {
-                db.db.all(`
-                    SELECT q.*, psq.user_answer, psq.is_correct
-                    FROM questions q
-                    JOIN practice_set_questions psq ON q.id = psq.question_id
-                    WHERE psq.practice_set_id = ?
-                    ORDER BY psq.id
-                `, [practiceSetId], (err, rows) => {
-                    if (err) reject(err);
-                    else resolve(rows);
-                });
-            });
+            const questions = await db.adapter.getAll(`
+                SELECT q.*, psq.user_answer, psq.is_correct
+                FROM questions q
+                JOIN practice_set_questions psq ON q.id = psq.question_id
+                WHERE psq.practice_set_id = ?
+                ORDER BY psq.id
+            `, [practiceSetId]);
 
             res.json({
                 practiceSet,
@@ -161,60 +174,38 @@ export default function practiceRoutes(db) {
                 const { questionId, userAnswer } = answer;
                 
                 // Get correct answer
-                const question = await new Promise((resolve, reject) => {
-                    db.db.get(
-                        "SELECT correct_answer FROM questions WHERE id = ?",
-                        [questionId],
-                        (err, row) => {
-                            if (err) reject(err);
-                            else resolve(row);
-                        }
-                    );
-                });
+                const question = await db.adapter.get(
+                    "SELECT correct_answer FROM questions WHERE id = ?",
+                    [questionId]
+                );
 
                 const isCorrect = question && userAnswer === question.correct_answer;
                 if (isCorrect) correctCount++;
 
                 // Update practice set question
-                await new Promise((resolve, reject) => {
-                    db.db.run(`
-                        UPDATE practice_set_questions 
-                        SET user_answer = ?, is_correct = ?
-                        WHERE practice_set_id = ? AND question_id = ?
-                    `, [userAnswer, isCorrect ? 1 : 0, practiceSetId, questionId], (err) => {
-                        if (err) reject(err);
-                        else resolve();
-                    });
-                });
+                await db.adapter.execute(`
+                    UPDATE practice_set_questions 
+                    SET user_answer = ?, is_correct = ?
+                    WHERE practice_set_id = ? AND question_id = ?
+                `, [userAnswer, isCorrect ? 1 : 0, practiceSetId, questionId]);
             }
 
             // Calculate score
             const score = totalQuestions > 0 ? (correctCount / totalQuestions) * 100 : 0;
 
             // Record in practice history
-            await new Promise((resolve, reject) => {
-                db.db.run(`
-                    INSERT INTO practice_history (
-                        user_id, practice_set_id, total_questions, 
-                        correct_answers, score, completed_at
-                    ) VALUES (?, ?, ?, ?, ?, ?)
-                `, [userId, practiceSetId, totalQuestions, correctCount, score, new Date().toISOString()], (err) => {
-                    if (err) reject(err);
-                    else resolve();
-                });
-            });
+            await db.adapter.execute(`
+                INSERT INTO practice_history (
+                    user_id, practice_set_id, total_questions, 
+                    correct_answers, score, completed_at
+                ) VALUES (?, ?, ?, ?, ?, ?)
+            `, [userId, practiceSetId, totalQuestions, correctCount, score, new Date().toISOString()]);
 
             // Mark practice set as completed
-            await new Promise((resolve, reject) => {
-                db.db.run(
-                    "UPDATE practice_sets SET completed_at = ? WHERE id = ?",
-                    [new Date().toISOString(), practiceSetId],
-                    (err) => {
-                        if (err) reject(err);
-                        else resolve();
-                    }
-                );
-            });
+            await db.adapter.execute(
+                "UPDATE practice_sets SET completed_at = ? WHERE id = ?",
+                [new Date().toISOString(), practiceSetId]
+            );
 
             res.json({
                 practiceSetId,

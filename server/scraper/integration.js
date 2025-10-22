@@ -50,55 +50,46 @@ class SATQuestionBankIntegration {
     }
 
     async saveQuestion(questionData) {
-        return new Promise((resolve, reject) => {
+        try {
             // Check if question already exists
-            this.db.db.get(
+            const existingQuestion = await this.db.adapter.get(
                 'SELECT id FROM questions WHERE question_id = ?',
-                [questionData.question_id],
-                (err, existingQuestion) => {
-                    if (err) {
-                        reject(err);
-                        return;
-                    }
-                    
-                    if (existingQuestion) {
-                        console.log(`Question ${questionData.question_id} already exists, skipping`);
-                        resolve(false);
-                        return;
-                    }
-                    
-                    // Insert new question
-                    const stmt = this.db.db.prepare(`
-                        INSERT INTO questions (
-                            question_id, test_type, domain, difficulty, skill,
-                            question_text, question_type, correct_answer, explanation, is_active
-                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                    `);
-                    
-                    stmt.run([
-                        questionData.question_id,
-                        questionData.test_type || 'SAT',
-                        questionData.domain || 'Unknown',
-                        questionData.difficulty || 'Unknown',
-                        questionData.skill || 'Unknown',
-                        questionData.question_text,
-                        questionData.question_type || 'Multiple Choice',
-                        questionData.correct_answer || '',
-                        questionData.explanation || '',
-                        questionData.is_active || 0
-                    ], function(err) {
-                        if (err) {
-                            reject(err);
-                        } else {
-                            console.log(`Saved question ${questionData.question_id}`);
-                            resolve(true);
-                        }
-                    });
-                    
-                    stmt.finalize();
-                }
+                [questionData.question_id]
             );
-        });
+            
+            if (existingQuestion) {
+                console.log(`Question ${questionData.question_id} already exists, skipping`);
+                return false;
+            }
+            
+            // Insert new question
+            const result = await this.db.adapter.execute(`
+                INSERT INTO questions (
+                    question_id, test_type, domain, difficulty, skill,
+                    question_text, question_type, correct_answer, explanation, is_active
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            `, [
+                questionData.question_id,
+                questionData.test_type || 'SAT',
+                questionData.domain || 'Unknown',
+                questionData.difficulty || 'Unknown',
+                questionData.skill || 'Unknown',
+                questionData.question_text,
+                questionData.question_type || 'Multiple Choice',
+                questionData.correct_answer || '',
+                questionData.explanation || '',
+                questionData.is_active || 0
+            ]);
+            
+            if (result) {
+                console.log(`Saved question ${questionData.question_id}`);
+                return true;
+            }
+            return false;
+        } catch (error) {
+            console.error(`Error saving question ${questionData.question_id}:`, error);
+            throw error;
+        }
     }
 
     async getAvailableOptions() {

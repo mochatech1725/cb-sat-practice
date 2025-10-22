@@ -27,6 +27,7 @@ export class Database {
             const schemaPath = join(__dirname, 'schema-mysql.sql');
             await this.adapter.initializeSchema(schemaPath);
             
+            
             console.log('Database initialized successfully');
             this.initialized = true;
             
@@ -35,40 +36,45 @@ export class Database {
             throw error;
         }
     }
-
     // Question filtering methods
     async getFilteredQuestions(filters) {
-        let query = `
-            SELECT * FROM questions 
-            WHERE test_type = ?
-        `;
+        // console.log('getFilteredQuestions called with:', {
+        //     domains: filters.domains,
+        //     domainsType: typeof filters.domains,
+        //     domainsIsArray: Array.isArray(filters.domains),
+        //     domainsLength: filters.domains?.length,
+        //     difficulties: filters.difficulties,
+        //     skills: filters.skills
+        // });
+
+        let query = 'SELECT * FROM questions WHERE test_type = ?';
         const params = [filters.testType];
 
-        if (filters.domains && filters.domains.length > 0) {
-            query += ` AND domain IN (${filters.domains.map(() => '?').join(',')})`;
+        if (filters.domains && Array.isArray(filters.domains) && filters.domains.length > 0) {
+            const placeholders = filters.domains.map(() => '?').join(',');
+            console.log('Domain placeholders:', placeholders);
+            query += ` AND domain IN (${placeholders})`;
             params.push(...filters.domains);
         }
 
-        if (filters.difficulties && filters.difficulties.length > 0) {
-            query += ` AND difficulty IN (${filters.difficulties.map(() => '?').join(',')})`;
+        if (filters.difficulties && Array.isArray(filters.difficulties) && filters.difficulties.length > 0) {
+            const placeholders = filters.difficulties.map(() => '?').join(',');
+            query += ` AND difficulty IN (${placeholders})`;
             params.push(...filters.difficulties);
         }
 
-        if (filters.skills && filters.skills.length > 0) {
-            query += ` AND skill IN (${filters.skills.map(() => '?').join(',')})`;
+        if (filters.skills && Array.isArray(filters.skills) && filters.skills.length > 0) {
+            const placeholders = filters.skills.map(() => '?').join(',');
+            query += ` AND skill IN (${placeholders})`;
             params.push(...filters.skills);
         }
 
-        if (filters.excludeActive) {
-            query += ` AND is_active = 0`;
-        }
-
-        if (filters.excludePrevious && filters.excludedQuestionIds && filters.excludedQuestionIds.length > 0) {
+        if (filters.excludePrevious && filters.excludedQuestionIds && Array.isArray(filters.excludedQuestionIds) && filters.excludedQuestionIds.length > 0) {
             query += ` AND id NOT IN (${filters.excludedQuestionIds.map(() => '?').join(',')})`;
             params.push(...filters.excludedQuestionIds);
         }
 
-        query += ` ORDER BY RAND() LIMIT ?`;
+        query += ' ORDER BY RAND() LIMIT ?';
         params.push(filters.questionCount);
 
         return await this.adapter.getAll(query, params);
@@ -81,8 +87,8 @@ export class Database {
         await this.adapter.execute(`
             INSERT INTO practice_tests (
                 test_id, user_id, test_name, test_type, domains, difficulties, 
-                skills, question_count, exclude_active, exclude_previous
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                skills, question_count, exclude_previous
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
         `, [
             testId,
             practiceTestData.userId || 'anonymous-user-001',
@@ -92,7 +98,6 @@ export class Database {
             JSON.stringify(practiceTestData.difficulties),
             JSON.stringify(practiceTestData.skills),
             practiceTestData.questionCount,
-            practiceTestData.excludeActive ? 1 : 0,
             practiceTestData.excludePrevious ? 1 : 0
         ]);
 
@@ -133,7 +138,6 @@ export class Database {
             difficulties: practiceSetData.difficulties,
             skills: practiceSetData.skills,
             questionCount: practiceSetData.questionCount,
-            excludeActive: practiceSetData.excludeActive,
             excludePrevious: practiceSetData.excludePrevious
         });
     }

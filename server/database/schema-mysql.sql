@@ -2,12 +2,10 @@
 
 -- Users table
 CREATE TABLE IF NOT EXISTS users (
-    user_id VARCHAR(36) PRIMARY KEY,
+    user_id VARCHAR(36) PRIMARY KEY DEFAULT (UUID()),
     first_name VARCHAR(100) NOT NULL,
     last_name VARCHAR(100) NOT NULL,
-    email VARCHAR(255) UNIQUE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    INDEX idx_email (email)
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Questions table to store SAT questions from College Board
@@ -46,7 +44,6 @@ CREATE TABLE IF NOT EXISTS practice_tests (
     difficulties JSON NOT NULL,
     skills JSON NOT NULL,
     question_count INT NOT NULL,
-    exclude_active BOOLEAN DEFAULT 0,
     exclude_previous BOOLEAN DEFAULT 0,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     completed_at TIMESTAMP NULL,

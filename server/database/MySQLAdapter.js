@@ -80,11 +80,22 @@ export class MySQLAdapter extends DatabaseAdapter {
 
     async query(sql, params = []) {
         try {
+            console.log('MySQLAdapter.query called with:', {
+                sql,
+                params,
+                paramsIsArray: Array.isArray(params),
+                paramsLength: params.length,
+                paramsTypes: params.map(p => typeof p)
+            });
+            
             const connection = this.transactionConnection || this.pool;
-            const [rows] = await connection.execute(sql, params);
+            // Use query() instead of execute() for better compatibility with dynamic queries
+            const [rows] = await connection.query(sql, params);
             return rows;
         } catch (error) {
             console.error('MySQL query error:', error);
+            console.error('Failed SQL:', sql);
+            console.error('Failed params:', params);
             throw error;
         }
     }

@@ -6,33 +6,17 @@ export default function questionRoutes(db) {
     // Get available filter options
     router.get('/filters', async (req, res) => {
         try {
-            const testTypes = await new Promise((resolve, reject) => {
-                db.db.all("SELECT DISTINCT test_type FROM questions ORDER BY test_type", (err, rows) => {
-                    if (err) reject(err);
-                    else resolve(rows.map(row => row.test_type));
-                });
-            });
+            const testTypeRows = await db.adapter.getAll("SELECT DISTINCT test_type FROM questions ORDER BY test_type");
+            const testTypes = testTypeRows.map(row => row.test_type);
 
-            const domains = await new Promise((resolve, reject) => {
-                db.db.all("SELECT DISTINCT domain FROM questions ORDER BY domain", (err, rows) => {
-                    if (err) reject(err);
-                    else resolve(rows.map(row => row.domain));
-                });
-            });
+            const domainRows = await db.adapter.getAll("SELECT DISTINCT domain FROM questions ORDER BY domain");
+            const domains = domainRows.map(row => row.domain);
 
-            const difficulties = await new Promise((resolve, reject) => {
-                db.db.all("SELECT DISTINCT difficulty FROM questions ORDER BY difficulty", (err, rows) => {
-                    if (err) reject(err);
-                    else resolve(rows.map(row => row.difficulty));
-                });
-            });
+            const difficultyRows = await db.adapter.getAll("SELECT DISTINCT difficulty FROM questions ORDER BY difficulty");
+            const difficulties = difficultyRows.map(row => row.difficulty);
 
-            const skills = await new Promise((resolve, reject) => {
-                db.db.all("SELECT DISTINCT skill FROM questions ORDER BY skill", (err, rows) => {
-                    if (err) reject(err);
-                    else resolve(rows.map(row => row.skill));
-                });
-            });
+            const skillRows = await db.adapter.getAll("SELECT DISTINCT skill FROM questions ORDER BY skill");
+            const skills = skillRows.map(row => row.skill);
 
             res.json({
                 testTypes,
@@ -55,7 +39,6 @@ export default function questionRoutes(db) {
                 difficulties = [],
                 skills = [],
                 questionCount = 10,
-                excludeActive = false,
                 excludePrevious = false,
                 userId = 'anonymous'
             } = req.body;
@@ -76,7 +59,6 @@ export default function questionRoutes(db) {
                 difficulties,
                 skills,
                 questionCount: Math.min(questionCount, 100), // Limit to 100 questions max
-                excludeActive,
                 excludePrevious,
                 excludedQuestionIds
             };
@@ -99,16 +81,10 @@ export default function questionRoutes(db) {
         try {
             const questionId = req.params.id;
             
-            const question = await new Promise((resolve, reject) => {
-                db.db.get(
-                    "SELECT * FROM questions WHERE id = ? OR question_id = ?",
-                    [questionId, questionId],
-                    (err, row) => {
-                        if (err) reject(err);
-                        else resolve(row);
-                    }
-                );
-            });
+            const question = await db.adapter.get(
+                "SELECT * FROM questions WHERE id = ? OR question_id = ?",
+                [questionId, questionId]
+            );
 
             if (!question) {
                 return res.status(404).json({ error: 'Question not found' });
@@ -126,18 +102,13 @@ export default function questionRoutes(db) {
         try {
             const practiceSetId = req.params.practiceSetId;
             
-            const questions = await new Promise((resolve, reject) => {
-                db.db.all(`
-                    SELECT q.*, psq.user_answer, psq.is_correct
-                    FROM questions q
-                    JOIN practice_set_questions psq ON q.id = psq.question_id
-                    WHERE psq.practice_set_id = ?
-                    ORDER BY psq.id
-                `, [practiceSetId], (err, rows) => {
-                    if (err) reject(err);
-                    else resolve(rows);
-                });
-            });
+            const questions = await db.adapter.getAll(`
+                SELECT q.*, psq.user_answer, psq.is_correct
+                FROM questions q
+                JOIN practice_set_questions psq ON q.id = psq.question_id
+                WHERE psq.practice_set_id = ?
+                ORDER BY psq.id
+            `, [practiceSetId]);
 
             res.json(questions);
         } catch (error) {

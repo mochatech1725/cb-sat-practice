@@ -13,8 +13,7 @@ import type {
   QuestionFilters,
   FilterOptions,
   PracticeSet,
-  PracticeHistory,
-  CreatePracticeTestRequest
+  PracticeHistory
 } from '@types'
 
 // Create axios instance with default config
@@ -155,15 +154,15 @@ export const practiceAPI = {
    * Create a new practice set/test
    */
   create: async (params: {
+    assessment: string
     testType: string
     domains: string[]
     difficulties: string[]
     skills: string[]
     questionCount: number
-    excludeActive?: boolean
     excludePrevious?: boolean
     setName?: string
-    userId?: string
+    userId: string
   }) => {
     const response = await apiClient.post<{
       practiceSetId: string
@@ -175,7 +174,7 @@ export const practiceAPI = {
   /**
    * Get practice history for a user
    */
-  getHistory: async (userId: string = 'anonymous') => {
+  getHistory: async (userId: string) => {
     const response = await apiClient.get<PracticeHistory[]>(`/practice/history/${userId}`)
     return response.data
   },
@@ -264,7 +263,6 @@ export const scraperAPI = {
     domains?: string[]
     difficulties?: string[]
     skills?: string[]
-    excludeActive?: boolean
   }) => {
     const response = await apiClient.post('/scraper/sync', filters)
     return response.data
