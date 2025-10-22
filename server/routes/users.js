@@ -1,0 +1,257 @@
+import express from 'express';
+import crypto from 'crypto';
+
+const router = express.Router();
+
+export default function(db) {
+    // Create a new user
+    router.post('/register', async (req, res) => {
+        try {
+            const { firstName, lastName, email } = req.body;
+
+            // Validation
+            if (!firstName || !lastName) {
+                return res.status(400).json({ 
+                    error: 'First name and last name are required' 
+                });
+            }
+
+            // Generate a unique user ID
+            const userId = crypto.randomUUID();
+
+            // Insert user into database
+            await db.adapter.execute(
+                'INSERT INTO users (user_id, first_name, last_name, email) VALUES (?, ?, ?, ?)',
+                [userId, firstName, lastName, email || null]
+            );
+
+            // Fetch the created user
+            const user = await db.adapter.getOne(
+                'SELECT user_id, first_name, last_name, email, created_at FROM users WHERE user_id = ?',
+                [userId]
+            );
+
+            res.status(201).json({
+                message: 'User created successfully',
+                user: user
+            });
+        } catch (error) {
+            console.error('Error creating user:', error);
+            
+            if (error.message.includes('Duplicate')) {
+                return res.status(409).json({ 
+                    error: 'User with this email already exists' 
+                });
+            }
+            
+            res.status(500).json({ 
+                error: 'Failed to create user',
+                details: process.env.NODE_ENV === 'development' ? error.message : undefined
+            });
+        }
+    });
+
+    // Get all users
+    router.get('/', async (req, res) => {
+        try {
+            const users = await db.adapter.getAll(
+                'SELECT user_id, first_name, last_name, email, created_at FROM users ORDER BY created_at DESC'
+            );
+
+            res.json({
+                count: users.length,
+                users: users
+            });
+        } catch (error) {
+            console.error('Error fetching users:', error);
+            res.status(500).json({ 
+                error: 'Failed to fetch users',
+                details: process.env.NODE_ENV === 'development' ? error.message : undefined
+            });
+        }
+    });
+
+    // Get a specific user by ID
+    router.get('/:userId', async (req, res) => {
+        try {
+            const { userId } = req.params;
+
+            const user = await db.adapter.getOne(
+                'SELECT user_id, first_name, last_name, email, created_at FROM users WHERE user_id = ?',
+                [userId]
+            );
+
+            if (!user) {
+                return res.status(404).json({ error: 'User not found' });
+            }
+
+            res.json({ user });
+        } catch (error) {
+            console.error('Error fetching user:', error);
+            res.status(500).json({ 
+                error: 'Failed to fetch user',
+                details: process.env.NODE_ENV === 'development' ? error.message : undefined
+            });
+        }
+    });
+
+    // Update a user
+    router.put('/:userId', async (req, res) => {
+        try {
+            const { userId } = req.params;
+            const { firstName, lastName, email } = req.body;
+
+            // Check if user exists
+            const existingUser = await db.adapter.getOne(
+                'SELECT user_id FROM users WHERE user_id = ?',
+                [userId]
+            );
+
+            if (!existingUser) {
+                return res.status(404).json({ error: 'User not found' });
+            }
+
+            // Build update query dynamically based on provided fields
+            const updates = [];
+            const params = [];
+
+            if (firstName !== undefined) {
+                updates.push('first_name = ?');
+                params.push(firstName);
+            }
+            if (lastName !== undefined) {
+                updates.push('last_name = ?');
+                params.push(lastName);
+            }
+            if (email !== undefined) {
+                updates.push('email = ?');
+                params.push(email);
+            }
+
+            if (updates.length === 0) {
+                return res.status(400).json({ error: 'No fields to update' });
+            }
+
+            params.push(userId);
+
+            await db.adapter.execute(
+                `UPDATE users SET ${updates.join(', ')} WHERE user_id = ?`,
+                params
+            );
+
+            // Fetch updated user
+            const user = await db.adapter.getOne(
+                'SELECT user_id, first_name, last_name, email, created_at FROM users WHERE user_id = ?',
+                [userId]
+            );
+
+            res.json({
+                message: 'User updated successfully',
+                user: user
+            });
+        } catch (error) {
+            console.error('Error updating user:', error);
+            res.status(500).json({ 
+                error: 'Failed to update user',
+                details: process.env.NODE_ENV === 'development' ? error.message : undefined
+            });
+        }
+    });
+
+    // Delete a user
+    router.delete('/:userId', async (req, res) => {
+        try {
+            const { userId } = req.params;
+
+            // Check if user exists
+            const existingUser = await db.adapter.getOne(
+                'SELECT user_id FROM users WHERE user_id = ?',
+                [userId]
+            );
+
+            if (!existingUser) {
+                return res.status(404).json({ error: 'User not found' });
+            }
+
+            // Delete user (cascade will handle related records)
+            await db.adapter.execute(
+                'DELETE FROM users WHERE user_id = ?',
+                [userId]
+            );
+
+            res.json({
+                message: 'User deleted successfully',
+                userId: userId
+            });
+        } catch (error) {
+            console.error('Error deleting user:', error);
+            res.status(500).json({ 
+                error: 'Failed to delete user',
+                details: process.env.NODE_ENV === 'development' ? error.message : undefined
+            });
+        }
+    });
+
+    // Get user statistics
+    router.get('/:userId/stats', async (req, res) => {
+        try {
+            const { userId } = req.params;
+
+            // Check if user exists
+            const user = await db.adapter.getOne(
+                'SELECT user_id, first_name, last_name FROM users WHERE user_id = ?',
+                [userId]
+            );
+
+            if (!user) {
+                return res.status(404).json({ error: 'User not found' });
+            }
+
+            // Get total practice tests
+            const testsResult = await db.adapter.getOne(
+                'SELECT COUNT(*) as total FROM practice_tests WHERE user_id = ?',
+                [userId]
+            );
+
+            // Get total attempts
+            const attemptsResult = await db.adapter.getOne(
+                'SELECT COUNT(*) as total, AVG(score) as avg_score FROM user_test_attempts WHERE user_id = ?',
+                [userId]
+            );
+
+            // Get recent activity
+            const recentTests = await db.adapter.getAll(
+                `SELECT pt.test_id, pt.test_name, pt.created_at, uta.score, uta.completed_at
+                 FROM practice_tests pt
+                 LEFT JOIN user_test_attempts uta ON pt.test_id = uta.test_id
+                 WHERE pt.user_id = ?
+                 ORDER BY pt.created_at DESC
+                 LIMIT 10`,
+                [userId]
+            );
+
+            res.json({
+                user: {
+                    userId: user.user_id,
+                    firstName: user.first_name,
+                    lastName: user.last_name
+                },
+                stats: {
+                    totalPracticeTests: testsResult.total || 0,
+                    totalAttempts: attemptsResult.total || 0,
+                    averageScore: attemptsResult.avg_score ? parseFloat(attemptsResult.avg_score).toFixed(2) : 0
+                },
+                recentTests: recentTests
+            });
+        } catch (error) {
+            console.error('Error fetching user stats:', error);
+            res.status(500).json({ 
+                error: 'Failed to fetch user statistics',
+                details: process.env.NODE_ENV === 'development' ? error.message : undefined
+            });
+        }
+    });
+
+    return router;
+}
+

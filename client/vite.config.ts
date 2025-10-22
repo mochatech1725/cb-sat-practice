@@ -7,10 +7,11 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
+      '@types': resolve(__dirname, '../types'),
     },
   },
   server: {
-    port: 5173,
+    port: 5273,
     proxy: {
       '/api': {
         target: 'http://localhost:3001',

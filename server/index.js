@@ -9,6 +9,7 @@ import Database from './database/init.js';
 import questionRoutes from './routes/questions.js';
 import practiceRoutes from './routes/practice.js';
 import scraperRoutes from './routes/scraper.js';
+import userRoutes from './routes/users.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -42,6 +43,7 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
+app.use('/api/users', userRoutes(db));
 app.use('/api/questions', questionRoutes(db));
 app.use('/api/practice', practiceRoutes(db));
 app.use('/api/scraper', scraperRoutes(db));

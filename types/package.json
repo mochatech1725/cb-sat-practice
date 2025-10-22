@@ -1,0 +1,15 @@
+{
+  "name": "@cb-sat-practice/types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types for SAT Practice Application",
+  "main": "index.ts",
+  "types": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["types", "typescript", "shared"],
+  "author": "",
+  "license": "MIT"
+}
+

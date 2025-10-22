@@ -122,7 +122,7 @@ export default function practiceRoutes(db) {
             // Get questions for this practice set
             const questions = await new Promise((resolve, reject) => {
                 db.db.all(`
-                    SELECT q.*, psq.user_answer, psq.is_correct, psq.time_spent
+                    SELECT q.*, psq.user_answer, psq.is_correct
                     FROM questions q
                     JOIN practice_set_questions psq ON q.id = psq.question_id
                     WHERE psq.practice_set_id = ?
@@ -158,7 +158,7 @@ export default function practiceRoutes(db) {
 
             // Process each answer
             for (const answer of answers) {
-                const { questionId, userAnswer, timeSpent } = answer;
+                const { questionId, userAnswer } = answer;
                 
                 // Get correct answer
                 const question = await new Promise((resolve, reject) => {
@@ -179,9 +179,9 @@ export default function practiceRoutes(db) {
                 await new Promise((resolve, reject) => {
                     db.db.run(`
                         UPDATE practice_set_questions 
-                        SET user_answer = ?, is_correct = ?, time_spent = ?
+                        SET user_answer = ?, is_correct = ?
                         WHERE practice_set_id = ? AND question_id = ?
-                    `, [userAnswer, isCorrect ? 1 : 0, timeSpent, practiceSetId, questionId], (err) => {
+                    `, [userAnswer, isCorrect ? 1 : 0, practiceSetId, questionId], (err) => {
                         if (err) reject(err);
                         else resolve();
                     });

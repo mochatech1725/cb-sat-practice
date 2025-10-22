@@ -5,7 +5,9 @@ CREATE TABLE IF NOT EXISTS users (
     user_id VARCHAR(36) PRIMARY KEY,
     first_name VARCHAR(100) NOT NULL,
     last_name VARCHAR(100) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    email VARCHAR(255) UNIQUE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_email (email)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Questions table to store SAT questions from College Board
@@ -82,7 +84,6 @@ CREATE TABLE IF NOT EXISTS user_test_attempts (
     score DECIMAL(5,2),
     total_questions INT NOT NULL,
     correct_answers INT NOT NULL,
-    total_time INT,
     FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE,
     FOREIGN KEY (test_id) REFERENCES practice_tests(test_id) ON DELETE CASCADE,
     INDEX idx_user_id (user_id),

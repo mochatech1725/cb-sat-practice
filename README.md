@@ -35,15 +35,21 @@ A comprehensive web application for generating customized SAT practice sets from
 - **Pinia** for state management
 - **Vue Router** for navigation
 - **Vite** for fast development and building
-- **Axios** for HTTP requests
+- **Centralized API service** for all HTTP requests
 
 ### Backend
 - **Express.js** for RESTful API
 - **MySQL** for data persistence
 - **Node.js** with ES6 modules
+- **TypeScript types** for type safety
 - **CORS** and **Helmet** for security
 - **Rate limiting** for API protection
 - **Database abstraction layer** for flexibility
+
+### Shared Types
+- **TypeScript definitions** shared between client and server
+- **Type-safe API contracts** for consistent data structures
+- **Auto-complete support** in both environments
 
 ## Project Structure
 
@@ -55,14 +61,19 @@ cb-sat-practice/
 │   │   ├── views/          # Page components
 │   │   ├── stores/         # Pinia stores
 │   │   ├── router/         # Vue Router configuration
+│   │   ├── services/       # API service layer
 │   │   └── main.ts         # Application entry point
 │   ├── package.json
-│   └── vite.config.ts
+│   └── tsconfig.json
 ├── server/                 # Express.js backend
 │   ├── database/           # Database schema and initialization
 │   ├── routes/             # API route handlers
 │   ├── package.json
+│   ├── tsconfig.json
 │   └── index.js
+├── types/                  # Shared TypeScript types
+│   ├── index.ts            # Type definitions
+│   └── README.md           # Types documentation
 ├── package.json            # Root package.json for scripts
 └── README.md
 ```
@@ -141,7 +152,57 @@ npm run server
 npm run client
 ```
 
+## Shared Types
+
+The project uses a shared `types/` directory that provides TypeScript type definitions for both client and server. This ensures type safety and consistency across the application.
+
+### Using Shared Types
+
+**In Client (Vue/TypeScript):**
+```typescript
+import type { User, Question, PracticeTest } from '@types';
+
+const user: User = {
+  user_id: '123',
+  first_name: 'John',
+  last_name: 'Doe',
+  email: 'john@example.com',
+  created_at: new Date().toISOString()
+};
+```
+
+**In Server (Node.js):**
+```typescript
+import type { CreateUserRequest, User } from '../../types/index.js';
+
+const handleCreateUser = async (req, res) => {
+  const userData: CreateUserRequest = req.body;
+  // Type-safe request handling
+};
+```
+
+See `types/README.md` for more details.
+
+## API Service Layer
+
+The client uses a centralized API service (`client/src/services/api.ts`) for all server communication:
+
+**Benefits:**
+- ✅ Single source of truth for all API calls
+- ✅ Type-safe request/response handling
+- ✅ Centralized error handling and interceptors
+- ✅ Easy to mock for testing
+- ✅ Consistent API structure across the app
+
 ## API Endpoints
+
+### Users API (`/api/users`)
+- `POST /register` - Create a new user
+- `GET /` - Get all users
+- `GET /:userId` - Get specific user
+- `PUT /:userId` - Update a user
+- `DELETE /:userId` - Delete a user
+- `GET /:userId/stats` - Get user statistics
 
 ### Questions API (`/api/questions`)
 - `GET /filters` - Get available filter options
@@ -186,14 +247,6 @@ npm run client
 2. View all your past practice sessions
 3. Click "View Details" to see question-by-question results
 4. Use "Reset All History" to clear all practice data
-
-## Sample Data
-
-The application comes with sample SAT questions across different domains and difficulties for testing purposes. In a production environment, you would need to:
-
-1. Import questions from the College Board question bank
-2. Set up proper user authentication
-3. Configure production database (PostgreSQL, MySQL, etc.)
 
 ## Development
 
@@ -251,18 +304,8 @@ cd server && npm start
 
 For detailed database configuration, see [DATABASE-SETUP.md](DATABASE-SETUP.md).
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
 
 ## License
 
 MIT License - see LICENSE file for details
 
-## Support
-
-For issues and questions, please create an issue in the repository.

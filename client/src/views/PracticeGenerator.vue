@@ -275,8 +275,7 @@ const filters = ref({
 const showPracticeSession = ref(false)
 const currentQuestionIndex = ref(0)
 const currentAnswer = ref('')
-const answers = ref<Array<{ questionId: number; userAnswer: string; timeSpent: number }>>([])
-const startTime = ref<number>(0)
+const answers = ref<Array<{ questionId: number; userAnswer: string }>>([])
 
 // Computed properties
 const availableTestTypes = computed(() => practiceStore.availableTestTypes)
@@ -318,7 +317,6 @@ function startPractice() {
   currentQuestionIndex.value = 0
   currentAnswer.value = ''
   answers.value = []
-  startTime.value = Date.now()
 }
 
 function nextQuestion() {
@@ -345,8 +343,7 @@ function saveCurrentAnswer() {
   
   const answerData = {
     questionId: currentQuestion.id,
-    userAnswer: currentAnswer.value,
-    timeSpent: Math.floor((Date.now() - startTime.value) / 1000)
+    userAnswer: currentAnswer.value
   }
   
   if (existingAnswerIndex >= 0) {

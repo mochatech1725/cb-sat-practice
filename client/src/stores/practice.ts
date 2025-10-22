@@ -1,54 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-import axios from 'axios'
-
-export interface Question {
-  id: number
-  question_id: string
-  test_type: string
-  domain: string
-  subdomain?: string
-  difficulty: string
-  skill: string
-  question_text: string
-  question_type?: string
-  correct_answer: string
-  explanation?: string
-  is_active: boolean
-}
-
-export interface PracticeSet {
-  id: number
-  user_id: string
-  set_name: string
-  test_type: string
-  domains: string[]
-  difficulties: string[]
-  skills: string[]
-  question_count: number
-  exclude_active: boolean
-  exclude_previous: boolean
-  created_at: string
-  completed_at?: string
-}
-
-export interface PracticeHistory {
-  id: number
-  user_id: string
-  practice_set_id: number
-  total_questions: number
-  correct_answers: number
-  total_time?: number
-  score: number
-  completed_at: string
-}
-
-export interface FilterOptions {
-  testTypes: string[]
-  domains: string[]
-  difficulties: string[]
-  skills: string[]
-}
+import { questionsAPI, practiceAPI } from '@/services'
+import type { Question, PracticeSet, PracticeHistory, FilterOptions } from '@types'
 
 export const usePracticeStore = defineStore('practice', () => {
   // State
@@ -77,8 +30,7 @@ export const usePracticeStore = defineStore('practice', () => {
       loading.value = true
       error.value = null
       
-      const response = await axios.get('/api/questions/filters')
-      filterOptions.value = response.data
+      filterOptions.value = await questionsAPI.getFilters()
     } catch (err: any) {
       error.value = err.response?.data?.error || 'Failed to fetch filter options'
       console.error('Error fetching filter options:', err)
@@ -101,28 +53,28 @@ export const usePracticeStore = defineStore('practice', () => {
       loading.value = true
       error.value = null
 
-      const response = await axios.post('/api/practice/create', {
+      const result = await practiceAPI.create({
         ...params,
         userId: 'anonymous' // For now, using anonymous user
       })
 
       currentPracticeSet.value = {
-        id: response.data.practiceSetId,
+        id: result.practiceSetId,
         user_id: 'anonymous',
         set_name: params.setName || `Practice Set ${new Date().toLocaleDateString()}`,
         test_type: params.testType,
         domains: params.domains,
         difficulties: params.difficulties,
         skills: params.skills,
-        question_count: response.data.questions.length,
+        question_count: result.questions.length,
         exclude_active: params.excludeActive,
         exclude_previous: params.excludePrevious,
         created_at: new Date().toISOString()
       }
       
-      currentQuestions.value = response.data.questions
+      currentQuestions.value = result.questions
       
-      return response.data
+      return result
     } catch (err: any) {
       error.value = err.response?.data?.error || 'Failed to generate practice set'
       console.error('Error generating practice set:', err)
@@ -137,8 +89,7 @@ export const usePracticeStore = defineStore('practice', () => {
       loading.value = true
       error.value = null
 
-      const response = await axios.get(`/api/practice/history/${userId}`)
-      practiceHistory.value = response.data
+      practiceHistory.value = await practiceAPI.getHistory(userId)
     } catch (err: any) {
       error.value = err.response?.data?.error || 'Failed to fetch practice history'
       console.error('Error fetching practice history:', err)
@@ -147,14 +98,14 @@ export const usePracticeStore = defineStore('practice', () => {
     }
   }
 
-  async function fetchPracticeSet(practiceSetId: number) {
+  async function fetchPracticeSet(practiceSetId: string) {
     try {
       loading.value = true
       error.value = null
 
-      const response = await axios.get(`/api/practice/set/${practiceSetId}`)
-      currentPracticeSet.value = response.data.practiceSet
-      currentQuestions.value = response.data.questions
+      const result = await practiceAPI.getSet(practiceSetId)
+      currentPracticeSet.value = result.practiceSet
+      currentQuestions.value = result.questions
     } catch (err: any) {
       error.value = err.response?.data?.error || 'Failed to fetch practice set'
       console.error('Error fetching practice set:', err)
@@ -163,21 +114,20 @@ export const usePracticeStore = defineStore('practice', () => {
     }
   }
 
-  async function submitPracticeSet(practiceSetId: number, answers: Array<{
+  async function submitPracticeSet(practiceSetId: string, answers: Array<{
     questionId: number
     userAnswer: string
-    timeSpent: number
   }>) {
     try {
       loading.value = true
       error.value = null
 
-      const response = await axios.post(`/api/practice/submit/${practiceSetId}`, {
+      const result = await practiceAPI.submit(practiceSetId, {
         answers,
         userId: 'anonymous'
       })
 
-      return response.data
+      return result
     } catch (err: any) {
       error.value = err.response?.data?.error || 'Failed to submit practice set'
       console.error('Error submitting practice set:', err)
@@ -192,7 +142,7 @@ export const usePracticeStore = defineStore('practice', () => {
       loading.value = true
       error.value = null
 
-      await axios.delete(`/api/practice/history/${userId}`)
+      await practiceAPI.resetHistory(userId)
       practiceHistory.value = []
       
       // Also clear current practice set if it belongs to this user
@@ -211,8 +161,8 @@ export const usePracticeStore = defineStore('practice', () => {
 
   async function getExcludedQuestionIds(userId: string = 'anonymous') {
     try {
-      const response = await axios.get(`/api/practice/excluded/${userId}`)
-      return response.data.excludedQuestionIds
+      const result = await practiceAPI.getExcludedQuestions(userId)
+      return result.excludedQuestionIds
     } catch (err: any) {
       console.error('Error fetching excluded question IDs:', err)
       return []

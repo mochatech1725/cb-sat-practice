@@ -8,7 +8,8 @@
     "server": "cd server && npm run dev",
     "client": "cd client && npm run dev",
     "build": "cd client && npm run build",
-    "install-all": "npm install && cd server && npm install && cd scraper && npm install && cd ../../client && npm install"
+    "install-all": "npm install && cd server && npm install && cd scraper && npm install && cd ../../client && npm install",
+    "type-check": "cd client && vue-tsc --noEmit && cd ../server && tsc --noEmit"
   },
   "keywords": ["sat", "practice", "college-board", "education"],
   "author": "",

@@ -128,7 +128,7 @@ export default function questionRoutes(db) {
             
             const questions = await new Promise((resolve, reject) => {
                 db.db.all(`
-                    SELECT q.*, psq.user_answer, psq.is_correct, psq.time_spent
+                    SELECT q.*, psq.user_answer, psq.is_correct
                     FROM questions q
                     JOIN practice_set_questions psq ON q.id = psq.question_id
                     WHERE psq.practice_set_id = ?
