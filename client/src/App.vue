@@ -6,7 +6,6 @@
         <div class="nav-links">
           <router-link to="/" class="nav-link">Generate Practice</router-link>
           <router-link to="/history" class="nav-link">Practice History</router-link>
-          <router-link to="/scraper" class="nav-link">Question Bank</router-link>
         </div>
       </div>
     </nav>

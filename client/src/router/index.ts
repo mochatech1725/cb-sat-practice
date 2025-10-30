@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import PracticeGenerator from '@/views/PracticeGenerator.vue'
 import PracticeHistory from '@/views/PracticeHistory.vue'
-import ScraperView from '@/views/ScraperView.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -15,11 +14,6 @@ const router = createRouter({
       path: '/history',
       name: 'history',
       component: PracticeHistory
-    },
-    {
-      path: '/scraper',
-      name: 'scraper',
-      component: ScraperView
     }
   ]
 })

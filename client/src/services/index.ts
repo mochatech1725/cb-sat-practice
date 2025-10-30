@@ -3,6 +3,6 @@
  * Import all services from this file
  */
 
-export { userAPI, questionsAPI, practiceAPI, scraperAPI } from './api'
+export { userAPI, questionsAPI, practiceAPI } from './api'
 export { default as apiClient } from './api'
 

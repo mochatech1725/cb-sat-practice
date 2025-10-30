@@ -227,65 +227,6 @@ export const practiceAPI = {
 }
 
 // ============================================================================
-// Scraper API
-// ============================================================================
-
-export const scraperAPI = {
-  /**
-   * Get scraper status
-   */
-  getStatus: async () => {
-    const response = await apiClient.get('/scraper/status')
-    return response.data
-  },
-
-  /**
-   * Test scraper connection
-   */
-  test: async () => {
-    const response = await apiClient.get('/scraper/test')
-    return response.data
-  },
-
-  /**
-   * Get available scraper options
-   */
-  getOptions: async () => {
-    const response = await apiClient.get('/scraper/options')
-    return response.data
-  },
-
-  /**
-   * Sync questions from College Board
-   */
-  sync: async (filters: {
-    testType?: string
-    domains?: string[]
-    difficulties?: string[]
-    skills?: string[]
-  }) => {
-    const response = await apiClient.post('/scraper/sync', filters)
-    return response.data
-  },
-
-  /**
-   * Bulk import questions
-   */
-  bulkImport: async (data: { questions: Question[] }) => {
-    const response = await apiClient.post('/scraper/bulk-import', data)
-    return response.data
-  },
-
-  /**
-   * Cleanup duplicate or invalid questions
-   */
-  cleanup: async () => {
-    const response = await apiClient.post('/scraper/cleanup')
-    return response.data
-  }
-}
-
-// ============================================================================
 // Export API client for custom requests
 // ============================================================================
 

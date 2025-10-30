@@ -257,29 +257,6 @@ export interface PaginatedResponse<T> {
 }
 
 // ============================================================================
-// Scraper Types
-// ============================================================================
-
-export interface ScraperOptions {
-    testType?: string;
-    domains?: string[];
-    difficulties?: string[];
-    skills?: string[];
-    excludeActive?: boolean;
-}
-
-export interface ScraperResult {
-    availableOptions?: {
-        testTypes: Array<{ value: string; text: string }>;
-        domains: Array<{ value: string; text: string }>;
-        difficulties: Array<{ value: string; text: string }>;
-        skills: Array<{ value: string; text: string }>;
-    };
-    questions: Question[];
-    filters: ScraperOptions;
-}
-
-// ============================================================================
 // Database Adapter Types
 // ============================================================================
 

@@ -8,7 +8,6 @@ import { fileURLToPath } from 'url';
 import Database from './database/init.js';
 import questionRoutes from './routes/questions.js';
 import practiceRoutes from './routes/practice.js';
-import scraperRoutes from './routes/scraper.js';
 import userRoutes from './routes/users.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -46,7 +45,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/users', userRoutes(db));
 app.use('/api/questions', questionRoutes(db));
 app.use('/api/practice', practiceRoutes(db));
-app.use('/api/scraper', scraperRoutes(db));
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
